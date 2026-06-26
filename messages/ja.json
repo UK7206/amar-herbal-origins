@@ -1,0 +1,193 @@
+{
+  "about": {
+    "certifications": {
+      "gmp": "GMP準拠",
+      "haccp": "HACCP認証取得",
+      "iso": "ISO 9001:2015認証",
+      "organic": "オーガニック認証",
+      "title": "認証・コンプライアンス"
+    },
+    "experience": {
+      "clients": "500社以上のお客様",
+      "clientsDesc": "満足いただいているお客様",
+      "countries": "25カ国以上",
+      "countriesDesc": "グローバルなリーチ",
+      "title": "私たちの実績",
+      "tons": "10,000トン以上",
+      "tonsDesc": "年間輸出量",
+      "years": "14年以上",
+      "yearsDesc": "業界経験"
+    },
+    "mission": {
+      "text": "公正取引慣行を維持し、地元農家を支援し、持続可能な農業方法を確保しながら、世界市場に最高品質のオオバコ種皮製品を提供すること。",
+      "title": "私たちのミッション"
+    },
+    "story": {
+      "text": "2010年に設立され、私たちは小さな家族経営から優質オオバコ種皮の有名輸出業者へと成長しました。品質、顧客満足、持続可能な実践へのコミットメントが、世界中の企業から信頼されるパートナーとなった理由です。",
+      "title": "私たちの歴史"
+    },
+    "subtitle": "グローバル取引における品質と信頼性を通じて信頼を築く。",
+    "title": "会社概要",
+    "values": {
+      "customer": "顧客重視",
+      "customerDesc": "お客様の成功が私たちの優先事項",
+      "integrity": "誠実さ",
+      "integrityDesc": "誠実で透明性のあるビジネス慣行",
+      "quality": "品質第一",
+      "qualityDesc": "製品品質に妥協しない",
+      "sustainability": "持続可能性",
+      "sustainabilityDesc": "環境に責任ある事業運営",
+      "title": "私たちの価値観"
+    }
+  },
+  "common": {
+    "backToTop": "トップへ戻る",
+    "contactUs": "お問い合わせ",
+    "getQuote": "見積もりを取得",
+    "learnMore": "詳細を見る",
+    "readMore": "続きを読む"
+  },
+  "contact": {
+    "form": {
+      "company": "会社名",
+      "email": "メールアドレス",
+      "error": "問題が発生しました。もう一度お試しください。",
+      "message": "メッセージ",
+      "name": "フルネーム",
+      "phone": "電話番号",
+      "submit": "メッセージを送信",
+      "success": "ありがとうございます！メッセージが正常に送信されました。",
+      "title": "メッセージを送る"
+    },
+    "info": {
+      "address": "住所",
+      "addressValue": "インド グジャラート州",
+      "email": "メール",
+      "emailValue": "info@amarherbalorigins.com",
+      "hours": "営業時間",
+      "hoursValue": "月曜日〜土曜日：午前9:00〜午後6:00 IST",
+      "phone": "電話",
+      "phoneValue": "+91 94084 65040",
+      "title": "連絡先情報"
+    },
+    "social": {
+      "facebook": "フェイスブック",
+      "instagram": "インスタグラム",
+      "linkedin": "リンクドイン",
+      "title": "フォローする",
+      "twitter": "ツイッター"
+    },
+    "subtitle": "お問い合わせ、見積もり、またはパートナーシップの機会についてご連絡ください。",
+    "title": "お問い合わせ"
+  },
+  "footer": {
+    "company": "Amar Herbal Origins",
+    "legal": "法的情報",
+    "links": "クイックリンク",
+    "privacy": "プライバシーポリシー",
+    "rights": "全著作権所有。",
+    "terms": "利用規約"
+  },
+  "hero": {
+    "cta": "見積もりを取得",
+    "learnMore": "詳細を見る",
+    "subtitle": "高品質のオオバコ種皮輸出のための信頼できるパートナー。2010年以降、世界中に卓越性をお届けしています。",
+    "title": "グローバル市場向けプレミアムオオバコ種皮"
+  },
+  "nav": {
+    "about": "会社概要",
+    "contact": "お問い合わせ",
+    "home": "ホーム",
+    "language": "言語",
+    "packaging": "カスタムパッケージ",
+    "product": "製品"
+  },
+  "product": {
+    "applications": {
+      "food": "食品産業",
+      "foodDesc": "さまざまな食品の天然増粘剤・安定剤。",
+      "nutraceutical": "機能性食品産業",
+      "nutraceuticalDesc": "食物繊維サプリメントや健康製品の主要成分。",
+      "pharmaceutical": "製薬産業",
+      "pharmaceuticalDesc": "膨潤性下剤や栄養補助食品として使用。",
+      "title": "用途"
+    },
+    "benefits": {
+      "certified": "有機認証取得",
+      "certifiedDesc": "一部の製品ラインで有機認証が利用可能。",
+      "natural": "100%天然",
+      "naturalDesc": "添加物・防腐剤・人工成分不使用。",
+      "quality": "プレミアム品質",
+      "qualityDesc": "厳格な品質管理措置により一貫した純度と食物繊維含有量を確保。",
+      "reliable": "安定した供給",
+      "reliableDesc": "柔軟な注文オプションで一貫した供給が可能。",
+      "title": "主な特長"
+    },
+    "overview": "製品概要",
+    "overviewText": "当社のオオバコ種皮は100%純粋で天然、優質なプランタゴ・オバタ種子から採取されています。",
+    "packaging": {
+      "bulk": "バルクパッケージ",
+      "bulkDesc": "25kg、50kg袋が利用可能",
+      "retail": "小売パッケージ",
+      "retailDesc": "小売市場向けカスタムパッケージオプション",
+      "shipping": "グローバル配送",
+      "shippingDesc": "競争力のある配送料金で世界配送",
+      "title": "包装・配送"
+    },
+    "specifications": {
+      "ash": "灰分含量",
+      "ashValue": "最大4%",
+      "fiber": "食物繊維",
+      "fiberValue": "最低85%",
+      "mesh": "メッシュサイズ",
+      "meshValue": "40、60、80、100メッシュが利用可能",
+      "moisture": "水分",
+      "moistureValue": "最大12%",
+      "purity": "純度",
+      "purityValue": "最低99%",
+      "title": "製品仕様"
+    },
+    "subtitle": "最高の畑から調達し、丁寧に加工し、卓越した品質でお届け。",
+    "title": "プレミアムオオバコ種皮"
+  },
+  "packaging": {
+    "bulk": {
+      "description": "産業・卸売顧客向けのコスト効率の良いバルク包装。",
+      "options": ["25kg PPバッグ", "50kg PPバッグ", "100kgジュートバッグ", "カスタムバルクサイズ利用可能"],
+      "title": "バルク包装オプション"
+    },
+    "custom": {
+      "description": "お客様固有のブランドと市場要件を満たすための完全カスタマイズパッケージソリューションを提供しています。",
+      "features": ["カスタムブランディングとロゴ印刷", "様々なバッグサイズと素材", "プライベートラベルオプション", "多言語ラベリング", "バーコードとQRコード", "国際基準への準拠"],
+      "title": "カスタム包装ソリューション"
+    },
+    "materials": {
+      "description": "保管・輸送中の製品の新鮮さと完全性を確保する高品質の包装材料のみを使用しています。",
+      "options": [
+        {"description": "バルク包装に耐久性があり費用対効果が高い", "title": "PP（ポリプロピレン）バッグ"},
+        {"description": "環境意識の高いブランドにエコフレンドリーなオプション", "title": "紙袋"},
+        {"description": "小売市場向けのプレミアムオプション", "title": "ラミネートバッグ"},
+        {"description": "伝統的で持続可能な包装の選択", "title": "ジュートバッグ"}
+      ],
+      "title": "包装材料"
+    },
+    "process": {
+      "description": "合理化されたカスタム包装プロセスにより、品質を犠牲にすることなく迅速な納期を確保します。",
+      "steps": [
+        {"description": "包装要件とブランドガイドラインを共有する", "title": "1. コンサルテーション"},
+        {"description": "デザインチームがカスタム包装コンセプトを作成", "title": "2. デザインと承認"},
+        {"description": "レビューと承認用のサンプルを製造", "title": "3. サンプル製造"},
+        {"description": "品質保証チェックを伴う最終生産", "title": "4. 生産"},
+        {"description": "丁寧な包装とグローバル配送", "title": "5. 配送"}
+      ],
+      "title": "包装プロセス"
+    },
+    "retail": {
+      "description": "消費者市場向けの魅力的な小売包装オプション。",
+      "options": ["100g〜500g消費者パック", "スタンドアップパウチ", "ジップロック再封可能バッグ", "内袋付きボックスパッケージ", "カスタム小売サイズ"],
+      "title": "小売包装オプション"
+    },
+    "subtitle": "お客様のユニークなビジネス要件とブランドアイデンティティに合わせたカスタム包装ソリューション。",
+    "title": "カスタム包装サービス"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "about": {
+    "certifications": {
+      "gmp": "GMP Compliant",
+      "haccp": "HACCP Certified",
+      "iso": "ISO 9001:2015 Certified",
+      "organic": "Organic Certification",
+      "title": "Certifications & Compliance"
+    },
+    "experience": {
+      "clients": "500+ Clients",
+      "clientsDesc": "Satisfied Customers",
+      "countries": "25+ Countries",
+      "countriesDesc": "Global Reach",
+      "title": "Our Experience",
+      "tons": "10,000+ Tons",
+      "tonsDesc": "Annual Export",
+      "years": "14+ Years",
+      "yearsDesc": "Industry Experience"
+    },
+    "mission": {
+      "text": "To provide the highest quality psyllium husk products to global markets while maintaining fair trade practices, supporting local farmers, and ensuring sustainable agricultural methods.",
+      "title": "Our Mission"
+    },
+    "story": {
+      "text": "Founded in 2010, we have grown from a small family business to a recognized exporter of premium psyllium husk. Our commitment to quality, customer satisfaction, and sustainable practices has made us a trusted partner for businesses worldwide.",
+      "title": "Our Story"
+    },
+    "subtitle": "Building trust through quality and reliability in global trade.",
+    "title": "About Our Company",
+    "values": {
+      "customer": "Customer Focus",
+      "customerDesc": "Your success is our priority",
+      "integrity": "Integrity",
+      "integrityDesc": "Honest and transparent business practices",
+      "quality": "Quality First",
+      "qualityDesc": "Never compromise on product quality",
+      "sustainability": "Sustainability",
+      "sustainabilityDesc": "Environmentally responsible operations",
+      "title": "Our Values"
+    }
+  },
+  "common": {
+    "backToTop": "Back to Top",
+    "contactUs": "Contact Us",
+    "getQuote": "Get a Quote",
+    "learnMore": "Learn More",
+    "readMore": "Read More"
+  },
+  "contact": {
+    "form": {
+      "company": "Company Name",
+      "email": "Email Address",
+      "error": "Something went wrong. Please try again.",
+      "message": "Your Message",
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent successfully.",
+      "title": "Send us a Message"
+    },
+    "info": {
+      "address": "Address",
+      "addressValue": "Gujarat, India",
+      "email": "Email",
+      "emailValue": "info@amarherbalorigins.com",
+      "hours": "Business Hours",
+      "hoursValue": "Monday - Saturday: 9:00 AM - 6:00 PM IST",
+      "phone": "Phone",
+      "phoneValue": "+91 94084 65040",
+      "title": "Contact Information"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "title": "Follow Us",
+      "twitter": "Twitter"
+    },
+    "subtitle": "Get in touch for inquiries, quotes, or partnership opportunities.",
+    "title": "Contact Us"
+  },
+  "footer": {
+    "company": "Amar Herbal Origins",
+    "legal": "Legal",
+    "links": "Quick Links",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved.",
+    "terms": "Terms of Service"
+  },
+  "hero": {
+    "cta": "Get a Quote",
+    "learnMore": "Learn More",
+    "subtitle": "Your trusted partner for high-quality psyllium husk exports. Delivering excellence worldwide since 2010.",
+    "title": "Premium Psyllium Husk for Global Markets"
+  },
+  "nav": {
+    "about": "About Us",
+    "contact": "Contact",
+    "home": "Home",
+    "language": "Language",
+    "packaging": "Custom Packaging",
+    "product": "Product"
+  },
+  "product": {
+    "applications": {
+      "food": "Food Industry",
+      "foodDesc": "Natural thickener and stabilizer in various food products.",
+      "nutraceutical": "Nutraceutical Industry",
+      "nutraceuticalDesc": "Key ingredient in fiber supplements and health products.",
+      "pharmaceutical": "Pharmaceutical Industry",
+      "pharmaceuticalDesc": "Used as a bulk-forming laxative and dietary supplement.",
+      "title": "Applications"
+    },
+    "benefits": {
+      "certified": "Certified Organic",
+      "certifiedDesc": "Organic certification available for select product lines.",
+      "natural": "100% Natural",
+      "naturalDesc": "No additives, preservatives, or artificial ingredients.",
+      "quality": "Premium Quality",
+      "qualityDesc": "Strict quality control measures ensure consistent purity and fiber content.",
+      "reliable": "Reliable Supply",
+      "reliableDesc": "Consistent availability with flexible ordering options.",
+      "title": "Key Benefits"
+    },
+    "overview": "Product Overview",
+    "overviewText": "Our psyllium husk is 100% pure, natural, and sourced from premium quality Plantago ovata seeds. We offer various grades to meet different industry requirements including pharmaceutical, food, and nutraceutical applications.",
+    "packaging": {
+      "bulk": "Bulk Packaging",
+      "bulkDesc": "25kg, 50kg bags available",
+      "retail": "Retail Packaging",
+      "retailDesc": "Custom packaging options for retail markets",
+      "shipping": "Global Shipping",
+      "shippingDesc": "Worldwide delivery with competitive shipping rates",
+      "title": "Packaging & Shipping"
+    },
+    "specifications": {
+      "ash": "Ash Content",
+      "ashValue": "4% Max",
+      "fiber": "Dietary Fiber",
+      "fiberValue": "85% Min",
+      "mesh": "Mesh Size",
+      "meshValue": "40, 60, 80, 100 mesh available",
+      "moisture": "Moisture",
+      "moistureValue": "12% Max",
+      "purity": "Purity",
+      "purityValue": "99% Min",
+      "title": "Product Specifications"
+    },
+    "subtitle": "Sourced from the finest fields, processed with care, delivered with excellence.",
+    "title": "Our Premium Psyllium Husk"
+  },
+  "packaging": {
+    "bulk": {
+      "description": "Cost-effective bulk packaging for industrial and wholesale customers. Available in various sizes to meet your volume requirements.",
+      "options": [
+        "25kg PP bags",
+        "50kg PP bags",
+        "100kg Jute bags",
+        "Custom bulk sizes available"
+      ],
+      "title": "Bulk Packaging Options"
+    },
+    "custom": {
+      "description": "We offer fully customized packaging solutions to meet your specific branding and market requirements. Our team works closely with you to create packaging that represents your brand.",
+      "features": [
+        "Custom branding and logo printing",
+        "Various bag sizes and materials",
+        "Private labeling options",
+        "Multi-language labeling",
+        "Barcoding and QR codes",
+        "Compliance with international standards"
+      ],
+      "title": "Custom Packaging Solutions"
+    },
+    "materials": {
+      "description": "We use only high-quality packaging materials that ensure product freshness and integrity during storage and transportation.",
+      "options": [
+        {
+          "description": "Durable and cost-effective for bulk packaging",
+          "title": "PP (Polypropylene) Bags"
+        },
+        {
+          "description": "Eco-friendly option for environmentally conscious brands",
+          "title": "Paper Bags"
+        },
+        {
+          "description": "Premium option for retail markets",
+          "title": "Laminated Bags"
+        },
+        {
+          "description": "Traditional and sustainable packaging choice",
+          "title": "Jute Bags"
+        }
+      ],
+      "title": "Packaging Materials"
+    },
+    "process": {
+      "description": "Our streamlined custom packaging process ensures quick turnaround times without compromising on quality.",
+      "steps": [
+        {
+          "description": "Share your packaging requirements and brand guidelines",
+          "title": "1. Consultation"
+        },
+        {
+          "description": "Our design team creates custom packaging concepts",
+          "title": "2. Design & Approval"
+        },
+        {
+          "description": "We produce samples for your review and approval",
+          "title": "3. Sample Production"
+        },
+        {
+          "description": "Final production with quality assurance checks",
+          "title": "4. Production"
+        },
+        {
+          "description": "Careful packaging and global shipping",
+          "title": "5. Delivery"
+        }
+      ],
+      "title": "Our Packaging Process"
+    },
+    "retail": {
+      "description": "Attractive retail packaging options designed for consumer markets. Perfect for health food stores, pharmacies, and online retail.",
+      "options": [
+        "100g - 500g consumer packs",
+        "Stand-up pouches",
+        "Ziplock resealable bags",
+        "Box packaging with inner bags",
+        "Custom retail sizes"
+      ],
+      "title": "Retail Packaging Options"
+    },
+    "subtitle": "Tailored packaging solutions to meet your unique business requirements and brand identity.",
+    "title": "Custom Packaging Services"
+  }
+}

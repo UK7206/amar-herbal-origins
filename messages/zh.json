@@ -1,0 +1,193 @@
+{
+  "about": {
+    "certifications": {
+      "gmp": "符合GMP标准",
+      "haccp": "HACCP认证",
+      "iso": "ISO 9001:2015认证",
+      "organic": "有机认证",
+      "title": "认证与合规"
+    },
+    "experience": {
+      "clients": "500+客户",
+      "clientsDesc": "满意的客户",
+      "countries": "25+国家",
+      "countriesDesc": "全球覆盖",
+      "title": "我们的经验",
+      "tons": "10,000+吨",
+      "tonsDesc": "年度出口",
+      "years": "14+年",
+      "yearsDesc": "行业经验"
+    },
+    "mission": {
+      "text": "为全球市场提供最高质量的车前子壳产品，同时维持公平的贸易实践，支持当地农民，并确保可持续的农业方法。",
+      "title": "我们的使命"
+    },
+    "story": {
+      "text": "成立于2010年，我们从小型家族企业发展成为优质车前子壳的知名出口商。我们对质量、客户满意度和可持续实践的承诺使我们成为全球企业的可靠合作伙伴。",
+      "title": "我们的故事"
+    },
+    "subtitle": "通过全球贸易中的质量和可靠性建立信任。",
+    "title": "关于我们公司",
+    "values": {
+      "customer": "以客户为中心",
+      "customerDesc": "您的成功是我们的优先事项",
+      "integrity": "诚信",
+      "integrityDesc": "诚实透明的商业实践",
+      "quality": "质量第一",
+      "qualityDesc": "绝不在产品质量上妥协",
+      "sustainability": "可持续发展",
+      "sustainabilityDesc": "环保负责的运营",
+      "title": "我们的价值观"
+    }
+  },
+  "common": {
+    "backToTop": "返回顶部",
+    "contactUs": "联系我们",
+    "getQuote": "获取报价",
+    "learnMore": "了解更多",
+    "readMore": "阅读更多"
+  },
+  "contact": {
+    "form": {
+      "company": "公司名称",
+      "email": "电子邮件地址",
+      "error": "出了点问题。请重试。",
+      "message": "您的留言",
+      "name": "全名",
+      "phone": "电话号码",
+      "submit": "发送消息",
+      "success": "谢谢！您的消息已成功发送。",
+      "title": "给我们发消息"
+    },
+    "info": {
+      "address": "地址",
+      "addressValue": "印度古吉拉特邦",
+      "email": "电子邮件",
+      "emailValue": "info@amarherbalorigins.com",
+      "hours": "营业时间",
+      "hoursValue": "周一至周六：上午9:00 - 下午6:00 IST",
+      "phone": "电话",
+      "phoneValue": "+91 94084 65040",
+      "title": "联系信息"
+    },
+    "social": {
+      "facebook": "脸书",
+      "instagram": "Instagram",
+      "linkedin": "领英",
+      "title": "关注我们",
+      "twitter": "推特"
+    },
+    "subtitle": "联系我们获取咨询、报价或合作机会。",
+    "title": "联系我们"
+  },
+  "footer": {
+    "company": "Amar Herbal Origins",
+    "legal": "法律",
+    "links": "快速链接",
+    "privacy": "隐私政策",
+    "rights": "版权所有。",
+    "terms": "服务条款"
+  },
+  "hero": {
+    "cta": "获取报价",
+    "learnMore": "了解更多",
+    "subtitle": "您信赖的优质车前子壳出口合作伙伴。自2010年以来向全球提供卓越产品。",
+    "title": "面向全球市场的优质车前子壳"
+  },
+  "nav": {
+    "about": "关于我们",
+    "contact": "联系我们",
+    "home": "首页",
+    "language": "语言",
+    "packaging": "定制包装",
+    "product": "产品"
+  },
+  "product": {
+    "applications": {
+      "food": "食品工业",
+      "foodDesc": "各种食品的天然增稠剂和稳定剂。",
+      "nutraceutical": "保健品行业",
+      "nutraceuticalDesc": "膳食纤维补充剂和健康产品的关键成分。",
+      "pharmaceutical": "制药工业",
+      "pharmaceuticalDesc": "用作容积性泻药和膳食补充剂。",
+      "title": "应用领域"
+    },
+    "benefits": {
+      "certified": "有机认证",
+      "certifiedDesc": "特定产品系列可提供有机认证。",
+      "natural": "100%天然",
+      "naturalDesc": "无添加剂、防腐剂或人工成分。",
+      "quality": "优质品质",
+      "qualityDesc": "严格的质量控制措施确保一致的纯度和纤维含量。",
+      "reliable": "可靠供应",
+      "reliableDesc": "稳定供应，订购方式灵活。",
+      "title": "主要优势"
+    },
+    "overview": "产品概述",
+    "overviewText": "我们的车前子壳100%纯净、天然，来源于优质卵叶车前草种子。",
+    "packaging": {
+      "bulk": "散装包装",
+      "bulkDesc": "可提供25公斤、50公斤袋装",
+      "retail": "零售包装",
+      "retailDesc": "面向零售市场的定制包装选项",
+      "shipping": "全球运输",
+      "shippingDesc": "全球配送，运费具有竞争力",
+      "title": "包装与运输"
+    },
+    "specifications": {
+      "ash": "灰分含量",
+      "ashValue": "最高4%",
+      "fiber": "膳食纤维",
+      "fiberValue": "最低85%",
+      "mesh": "目数",
+      "meshValue": "可提供40、60、80、100目",
+      "moisture": "水分",
+      "moistureValue": "最高12%",
+      "purity": "纯度",
+      "purityValue": "最低99%",
+      "title": "产品规格"
+    },
+    "subtitle": "来自最优质的田间，用心加工，卓越交付。",
+    "title": "我们的优质车前子壳"
+  },
+  "packaging": {
+    "bulk": {
+      "description": "适合工业和批发客户的经济实惠散装包装。",
+      "options": ["25公斤PP袋", "50公斤PP袋", "100公斤黄麻袋", "可定制散装尺寸"],
+      "title": "散装包装选项"
+    },
+    "custom": {
+      "description": "我们提供完全定制的包装解决方案，满足您特定的品牌和市场需求。",
+      "features": ["定制品牌和标志印刷", "各种袋子尺寸和材料", "自有品牌选项", "多语言标签", "条形码和二维码", "符合国际标准"],
+      "title": "定制包装解决方案"
+    },
+    "materials": {
+      "description": "我们只使用高质量的包装材料。",
+      "options": [
+        {"description": "散装包装耐用且经济实惠", "title": "PP（聚丙烯）袋"},
+        {"description": "适合环保品牌的生态友好选项", "title": "纸袋"},
+        {"description": "零售市场的优质选项", "title": "复合袋"},
+        {"description": "传统且可持续的包装选择", "title": "黄麻袋"}
+      ],
+      "title": "包装材料"
+    },
+    "process": {
+      "description": "我们精简的定制包装流程确保快速周转而不影响质量。",
+      "steps": [
+        {"description": "分享您的包装需求和品牌指南", "title": "1. 咨询"},
+        {"description": "我们的设计团队创建定制包装方案", "title": "2. 设计与审批"},
+        {"description": "我们为您的审核生产样品", "title": "3. 样品生产"},
+        {"description": "带有质量保证检查的最终生产", "title": "4. 生产"},
+        {"description": "精心包装和全球运输", "title": "5. 交付"}
+      ],
+      "title": "我们的包装流程"
+    },
+    "retail": {
+      "description": "专为消费市场设计的吸引人零售包装选项。",
+      "options": ["100克-500克消费者包装", "立式袋", "可重复密封袋", "带内袋的盒装", "定制尺寸"],
+      "title": "零售包装选项"
+    },
+    "subtitle": "量身定制的包装解决方案，满足您独特的业务需求。",
+    "title": "定制包装服务"
+  }
+}

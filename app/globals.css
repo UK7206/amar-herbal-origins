@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-cream: #F5F0E8;
+  --bg-dark: #1C1204;
+  --bg-dark-card: #2D1F08;
+  --accent: #D97706;
+  --accent-light: #FEF3C7;
+  --accent-dark: #B45309;
+  --text-primary: #1a1a1a;
+  --text-muted: #6b7280;
+  --text-light: #9ca3af;
+  --white: #ffffff;
+  --card-border: #E5E0D8;
+}
+
+@theme inline {
+  --color-background: var(--bg-cream);
+  --color-foreground: var(--text-primary);
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-cream);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-cream); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+
+/* ===== UTILITY CLASSES ===== */
+.font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+.font-sans { font-family: 'Inter', system-ui, sans-serif; }
+
+/* Amber label */
+.section-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* HERO HEADING */
+.hero-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--text-primary);
+}
+
+/* SECTION HEADING */
+.section-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+/* AMBER Text */
+.text-accent { color: var(--accent); }
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent);
+  color: white;
+  padding: 0.875rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(217,119,6,0.35);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--text-primary);
+  padding: 0.875rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  border: 2px solid var(--text-primary);
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  background: var(--text-primary);
+  color: white;
+}
+
+.btn-outline-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: white;
+  padding: 0.875rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  border: 2px solid rgba(255,255,255,0.5);
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-outline-light:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: white;
+}
+
+/* ===== CARDS ===== */
+.card-light {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid var(--card-border);
+  transition: all 0.3s ease;
+}
+.card-light:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+.card-dark {
+  background: var(--bg-dark-card);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
+}
+.card-dark:hover {
+  transform: translateY(-4px);
+  border-color: rgba(217,119,6,0.3);
+}
+
+/* Status pills */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.pill-amber { background: rgba(217,119,6,0.15); color: var(--accent); }
+.pill-green { background: rgba(34,197,94,0.15); color: #16a34a; }
+.pill-dark { background: rgba(217,119,6,0.2); color: var(--accent); }
+
+/* ===== MARQUEE ===== */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-wrapper {
+  overflow: hidden;
+  background: var(--bg-dark);
+  padding: 0.875rem 0;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+
+/* ===== SECTIONS ===== */
+.section-cream { background: var(--bg-cream); padding: 5rem 0; }
+.section-white { background: white; padding: 5rem 0; }
+.section-dark { background: var(--bg-dark); padding: 5rem 0; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Process step connector line */
+.step-connector {
+  position: relative;
+}
+.step-connector::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  border-top: 2px dashed var(--accent);
+  opacity: 0.4;
+}
+
+/* WhatsApp float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(37,211,102,0.5);
+}
+
+/* Product image overlay badge */
+.product-badge {
+  position: absolute;
+  top: 0.875rem;
+  right: 0.875rem;
+  background: white;
+  border-radius: 50px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* Image card for products */
+.product-image-card {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  position: relative;
+}
+
+/* Stats number */
+.stat-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+/* ===== SEO KEYWORD TAG LINKS ===== */
+.seo-tag-link {
+  background: white;
+  border: 1px solid #E5E0D8;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: 500;
+  display: inline-block;
+}
+.seo-tag-link:hover {
+  border-color: #D97706;
+  color: #D97706;
+  transform: translateY(-1px);
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  .section-cream,
+  .section-white,
+  .section-dark {
+    padding: 4rem 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Headings */
+  .hero-heading {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .section-heading {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  /* Sections */
+  .section-cream,
+  .section-white,
+  .section-dark {
+    padding: 3rem 0;
+  }
+
+  /* Buttons full-width on tiny viewports */
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline-light {
+    font-size: 0.88rem;
+    padding: 0.75rem 1.4rem;
+  }
+
+  /* Cards */
+  .card-light,
+  .card-dark {
+    padding: 1.25rem;
+  }
+
+  /* WhatsApp float – move up a bit so it doesn't overlap bottom nav */
+  .whatsapp-float {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 48px;
+    height: 48px;
+  }
+
+  /* Step connector line – hide on mobile */
+  .step-connector::after {
+    display: none;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.875rem;
+  }
+  .hero-heading {
+    font-size: clamp(1.75rem, 9vw, 2.5rem);
+  }
+  .section-heading {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+  .section-cream,
+  .section-white,
+  .section-dark {
+    padding: 2.5rem 0;
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "about": {
+    "title": "Sobre Nuestra Empresa",
+    "subtitle": "Construyendo confianza a través de la calidad y confiabilidad en el comercio global.",
+    "story": {
+      "title": "Nuestra Historia",
+      "text": "Fundada en 2010, hemos crecido de un pequeño negocio familiar a un exportador reconocido de cáscara de psyllium premium. Nuestro compromiso con la calidad, satisfacción del cliente y prácticas sostenibles nos ha convertido en un socio confiable para empresas de todo el mundo."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "text": "Proporcionar productos de cáscara de psyllium de la más alta calidad a los mercados mundiales manteniendo prácticas comerciales justas, apoyando a los agricultores locales y asegurando métodos agrícolas sostenibles."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "quality": "Calidad Primero",
+      "qualityDesc": "Nunca comprometer la calidad del producto",
+      "integrity": "Integridad",
+      "integrityDesc": "Prácticas comerciales honestas y transparentes",
+      "customer": "Enfoque en el Cliente",
+      "customerDesc": "Tu éxito es nuestra prioridad",
+      "sustainability": "Sostenibilidad",
+      "sustainabilityDesc": "Operaciones ambientalmente responsables"
+    },
+    "experience": {
+      "title": "Nuestra Experiencia",
+      "years": "14+ Años",
+      "yearsDesc": "Experiencia en la Industria",
+      "clients": "500+ Clientes",
+      "clientsDesc": "Clientes Satisfechos",
+      "countries": "25+ Países",
+      "countriesDesc": "Alcance Global",
+      "tons": "10,000+ Toneladas",
+      "tonsDesc": "Exportación Anual"
+    },
+    "certifications": {
+      "title": "Certificaciones y Cumplimiento",
+      "iso": "Certificado ISO 9001:2015",
+      "gmp": "Cumple con GMP",
+      "haccp": "Certificado HACCP",
+      "organic": "Certificación Orgánica"
+    }
+  },
+  "common": {
+    "backToTop": "Volver Arriba",
+    "contactUs": "Contáctanos",
+    "getQuote": "Obtener Cotización",
+    "learnMore": "Saber Más",
+    "readMore": "Leer Más"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Ponte en contacto para consultas, cotizaciones u oportunidades de colaboración.",
+    "info": {
+      "title": "Información de Contacto",
+      "phone": "Teléfono",
+      "phoneValue": "+91 94084 65040",
+      "email": "Correo Electrónico",
+      "emailValue": "info@amarherbalorigins.com",
+      "address": "Dirección",
+      "addressValue": "Gujarat, India",
+      "hours": "Horario Comercial",
+      "hoursValue": "Lunes - Sábado: 9:00 AM - 6:00 PM IST"
+    },
+    "form": {
+      "title": "Envíanos un Mensaje",
+      "name": "Nombre Completo",
+      "email": "Dirección de Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "company": "Nombre de la Empresa",
+      "message": "Tu Mensaje",
+      "submit": "Enviar Mensaje",
+      "success": "¡Gracias! Tu mensaje ha sido enviado exitosamente.",
+      "error": "Algo salió mal. Por favor, intenta nuevamente."
+    },
+    "social": {
+      "title": "Síguenos",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
+    }
+  },
+  "footer": {
+    "company": "Amar Herbal Origins",
+    "links": "Enlaces Rápidos",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "rights": "Todos los derechos reservados."
+  },
+  "hero": {
+    "title": "Cáscara de Psyllium Premium para Mercados Globales",
+    "subtitle": "Tu socio confiable para exportaciones de cáscara de psyllium de alta calidad. Entregando excelencia en todo el mundo desde 2010.",
+    "cta": "Obtener Cotización",
+    "learnMore": "Saber Más"
+  },
+  "nav": {
+    "home": "Inicio",
+    "product": "Producto",
+    "packaging": "Empaque Personalizado",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
+  "product": {
+    "title": "Nuestra Cáscara de Psyllium Premium",
+    "subtitle": "Obtenida de los mejores campos, procesada con cuidado, entregada con excelencia.",
+    "overview": "Descripción General del Producto",
+    "overviewText": "Nuestra cáscara de psyllium es 100% pura, natural y obtenida de semillas de Plantago ovata de calidad premium. Ofrecemos varios grados para satisfacer diferentes requisitos de la industria incluyendo aplicaciones farmacéuticas, alimentarias y nutracéuticas.",
+    "benefits": {
+      "title": "Beneficios Clave",
+      "natural": "100% Natural",
+      "naturalDesc": "Sin aditivos, conservantes o ingredientes artificiales",
+      "quality": "Calidad Premium",
+      "qualityDesc": "Medidas estrictas de control de calidad aseguran pureza y contenido de fibra consistentes",
+      "certified": "Certificado Orgánico",
+      "certifiedDesc": "Certificación orgánica disponible para líneas de productos selectas",
+      "reliable": "Sumistro Confiable",
+      "reliableDesc": "Disponibilidad consistente con opciones de pedido flexibles"
+    },
+    "specifications": {
+      "title": "Especificaciones del Producto",
+      "purity": "Pureza",
+      "purityValue": "99% Mín",
+      "fiber": "Fibra Dietética",
+      "fiberValue": "85% Mín",
+      "moisture": "Humedad",
+      "moistureValue": "12% Máx",
+      "ash": "Contenido de Ceniza",
+      "ashValue": "4% Máx",
+      "mesh": "Tamaño de Malla",
+      "meshValue": "40, 60, 80, 100 malla disponible"
+    },
+    "applications": {
+      "title": "Aplicaciones",
+      "pharmaceutical": "Industria Farmacéutica",
+      "pharmaceuticalDesc": "Utilizado como laxante formador de volumen y suplemento dietético",
+      "food": "Industria Alimentaria",
+      "foodDesc": "Espesante y estabilizador natural en varios productos alimenticios",
+      "nutraceutical": "Industria Nutracéutica",
+      "nutraceuticalDesc": "Ingrediente clave en suplementos de fibra y productos de salud"
+    },
+    "packaging": {
+      "title": "Empaque y Envío",
+      "bulk": "Empaque a Granel",
+      "bulkDesc": "Bolsas de 25kg, 50kg disponibles",
+      "retail": "Empaque al por Menor",
+      "retailDesc": "Opciones de empaque personalizado para mercados minoristas",
+      "shipping": "Envío Global",
+      "shippingDesc": "Entrega mundial con tarifas de envío competitivas"
+    }
+  },
+  "packaging": {
+    "title": "Servicios de Empaque Personalizado",
+    "subtitle": "Soluciones de empaque a medida para satisfacer sus requisitos comerciales únicos e identidad de marca.",
+    "custom": {
+      "title": "Soluciones de Empaque Personalizado",
+      "description": "Ofrecemos soluciones de empaque completamente personalizadas para satisfacer sus requisitos específicos de marca y mercado. Nuestro equipo trabaja estrechamente con usted para crear empaque que represente su marca.",
+      "features": [
+        "Marcado personalizado e impresión de logotipos",
+        "Varios tamaños de bolsas y materiales",
+        "Opciones de etiquetado privado",
+        "Etiquetado en varios idiomas",
+        "Códigos de barras y códigos QR",
+        "Cumplimiento con estándares internacionales"
+      ]
+    },
+    "bulk": {
+      "title": "Opciones de Empaque a Granel",
+      "description": "Empaque a granel rentable para clientes industriales y mayoristas. Disponible en varios tamaños para satisfacer sus requisitos de volumen.",
+      "options": [
+        "Bolsas de PP de 25kg",
+        "Bolsas de PP de 50kg",
+        "Bolsas de yute de 100kg",
+        "Tamaños personalizados disponibles"
+      ]
+    },
+    "retail": {
+      "title": "Opciones de Empaque al por Menor",
+      "description": "Opciones de empaque atractivas diseñadas para mercados de consumo. Perfecto para tiendas de alimentos saludables, farmacias y venta minorista en línea.",
+      "options": [
+        "Paquetes de consumo de 100g - 500g",
+        "Bolsas con soporte",
+        "Bolsas resellables con cierre",
+        "Empaque de caja con bolsas interiores",
+        "Tamaños personalizados"
+      ]
+    },
+    "materials": {
+      "title": "Materiales de Empaque",
+      "description": "Utilizamos solo materiales de empaque de alta calidad que aseguran la frescura e integridad del producto durante el almacenamiento y transporte.",
+      "options": [
+        {
+          "title": "Bolsas de PP (Polipropileno)",
+          "description": "Duradero y rentable para empaque a granel"
+        },
+        {
+          "title": "Bolsas de Papel",
+          "description": "Opción ecológica para marcas conscientes del medio ambiente"
+        },
+        {
+          "title": "Bolsas Laminadas",
+          "description": "Opción premium para mercados minoristas"
+        },
+        {
+          "title": "Bolsas de Yute",
+          "description": "Elección de empaque tradicional y sostenible"
+        }
+      ]
+    },
+    "process": {
+      "title": "Nuestro Proceso de Empaque",
+      "description": "Nuestro proceso simplificado de empaque personalizado garantiza tiempos de entrega rápidos sin comprometer la calidad.",
+      "steps": [
+        {
+          "title": "1. Consulta",
+          "description": "Comparta sus requisitos de empaque y pautas de marca"
+        },
+        {
+          "title": "2. Diseño y Aprobación",
+          "description": "Nuestro equipo de diseño crea conceptos de empaque personalizados"
+        },
+        {
+          "title": "3. Producción de Muestras",
+          "description": "Producimos muestras para su revisión y aprobación"
+        },
+        {
+          "title": "4. Producción",
+          "description": "Producción final con controles de aseguramiento de calidad"
+        },
+        {
+          "title": "5. Entrega",
+          "description": "Empaque cuidadoso y envío global"
+        }
+      ]
+    }
+  }
+}

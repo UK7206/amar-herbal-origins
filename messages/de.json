@@ -1,0 +1,193 @@
+{
+  "about": {
+    "certifications": {
+      "gmp": "GMP-konform",
+      "haccp": "HACCP-zertifiziert",
+      "iso": "ISO 9001:2015 zertifiziert",
+      "organic": "Bio-Zertifizierung",
+      "title": "Zertifizierungen & Compliance"
+    },
+    "experience": {
+      "clients": "500+ Kunden",
+      "clientsDesc": "Zufriedene Kunden",
+      "countries": "25+ Länder",
+      "countriesDesc": "Globale Reichweite",
+      "title": "Unsere Erfahrung",
+      "tons": "10.000+ Tonnen",
+      "tonsDesc": "Jährlicher Export",
+      "years": "14+ Jahre",
+      "yearsDesc": "Branchenerfahrung"
+    },
+    "mission": {
+      "text": "Hochwertige Psylliumschalenprodukten für weltweite Märkte bereitzustellen und dabei faire Handelspraktiken zu wahren, lokale Landwirte zu unterstützen und nachhaltige Landwirtschaftsmethoden sicherzustellen.",
+      "title": "Unsere Mission"
+    },
+    "story": {
+      "text": "Gegründet im Jahr 2010 sind wir von einem kleinen Familienunternehmen zu einem anerkannten Exporteur von Premium-Psylliumschalen gewachsen. Unser Engagement für Qualität, Kundenzufriedenheit und nachhaltige Praktiken hat uns zu einem vertrauenswürdigen Partner für Unternehmen weltweit gemacht.",
+      "title": "Unsere Geschichte"
+    },
+    "subtitle": "Vertrauen durch Qualität und Zuverlässigkeit im globalen Handel aufbauen.",
+    "title": "Über unser Unternehmen",
+    "values": {
+      "customer": "Kundenorientierung",
+      "customerDesc": "Ihr Erfolg ist unsere Priorität",
+      "integrity": "Integrität",
+      "integrityDesc": "Ehrliche und transparente Geschäftspraktiken",
+      "quality": "Qualität zuerst",
+      "qualityDesc": "Niemals Kompromisse bei der Produktqualität",
+      "sustainability": "Nachhaltigkeit",
+      "sustainabilityDesc": "Umweltbewusste Betrieb",
+      "title": "Unsere Werte"
+    }
+  },
+  "common": {
+    "backToTop": "Nach oben",
+    "contactUs": "Kontakt",
+    "getQuote": "Angebot anfordern",
+    "learnMore": "Mehr erfahren",
+    "readMore": "Mehr lesen"
+  },
+  "contact": {
+    "form": {
+      "company": "Firmenname",
+      "email": "E-Mail-Adresse",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "message": "Ihre Nachricht",
+      "name": "Vollständiger Name",
+      "phone": "Telefonnummer",
+      "submit": "Nachricht senden",
+      "success": "Danke! Ihre Nachricht wurde erfolgreich gesendet.",
+      "title": "Senden Sie uns eine Nachricht"
+    },
+    "info": {
+      "address": "Adresse",
+      "addressValue": "Gujarat, Indien",
+      "email": "E-Mail",
+      "emailValue": "info@amarherbalorigins.com",
+      "hours": "Geschäftszeiten",
+      "hoursValue": "Montag - Samstag: 9:00 - 18:00 IST",
+      "phone": "Telefon",
+      "phoneValue": "+91 94084 65040",
+      "title": "Kontaktinformationen"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "title": "Folgen Sie uns",
+      "twitter": "Twitter"
+    },
+    "subtitle": "Nehmen Sie Kontakt auf für Anfragen, Angebote oder Partnerschaftsmöglichkeiten.",
+    "title": "Kontakt"
+  },
+  "footer": {
+    "company": "Amar Herbal Origins",
+    "legal": "Rechtliches",
+    "links": "Schnelllinks",
+    "privacy": "Datenschutzrichtlinie",
+    "rights": "Alle Rechte vorbehalten.",
+    "terms": "Nutzungsbedingungen"
+  },
+  "hero": {
+    "cta": "Angebot anfordern",
+    "learnMore": "Mehr erfahren",
+    "subtitle": "Ihr vertrauenswürdiger Partner für hochwertige Psylliumschalen-Exporte. Weltweit exzellent seit 2010.",
+    "title": "Premium Psylliumschalen für globale Märkte"
+  },
+  "nav": {
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "home": "Startseite",
+    "language": "Sprache",
+    "packaging": "Verpackung",
+    "product": "Produkt"
+  },
+  "product": {
+    "applications": {
+      "food": "Lebensmittelindustrie",
+      "foodDesc": "Natürliches Verdickungsmittel und Stabilisator in verschiedenen Lebensmitteln.",
+      "nutraceutical": "Nutrazeutische Industrie",
+      "nutraceuticalDesc": "Schlüsselzutat in Ballaststoffpräparaten und Gesundheitsprodukten.",
+      "pharmaceutical": "Pharmaindustrie",
+      "pharmaceuticalDesc": "Als Quellmittel und Nahrungsergänzungsmittel verwendet.",
+      "title": "Anwendungen"
+    },
+    "benefits": {
+      "certified": "Bio-zertifiziert",
+      "certifiedDesc": "Bio-Zertifizierung für ausgewählte Produktlinien verfügbar.",
+      "natural": "100% Natürlich",
+      "naturalDesc": "Keine Zusatzstoffe, Konservierungsmittel oder künstliche Zutaten.",
+      "quality": "Premium-Qualität",
+      "qualityDesc": "Strenge Qualitätskontrollmaßnahmen sorgen für einheitliche Reinheit und Fasergehalt.",
+      "reliable": "Zuverlässige Versorgung",
+      "reliableDesc": "Konsistente Verfügbarkeit mit flexiblen Bestellmöglichkeiten.",
+      "title": "Hauptvorteile"
+    },
+    "overview": "Produktübersicht",
+    "overviewText": "Unsere Psylliumschalen sind 100% rein, natürlich und werden aus hochwertigen Plantago ovata-Samen gewonnen. Wir bieten verschiedene Qualitäten für unterschiedliche Branchenanforderungen an.",
+    "packaging": {
+      "bulk": "Großverpackung",
+      "bulkDesc": "25kg, 50kg Säcke verfügbar",
+      "retail": "Einzelhandelsverpackung",
+      "retailDesc": "Individuelle Verpackungsoptionen für Einzelhandelsmärkte",
+      "shipping": "Globaler Versand",
+      "shippingDesc": "Weltweite Lieferung mit wettbewerbsfähigen Versandkosten",
+      "title": "Verpackung & Versand"
+    },
+    "specifications": {
+      "ash": "Aschegehalt",
+      "ashValue": "Max. 4%",
+      "fiber": "Ballaststoffe",
+      "fiberValue": "Min. 85%",
+      "mesh": "Maschengröße",
+      "meshValue": "40, 60, 80, 100 Mesh verfügbar",
+      "moisture": "Feuchtigkeit",
+      "moistureValue": "Max. 12%",
+      "purity": "Reinheit",
+      "purityValue": "Min. 99%",
+      "title": "Produktspezifikationen"
+    },
+    "subtitle": "Aus besten Feldern gewonnen, sorgfältig verarbeitet, hervorragend geliefert.",
+    "title": "Unsere Premium Psylliumschalen"
+  },
+  "packaging": {
+    "bulk": {
+      "description": "Kostengünstige Großverpackung für industrielle und Großhandelskunden.",
+      "options": ["25kg PP-Säcke", "50kg PP-Säcke", "100kg Jutesäcke", "Individuelle Großmengen verfügbar"],
+      "title": "Großverpackungsoptionen"
+    },
+    "custom": {
+      "description": "Wir bieten vollständig individuelle Verpackungslösungen für Ihre spezifischen Marken- und Marktanforderungen.",
+      "features": ["Individuelle Markengestaltung und Logodruck", "Verschiedene Taschengrößen und Materialien", "Private-Label-Optionen", "Mehrsprachige Beschriftung", "Barcodes und QR-Codes", "Einhaltung internationaler Standards"],
+      "title": "Individuelle Verpackungslösungen"
+    },
+    "materials": {
+      "description": "Wir verwenden nur hochwertige Verpackungsmaterialien.",
+      "options": [
+        {"description": "Langlebig und kostengünstig für Großverpackungen", "title": "PP-Säcke (Polypropylen)"},
+        {"description": "Umweltfreundliche Option für umweltbewusste Marken", "title": "Papiertüten"},
+        {"description": "Premium-Option für Einzelhandelsmärkte", "title": "Laminierte Taschen"},
+        {"description": "Traditionelle und nachhaltige Verpackungswahl", "title": "Jutesäcke"}
+      ],
+      "title": "Verpackungsmaterialien"
+    },
+    "process": {
+      "description": "Unser optimierter individueller Verpackungsprozess gewährleistet schnelle Bearbeitungszeiten.",
+      "steps": [
+        {"description": "Teilen Sie Ihre Verpackungsanforderungen mit", "title": "1. Beratung"},
+        {"description": "Unser Designteam erstellt individuelle Verpackungskonzepte", "title": "2. Design & Freigabe"},
+        {"description": "Wir produzieren Muster zur Prüfung", "title": "3. Musterproduktion"},
+        {"description": "Endproduktion mit Qualitätssicherungsprüfungen", "title": "4. Produktion"},
+        {"description": "Sorgfältige Verpackung und weltweiter Versand", "title": "5. Lieferung"}
+      ],
+      "title": "Unser Verpackungsprozess"
+    },
+    "retail": {
+      "description": "Attraktive Einzelhandelsverpackungsoptionen für Verbrauchermärkte.",
+      "options": ["100g - 500g Verbraucherpackungen", "Standbeutel", "Wiederverschließbare Taschen", "Kastenverpackungen mit Innenbeuteln", "Individuelle Größen"],
+      "title": "Einzelhandelsverpackungsoptionen"
+    },
+    "subtitle": "Maßgeschneiderte Verpackungslösungen für Ihre einzigartigen Geschäftsanforderungen.",
+    "title": "Individuelle Verpackungsdienstleistungen"
+  }
+}

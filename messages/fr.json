@@ -1,0 +1,193 @@
+{
+  "about": {
+    "certifications": {
+      "gmp": "Conforme GMP",
+      "haccp": "Certifié HACCP",
+      "iso": "Certifié ISO 9001:2015",
+      "organic": "Certification biologique",
+      "title": "Certifications & Conformité"
+    },
+    "experience": {
+      "clients": "500+ Clients",
+      "clientsDesc": "Clients satisfaits",
+      "countries": "25+ Pays",
+      "countriesDesc": "Portée mondiale",
+      "title": "Notre expérience",
+      "tons": "10 000+ Tonnes",
+      "tonsDesc": "Exportation annuelle",
+      "years": "14+ Ans",
+      "yearsDesc": "Expérience dans le secteur"
+    },
+    "mission": {
+      "text": "Fournir des produits de cosse de psyllium de la plus haute qualité aux marchés mondiaux tout en maintenant des pratiques commerciales équitables, en soutenant les agriculteurs locaux et en garantissant des méthodes agricoles durables.",
+      "title": "Notre mission"
+    },
+    "story": {
+      "text": "Fondée en 2010, nous sommes passés d'une petite entreprise familiale à un exportateur reconnu de cosse de psyllium premium. Notre engagement envers la qualité, la satisfaction client et les pratiques durables nous a rendus un partenaire de confiance pour les entreprises du monde entier.",
+      "title": "Notre histoire"
+    },
+    "subtitle": "Établir la confiance grâce à la qualité et la fiabilité dans le commerce mondial.",
+    "title": "À propos de notre entreprise",
+    "values": {
+      "customer": "Orientation client",
+      "customerDesc": "Votre succès est notre priorité",
+      "integrity": "Intégrité",
+      "integrityDesc": "Pratiques commerciales honnêtes et transparentes",
+      "quality": "La qualité d'abord",
+      "qualityDesc": "Ne jamais compromettre la qualité du produit",
+      "sustainability": "Durabilité",
+      "sustainabilityDesc": "Opérations respectueuses de l'environnement",
+      "title": "Nos valeurs"
+    }
+  },
+  "common": {
+    "backToTop": "Retour en haut",
+    "contactUs": "Contactez-nous",
+    "getQuote": "Obtenir un devis",
+    "learnMore": "En savoir plus",
+    "readMore": "Lire plus"
+  },
+  "contact": {
+    "form": {
+      "company": "Nom de l'entreprise",
+      "email": "Adresse e-mail",
+      "error": "Quelque chose s'est mal passé. Veuillez réessayer.",
+      "message": "Votre message",
+      "name": "Nom complet",
+      "phone": "Numéro de téléphone",
+      "submit": "Envoyer le message",
+      "success": "Merci ! Votre message a été envoyé avec succès.",
+      "title": "Envoyez-nous un message"
+    },
+    "info": {
+      "address": "Adresse",
+      "addressValue": "Gujarat, Inde",
+      "email": "E-mail",
+      "emailValue": "info@amarherbalorigins.com",
+      "hours": "Heures d'ouverture",
+      "hoursValue": "Lundi - Samedi: 9h00 - 18h00 IST",
+      "phone": "Téléphone",
+      "phoneValue": "+91 94084 65040",
+      "title": "Informations de contact"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "title": "Suivez-nous",
+      "twitter": "Twitter"
+    },
+    "subtitle": "Contactez-nous pour des demandes, des devis ou des opportunités de partenariat.",
+    "title": "Contactez-nous"
+  },
+  "footer": {
+    "company": "Amar Herbal Origins",
+    "legal": "Légal",
+    "links": "Liens rapides",
+    "privacy": "Politique de confidentialité",
+    "rights": "Tous droits réservés.",
+    "terms": "Conditions d'utilisation"
+  },
+  "hero": {
+    "cta": "Obtenir un devis",
+    "learnMore": "En savoir plus",
+    "subtitle": "Votre partenaire de confiance pour les exportations de cosse de psyllium de haute qualité. L'excellence mondiale depuis 2010.",
+    "title": "Cosse de psyllium premium pour les marchés mondiaux"
+  },
+  "nav": {
+    "about": "À propos",
+    "contact": "Contact",
+    "home": "Accueil",
+    "language": "Langue",
+    "packaging": "Emballage personnalisé",
+    "product": "Produit"
+  },
+  "product": {
+    "applications": {
+      "food": "Industrie alimentaire",
+      "foodDesc": "Épaississant et stabilisant naturel dans divers produits alimentaires.",
+      "nutraceutical": "Industrie nutraceutique",
+      "nutraceuticalDesc": "Ingrédient clé dans les suppléments de fibres et les produits de santé.",
+      "pharmaceutical": "Industrie pharmaceutique",
+      "pharmaceuticalDesc": "Utilisé comme laxatif de ballonnement et complément alimentaire.",
+      "title": "Applications"
+    },
+    "benefits": {
+      "certified": "Certifié biologique",
+      "certifiedDesc": "Certification biologique disponible pour certaines gammes de produits.",
+      "natural": "100% Naturel",
+      "naturalDesc": "Aucun additif, conservateur ou ingrédient artificiel.",
+      "quality": "Qualité premium",
+      "qualityDesc": "Des mesures strictes de contrôle de qualité assurent une pureté et une teneur en fibres constantes.",
+      "reliable": "Approvisionnement fiable",
+      "reliableDesc": "Disponibilité constante avec des options de commande flexibles.",
+      "title": "Avantages clés"
+    },
+    "overview": "Aperçu du produit",
+    "overviewText": "Notre cosse de psyllium est 100% pure, naturelle et provient de graines de Plantago ovata de qualité premium.",
+    "packaging": {
+      "bulk": "Conditionnement en vrac",
+      "bulkDesc": "Sacs de 25kg, 50kg disponibles",
+      "retail": "Emballage de détail",
+      "retailDesc": "Options d'emballage personnalisées pour les marchés de détail",
+      "shipping": "Expédition mondiale",
+      "shippingDesc": "Livraison mondiale avec des tarifs d'expédition compétitifs",
+      "title": "Emballage & Expédition"
+    },
+    "specifications": {
+      "ash": "Teneur en cendres",
+      "ashValue": "4% Max",
+      "fiber": "Fibres alimentaires",
+      "fiberValue": "85% Min",
+      "mesh": "Taille du maillage",
+      "meshValue": "Maillages 40, 60, 80, 100 disponibles",
+      "moisture": "Humidité",
+      "moistureValue": "12% Max",
+      "purity": "Pureté",
+      "purityValue": "99% Min",
+      "title": "Spécifications du produit"
+    },
+    "subtitle": "Sourcé des meilleurs champs, traité avec soin, livré avec excellence.",
+    "title": "Notre cosse de psyllium premium"
+  },
+  "packaging": {
+    "bulk": {
+      "description": "Conditionnement en vrac économique pour les clients industriels et de gros.",
+      "options": ["Sacs PP 25kg", "Sacs PP 50kg", "Sacs en jute 100kg", "Tailles en vrac personnalisées disponibles"],
+      "title": "Options de conditionnement en vrac"
+    },
+    "custom": {
+      "description": "Nous proposons des solutions d'emballage entièrement personnalisées.",
+      "features": ["Image de marque personnalisée et impression de logo", "Diverses tailles de sacs et matériaux", "Options de marque privée", "Étiquetage multilingue", "Codes-barres et codes QR", "Conformité aux normes internationales"],
+      "title": "Solutions d'emballage personnalisées"
+    },
+    "materials": {
+      "description": "Nous utilisons uniquement des matériaux d'emballage de haute qualité.",
+      "options": [
+        {"description": "Durable et économique pour le conditionnement en vrac", "title": "Sacs PP (Polypropylène)"},
+        {"description": "Option écologique pour les marques respectueuses de l'environnement", "title": "Sacs en papier"},
+        {"description": "Option premium pour les marchés de détail", "title": "Sacs laminés"},
+        {"description": "Choix d'emballage traditionnel et durable", "title": "Sacs en jute"}
+      ],
+      "title": "Matériaux d'emballage"
+    },
+    "process": {
+      "description": "Notre processus d'emballage personnalisé rationalisé garantit des délais d'exécution rapides.",
+      "steps": [
+        {"description": "Partagez vos exigences d'emballage et vos directives de marque", "title": "1. Consultation"},
+        {"description": "Notre équipe de design crée des concepts d'emballage personnalisés", "title": "2. Design & Approbation"},
+        {"description": "Nous produisons des échantillons pour votre examen", "title": "3. Production d'échantillons"},
+        {"description": "Production finale avec contrôles d'assurance qualité", "title": "4. Production"},
+        {"description": "Emballage soigneux et expédition mondiale", "title": "5. Livraison"}
+      ],
+      "title": "Notre processus d'emballage"
+    },
+    "retail": {
+      "description": "Options d'emballage attrayantes conçues pour les marchés de consommation.",
+      "options": ["Packs consommateurs 100g - 500g", "Sachets debout", "Sacs refermables", "Emballages en boîte", "Tailles personnalisées"],
+      "title": "Options d'emballage de détail"
+    },
+    "subtitle": "Solutions d'emballage sur mesure pour vos besoins commerciaux uniques.",
+    "title": "Services d'emballage personnalisés"
+  }
+}
