@@ -4,6 +4,17 @@
  * Pattern: same as news page (hardcoded TS arrays, no CMS needed)
  */
 
+export interface BlogFaq {
+  q: string;
+  a: string;
+}
+
+export interface BlogRelatedLink {
+  label: string;
+  href: string; // relative path, e.g. '/en/manufacturer'
+  description: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -13,6 +24,8 @@ export interface BlogPost {
   category: 'Export Guide' | 'Market Intelligence' | 'Quality & Certs' | 'Packaging' | 'Sourcing';
   keywords: string[];
   body: string; // full article body in plain text paragraphs (separated by \n\n)
+  faqs?: BlogFaq[]; // optional: powers FAQPage JSON-LD rich results on blog posts
+  relatedLinks?: BlogRelatedLink[]; // optional: internal links rendered as "Explore Further" section
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -581,11 +594,17 @@ At Amar Herbal Origins, we accommodate all standard packaging formats and can cu
     slug: 'psyllium-husk-supplier-germany',
     title: 'Psyllium Husk Supplier Germany: Why Indian Origin Wins for German Pharma',
     excerpt:
-      'Germany is Europe\'s largest pharmaceutical market. German pharma and supplement companies rely on Indian psyllium husk suppliers. Here\'s what German buyers look for and how to qualify a compliant supplier.',
-    date: 'April 2025',
+      'German pharma and supplement brands source psyllium husk (ispaghula husk) from India under Ph. Eur. monograph, EU Organic, and EUR 1 certificate. This guide covers documentation requirements, heavy metal limits, pesticide MRL compliance, and how to find a Germany-compliant Indian psyllium supplier.',
+    date: 'June 2026',
     readTime: '5 min read',
     category: 'Market Intelligence',
-    keywords: ['psyllium husk supplier germany', 'psyllium husk germany import', 'isabgol supplier germany'],
+    keywords: ['psyllium husk supplier germany', 'psyllium husk germany import', 'isabgol supplier germany', 'ispaghula husk germany', 'psyllium husk eu organic germany', 'isabgol lieferant deutschland', 'psyllium hs code eu import'],
+    relatedLinks: [
+      { label: 'View Certifications', href: '/en/quality', description: 'ISO 22000, EU Organic, Halal — full certificate portfolio' },
+      { label: 'HS Code & Import Duties', href: '/en/blog/psyllium-husk-hs-code-import-duties', description: 'HS code 1211.90, EU import duty rates, EUR 1 certificate explained' },
+      { label: 'Psyllium COA Guide', href: '/en/blog/psyllium-husk-coa-guide', description: 'How to verify COA parameters for EU market compliance' },
+      { label: 'Request EU-Compliant Quote', href: '/en/contact', description: 'Get Ph. Eur. spec COA, EUR 1, EU Organic documentation' },
+    ],
     body: `Germany is Europe's largest pharmaceutical and natural health products market, and one of the highest per-capita consumers of psyllium husk globally. German pharma companies, nutraceutical brands, and natural remedy distributors rely on Indian psyllium suppliers for their raw material supply.
 
 **Why Germany Sources Psyllium from India**
@@ -620,11 +639,17 @@ Amar Herbal Origins supplies regularly to European buyers including those in Ger
     slug: 'psyllium-husk-fob-price-guide',
     title: 'Psyllium Husk FOB Price Guide: What Affects Psyllium Export Pricing from India?',
     excerpt:
-      'Understanding what drives psyllium husk FOB prices from India helps buyers negotiate better and plan procurement effectively. A guide to pricing factors, Unjha mandi rates, and seasonal patterns.',
-    date: 'March 2025',
+      '2026 psyllium husk FOB price from Mundra: USD 1,100–2,100/MT depending on grade. Understand how Unjha APMC mandi rates set global prices, when to buy for lowest cost (April–July post-harvest), and how grade, quantity, and season affect your landed cost.',
+    date: 'June 2026',
     readTime: '6 min read',
     category: 'Market Intelligence',
-    keywords: ['psyllium husk fob price india', 'psyllium husk price india', 'isabgol export price'],
+    keywords: ['psyllium husk fob price india', 'psyllium husk price india', 'isabgol export price', 'psyllium husk price 2026', 'unjha mandi psyllium rate', 'psyllium husk bulk price india', 'isabgol price india'],
+    relatedLinks: [
+      { label: 'Get Current Live Price', href: '/en/contact', description: 'Prices updated weekly — get a current FOB quotation for your grade' },
+      { label: 'Wholesale Procurement Guide', href: '/en/blog/wholesale-bulk-psyllium-husk-india', description: 'FCL vs LCL pricing tiers and blanket order strategy' },
+      { label: 'Psyllium Price 2026 Guide', href: '/en/blog/psyllium-husk-price-2026-india', description: 'Full 2026 price breakdown by grade with landed cost calculator' },
+      { label: 'Psyllium Husk Exporter', href: '/en/exporter', description: 'Export capabilities, port details, and logistics information' },
+    ],
     body: `Psyllium husk export pricing from India can vary significantly based on season, crop yield, grade, quantity, and market conditions. Understanding what drives FOB prices helps buyers plan procurement more effectively and negotiate from a position of knowledge.
 
 **The Unjha Mandi Benchmark**
@@ -662,6 +687,24 @@ Contact our export team for current FOB pricing and to discuss supply agreements
     readTime: '7 min read',
     category: 'Quality & Certs',
     keywords: ['psyllium husk certifications export', 'psyllium husk quality certifications', 'iso 22000 psyllium husk'],
+    faqs: [
+      {
+        q: 'What certifications are required to export psyllium husk from India?',
+        a: 'At minimum: FSSAI license and IEC (Import Export Code). For international B2B trade: ISO 22000 is the gold standard. For USA: FDA facility registration and USDA Organic (for organic grade). For EU: ISO 22000 and EU Organic. For UAE/GCC: Halal certification from an ESMA-recognized body. For Japan: comprehensive pesticide testing per the Japan Positive List.',
+      },
+      {
+        q: 'Is ISO 22000 mandatory for psyllium husk export?',
+        a: 'ISO 22000 is not legally mandatory but is practically required by most serious international buyers — especially in the USA, EU, Japan, and Australia. It demonstrates that the manufacturer operates a rigorous food safety management system covering HACCP principles and GMP. Buyers use it as a key supplier qualification criterion.',
+      },
+      {
+        q: 'Do I need Halal certified psyllium husk for UAE and Middle East?',
+        a: 'Yes. For the UAE specifically, ESMA (Emirates Authority for Standardization and Metrology) requires Halal-certified food ingredients. For Saudi Arabia (SFDA), Malaysia (JAKIM), and Singapore (MUIS), Halal certification is also required or strongly preferred. The certifying body must be recognized by the destination country\'s Halal authority.',
+      },
+      {
+        q: 'What does USDA Organic certification mean for psyllium husk?',
+        a: 'USDA NOP (National Organic Program) certification confirms that the psyllium husk was grown without synthetic pesticides or fertilizers, processed in dedicated organic facilities, and audited by an accredited certifying agent. US brands selling organic psyllium products must source from USDA NOP certified suppliers. Verify certificates at ams.usda.gov.',
+      },
+    ],
     body: `When importing psyllium husk from India, the certifications held by your supplier determine which markets you can sell in, what health claims you can make, and what regulatory obstacles you'll face at customs.
 
 Here's a market-by-market breakdown of which certifications matter most.
@@ -717,6 +760,24 @@ Amar Herbal Origins holds all major export certifications including ISO 22000, F
     readTime: '6 min read',
     category: 'Quality & Certs',
     keywords: ['psyllium husk coa certificate', 'certificate of analysis psyllium husk', 'psyllium husk quality testing'],
+    faqs: [
+      {
+        q: 'What is a COA for psyllium husk and why is it important?',
+        a: 'A Certificate of Analysis (COA) is a laboratory document that certifies the test results for a specific batch of psyllium husk. It confirms purity, moisture, ash content, heavy metals, microbiology, and pesticide residues. Every reputable psyllium husk supplier should provide a batch-specific COA from a third-party accredited laboratory with every shipment.',
+      },
+      {
+        q: 'What swelling factor should psyllium husk have on a COA?',
+        a: 'For whole psyllium husk: minimum swelling factor of 40 ml/g per USP/Ph. Eur. standards. For psyllium husk powder: minimum 50 ml/g. Higher swelling factor = higher purity and better fiber functionality. Premium grades from Amar Herbal Origins typically show 45–55 ml/g for whole husk.',
+      },
+      {
+        q: 'What heavy metal limits should be on a psyllium husk COA?',
+        a: 'EU Regulation (EC) 1881/2006 requires: Lead ≤0.1 mg/kg, Cadmium ≤0.05 mg/kg, Mercury ≤0.1 mg/kg, Arsenic ≤0.1 mg/kg for supplement ingredients. A complete psyllium husk COA must show results for all four heavy metals below these limits. US buyers should also check USP General Chapter <232> limits.',
+      },
+      {
+        q: 'Should I request an in-house or third-party COA from a psyllium husk supplier?',
+        a: 'For first orders, always request BOTH: the supplier\'s in-house COA AND a third-party COA from an accredited external lab (SGS, Intertek, Bureau Veritas, or equivalent). This eliminates conflict of interest and verifies the results independently. For ongoing relationships, in-house COA with periodic third-party verification is standard.',
+      },
+    ],
     body: `The Certificate of Analysis (COA) is the single most important document in a psyllium husk import transaction. It tells you exactly what is in the product, verifies it meets your specifications, and provides the documentation your regulatory team needs. Here's how to read one correctly.
 
 **What Is a COA?**
@@ -751,20 +812,35 @@ At Amar Herbal Origins, we provide in-house COA with every shipment and can arra
   },
   {
     slug: 'isabgol-vs-psyllium-husk-difference',
-    title: 'Isabgol vs Psyllium Husk: What\'s the Difference? (B2B Sourcing Guide)',
+    title: 'Isabgol vs Psyllium Husk: Are They the Same? Complete B2B Sourcing Guide',
     excerpt:
-      'Are isabgol and psyllium husk the same thing? Yes — but there are important nuances in product form, grade, and market usage. A clear guide for importers and supplement manufacturers.',
-    date: 'January 2025',
-    readTime: '4 min read',
+      'Isabgol and psyllium husk are 100% the same product — isabgol is the Hindi/Gujarati name for psyllium husk (Plantago ovata). Learn the difference between isabgol husk, psyllium seeds, and ispaghula husk, plus how to source bulk psyllium from India with full COA and certifications.',
+    date: 'June 2026',
+    readTime: '5 min read',
     category: 'Sourcing',
-    keywords: ['isabgol vs psyllium husk', 'difference between isabgol and psyllium husk', 'psyllium husk isabgol'],
-    body: `If you've searched for psyllium husk suppliers from India, you'll have noticed that Indian sellers often use the term "Isabgol" interchangeably. Here's what you need to know about the relationship between isabgol and psyllium husk.
+    keywords: ['isabgol vs psyllium husk', 'difference between isabgol and psyllium husk', 'is isabgol same as psyllium husk', 'isabgol and psyllium husk are same', 'psyllium husk isabgol', 'isabgol psyllium husk difference', 'is isabgol same as metamucil', 'psyllium husk in gujarati', 'isabgol in english'],
+    relatedLinks: [
+      { label: 'Psyllium Husk Products & Grades', href: '/en/psyllium/products', description: 'Whole husk, powder, organic & blonde grades — full spec sheet' },
+      { label: 'How to Read a Psyllium COA', href: '/en/blog/psyllium-husk-coa-guide', description: 'Swelling factor, heavy metals, microbiology — what numbers to check' },
+      { label: 'Psyllium Certifications Guide', href: '/en/blog/psyllium-husk-certifications-export', description: 'ISO 22000, USDA Organic, Halal, Kosher — which market needs what' },
+      { label: 'Request a Free Sample', href: '/en/contact', description: 'Get a 100–500g sample with full COA within 24 hours' },
+      { label: 'FOB Price Guide 2026', href: '/en/blog/psyllium-husk-fob-price-guide', description: 'Current psyllium husk pricing from India, Unjha mandi rates explained' },
+    ],
+    body: `If you've searched for psyllium husk suppliers from India, you'll have noticed that Indian sellers often use the term "Isabgol" interchangeably. The short answer: isabgol and psyllium husk are the same thing — different names for the same plant product.
 
-**Isabgol and Psyllium Husk Are the Same Plant**
+**Are Isabgol and Psyllium Husk the Same?**
 
-Isabgol is the Hindi/Urdu/Gujarati name for Plantago ovata — the plant species from which psyllium husk is derived. "Psyllium" comes from Greek (psyllion = flea), a reference to the appearance of the seeds. "Isabgol" translates roughly as "horse's ear" in Persian/Urdu, describing the shape of the seed.
+Yes. Isabgol and psyllium husk are 100% the same product. Isabgol is the Hindi/Urdu/Gujarati name for Plantago ovata — the plant species from which psyllium husk is derived. "Psyllium" comes from Greek (psyllion = flea), a reference to the appearance of the seeds. "Isabgol" translates roughly as "horse's ear" in Persian/Urdu, describing the shape of the seed.
 
 In trade, "isabgol" and "psyllium husk" refer to identical product from identical botanical origin. Indian exporters typically use "isabgol" in domestic market references and "psyllium husk" in international documentation.
+
+**Is Isabgol the Same as Metamucil?**
+
+Metamucil is a brand name for a psyllium husk supplement — the raw material used in Metamucil is the same psyllium husk (isabgol) exported from India. The plant, the husk, and the fiber content are identical. Metamucil simply adds flavouring and branding. From a raw ingredient perspective, Metamucil's active ingredient = isabgol = psyllium husk.
+
+**What Is the Difference Between Isabgol and Isabgol Husk?**
+
+Strictly speaking: "Isabgol" or "psyllium" refers to the whole seed, while "Isabgol husk" or "psyllium husk" refers only to the outer seed coat (husk) after it has been separated from the seed. The husk is the commercially important part — it contains the highest concentration of soluble fiber (mucilage). The terms are often used interchangeably in trade, but technically: husk = the fiber-rich outer coat; seed = the whole seed before dehusking.
 
 **Product Forms to Understand**
 
@@ -789,6 +865,28 @@ Indian suppliers will understand both terms, but international documentation in 
 From highest to lowest commercial value: (1) Organic Psyllium Husk Powder 99%, (2) Organic Whole Psyllium Husk 99%, (3) Conventional Psyllium Husk Powder 99%, (4) Conventional Whole Psyllium Husk 99%, (5) Psyllium Husk 98%, (6) Psyllium Seeds.
 
 At Amar Herbal Origins, we supply all grades and product forms of psyllium husk / isabgol with full documentation. Contact us to specify your exact grade and application requirements.`,
+    faqs: [
+      {
+        q: 'Are isabgol and psyllium husk the same thing?',
+        a: 'Yes. Isabgol and psyllium husk are exactly the same product. Isabgol is the Hindi/Urdu/Gujarati name for Plantago ovata seeds and their husk. Psyllium husk is the same product referred to by its international English name. Both terms refer to the fiber-rich outer seed coat of the Plantago ovata plant grown in Gujarat and Rajasthan, India.',
+      },
+      {
+        q: 'Is isabgol the same as psyllium husk powder?',
+        a: 'Isabgol husk and psyllium husk are the same ingredient. Psyllium husk powder is isabgol husk that has been finely milled to 40–100 mesh. The whole husk and powder form have the same botanical origin — only the particle size differs. Psyllium husk powder is used in capsules and tablets; whole isabgol husk is used in fiber drinks and direct supplements.',
+      },
+      {
+        q: 'What is the difference between isabgol and isabgol husk?',
+        a: 'Technically, "isabgol" refers to the whole Plantago ovata seed, while "isabgol husk" refers to the outer seed coat separated from the seed. The husk contains the highest concentration of soluble fiber (psyllium mucilage). In commercial trade and everyday usage, both terms are often used interchangeably to refer to the processed husk product.',
+      },
+      {
+        q: 'Is psyllium husk the same as ispaghula husk?',
+        a: 'Yes. Ispaghula husk is the British Pharmacopoeia and European Pharmacopoeia name for psyllium husk. All three names — isabgol, psyllium husk, and ispaghula husk — refer to the same product: the husk of Plantago ovata seeds. European pharmaceutical companies use "ispaghula" while American companies use "psyllium" — the product is identical.',
+      },
+      {
+        q: 'Where is the best psyllium husk (isabgol) produced?',
+        a: 'India produces over 85% of the world supply of psyllium husk. The primary growing regions are Unjha, Mehsana, and Sidhpur in Gujarat, and Jodhpur district in Rajasthan. Gujarat\'s cool, dry winter climate creates ideal growing conditions for Plantago ovata. Amar Herbal Origins sources directly from these farming regions.',
+      },
+    ],
   },
   {
     slug: 'psyllium-husk-supplier-uae',
@@ -836,10 +934,28 @@ For GCC distribution, our psyllium products meet requirements for all six GCC co
     title: 'Psyllium Husk Supplier Canada: Health Canada NPN & NHP Documentation Guide',
     excerpt:
       'Canada regulates psyllium husk as a Natural Health Product (NHP) requiring an NPN license. This guide explains what Canadian supplement brands need from their Indian psyllium supplier to successfully register and sell psyllium products in Canada.',
-    date: 'June 2025',
+    date: 'June 2026',
     readTime: '6 min read',
     category: 'Export Guide',
-    keywords: ['psyllium husk supplier canada', 'psyllium husk canada nhp', 'import psyllium canada', 'health canada psyllium'],
+    keywords: ['psyllium husk supplier canada', 'psyllium husk canada nhp', 'import psyllium canada', 'health canada psyllium', 'bulk psyllium husk canada', 'buy psyllium husk canada'],
+    faqs: [
+      {
+        q: 'Can I import psyllium husk from India to Canada?',
+        a: 'Yes. Canada imports significant quantities of psyllium husk from India. There is 0% import duty under Canada\'s MFN tariff rate for HS code 1211.90. If you are selling psyllium husk as a consumer supplement product in Canada, it must be licensed as a Natural Health Product (NHP) with a Natural Product Number (NPN) from Health Canada.',
+      },
+      {
+        q: 'What is the MOQ for psyllium husk shipments to Canada?',
+        a: 'Amar Herbal Origins ships to Canada from 500 kg (LCL/consolidated shipment) to full FCL container loads of 18–20 MT. FOB pricing from Mundra port. Transit time to Vancouver (West Coast): 18–22 days; to Toronto via Halifax: 24–28 days. Free samples available before bulk order.',
+      },
+      {
+        q: 'Does psyllium husk imported to Canada need to be Halal or Organic certified?',
+        a: 'Halal certification is not mandatory for Canadian market entry but is preferred by Muslim-majority communities. For organic claims: Canada\'s CFIA recognizes USDA Organic under the Canada-US organic equivalency arrangement — our USDA NOP certified psyllium husk can be sold as organic in Canada. EU Organic is also recognized.',
+      },
+      {
+        q: 'What documentation do Canadian importers need for psyllium husk from India?',
+        a: 'Key documents: Certificate of Analysis (COA) from accredited lab, phytosanitary certificate, Certificate of Origin (APEDA/FIEO), commercial invoice, packing list, MSDS/SDS, and non-GMO declaration. For NPN applications: full technical dossier including stability data, GMP certificate, and botanical specification sheet.',
+      },
+    ],
     body: `Canada's Natural Health Products Regulations (NHPR) make it one of the world's most regulated markets for psyllium husk products. Unlike the USA where psyllium supplements are dietary supplements under DSHEA, Canadian products require a Natural Product Number (NPN) — a full product license from Health Canada.
 
 **What Is an NPN and Why Does It Matter?**
@@ -1273,7 +1389,588 @@ When evaluating suppliers: (1) Can you provide farm-origin traceability? (2) Do 
 
 We welcome sustainability audits and can arrange virtual or physical farm visits for qualified buyers committed to supply chain transparency.`,
   },
+  // ── NEW: targets "wholesale psyllium" (pos 54), "bulk psyllium husk" (pos 27) ──
+  {
+    slug: 'wholesale-bulk-psyllium-husk-india',
+    title: 'Wholesale Psyllium Husk from India: Bulk Pricing, MOQ & Supplier Guide 2026',
+    excerpt:
+      'Everything wholesale buyers need to know about sourcing bulk psyllium husk from India. FCL pricing tiers, minimum order quantities, how the Unjha wholesale market sets global prices, and what separates a genuine wholesale supplier from a trader.',
+    date: 'June 2026',
+    readTime: '7 min read',
+    category: 'Sourcing',
+    keywords: ['wholesale psyllium husk india', 'bulk psyllium husk supplier', 'psyllium husk wholesale price', 'buy psyllium husk in bulk india', 'psyllium husk bulk order india'],
+    relatedLinks: [
+      { label: 'Request a Wholesale Quote', href: '/en/contact', description: 'Get current FOB pricing for your quantity and grade' },
+      { label: 'Bulk Procurement Guide', href: '/en/blog/psyllium-husk-bulk-procurement-guide', description: 'FCL vs LCL, lead times, and safety stock strategy' },
+      { label: 'FOB Price Guide', href: '/en/blog/psyllium-husk-fob-price-guide', description: 'How Unjha mandi rates drive global psyllium prices' },
+      { label: 'Psyllium Husk Manufacturer', href: '/en/manufacturer', description: 'ISO 22000 certified manufacturing facility in Gujarat' },
+    ],
+    faqs: [
+      {
+        q: 'What is the wholesale price of psyllium husk from India?',
+        a: 'Wholesale psyllium husk FOB price from Mundra port (India) ranges from USD 1,100–1,450 per metric ton for conventional grade (99%) and USD 1,600–2,100 per MT for USDA/EU organic grade, depending on quantity, grade, and current Unjha APMC mandi rates. For FCL orders (18–20 MT), pricing is significantly better than LCL. Contact Amar Herbal Origins for a current wholesale quotation.',
+      },
+      {
+        q: 'What is the minimum order quantity (MOQ) for wholesale psyllium husk from India?',
+        a: 'Standard wholesale MOQ is 1 Metric Ton (1,000 kg) for conventional psyllium husk. For organic grade, MOQ is 500 kg. For the best per-MT wholesale pricing, FCL orders of 15–20 MT are optimal. Amar Herbal Origins also accommodates trial orders from 100 kg (LCL) before wholesale commitment.',
+      },
+      {
+        q: 'How does the Unjha mandi set wholesale psyllium husk prices?',
+        a: 'The Unjha APMC (Agricultural Produce Market Committee) in Gujarat is the global wholesale price benchmark for psyllium husk. Daily mandi arrivals and auction prices directly influence FOB export prices. Post-harvest (April–July), when new crop arrives at Unjha, wholesale prices typically soften. Pre-harvest (October–January), tight supply pushes prices higher.',
+      },
+      {
+        q: 'What is the difference between buying wholesale from a manufacturer vs a trader?',
+        a: 'A manufacturer like Amar Herbal Origins owns and operates its own processing facility — we are the source. A trader buys from multiple manufacturers and marks up the price. Buying wholesale direct from a Gujarat manufacturer gives you: better pricing (no trader margin), batch-specific traceability, direct access to certifications, and consistent quality control.',
+      },
+      {
+        q: 'Can I get annual wholesale supply agreements for psyllium husk?',
+        a: 'Yes. Amar Herbal Origins offers annual blanket supply agreements for buyers consuming 50+ MT per year. Benefits include: quarterly fixed pricing (partially hedging against Unjha mandi fluctuations), priority production scheduling, guaranteed delivery windows, and a dedicated export coordinator. Contact our team to discuss annual terms.',
+      },
+    ],
+    body: `Sourcing wholesale psyllium husk from India is the most cost-effective way for supplement manufacturers, pharma companies, and food producers to secure their fiber ingredient supply. India produces over 85% of global psyllium and offers the most competitive wholesale pricing in the world.
+
+**Understanding the Unjha Wholesale Market — Where Psyllium Prices Are Set**
+
+The Unjha APMC (Agricultural Produce Market Committee) in Unjha, Mehsana district, Gujarat is the world's largest psyllium husk wholesale market. Every day, farmers bring their harvest to Unjha for auction. These mandi prices directly set the benchmark that all Indian psyllium exporters use for their FOB export quotes.
+
+Wholesale buyers who understand Unjha mandi cycles get significantly better pricing. The key seasonal pattern:
+
+Post-harvest (April–July): New crop floods the Unjha mandi, wholesale prices soften. Best time to buy in volume or sign forward contracts.
+
+Pre-harvest (October–February): Old crop stock runs low, wholesale prices typically rise. Build safety stock before this window if possible.
+
+**Wholesale Pricing Tiers — FCL vs LCL**
+
+Wholesale pricing for psyllium husk from India operates in quantity tiers:
+
+LCL (Less than Container Load): 100 kg – 3 MT. Higher per-MT price; suitable for first-time buyers or smaller brands.
+
+Part Container: 5–14 MT. Mid-range pricing; cost-effective for growing supplement brands.
+
+Full Container Load (FCL): 15–20 MT in a 20ft container. Best per-MT wholesale pricing; recommended for regular buyers.
+
+Multi-Container: 20+ MT across multiple FCLs. Significant volume discount; negotiate annual supply agreements.
+
+**Wholesale Grades Available**
+
+Conventional Whole Psyllium Husk 99%: Most widely traded wholesale grade globally. Used in OTC fiber supplements, pharmaceutical formulations, functional foods.
+
+Conventional Psyllium Husk Powder 99% (40-100 mesh): For capsule/tablet manufacturers. Commands 10–20% premium over whole husk.
+
+Organic Psyllium Husk 99% (USDA NOP / EU Organic): For brands selling certified organic products. 20–40% premium over conventional. Separate wholesale supply from dedicated organic processing lines.
+
+Blonde Psyllium Husk: Premium grade with lighter color, for visual-grade supplement products.
+
+**What to Verify Before Buying Wholesale**
+
+Before committing to a wholesale order: (1) Request batch-specific COA — not a generic spec sheet, (2) Verify the supplier's IEC (Import Export Code) is valid, (3) Confirm certifications on the issuing body's database, (4) Ask for client references in your target market, (5) Order a 100–500g sample before any wholesale commitment.
+
+Amar Herbal Origins is a Gujarat-based wholesale psyllium husk manufacturer and exporter. We supply FCL and LCL wholesale orders to buyers across USA, Germany, Canada, UAE, Australia, Japan, and 25+ other markets. Contact us for current FOB wholesale pricing.`,
+  },
+  // ── NEW: targets "psyllium husk suppliers in india" (pos 76), "best psyllium supplier india" ──
+  {
+    slug: 'how-to-find-verify-psyllium-husk-suppliers-india',
+    title: 'How to Find & Verify Psyllium Husk Suppliers in India — Due Diligence Guide 2026',
+    excerpt:
+      'Finding a genuine psyllium husk supplier in India requires more than a Google search. This due diligence guide shows you how to verify IEC codes, check APEDA registration, validate organic certificates, and test samples before committing to any Indian supplier.',
+    date: 'June 2026',
+    readTime: '8 min read',
+    category: 'Sourcing',
+    keywords: ['psyllium husk suppliers in india', 'how to find psyllium husk supplier india', 'verify psyllium supplier india', 'best psyllium husk supplier india', 'psyllium husk exporter india list'],
+    relatedLinks: [
+      { label: 'About Amar Herbal Origins', href: '/en/about', description: 'Our company credentials, certifications, and founding story' },
+      { label: 'Quality & Certifications', href: '/en/quality', description: 'Our full certification portfolio and QC process' },
+      { label: 'How to Import from India', href: '/en/blog/how-to-import-psyllium-husk-from-india', description: 'Step-by-step import process for first-time buyers' },
+      { label: 'COA Reading Guide', href: '/en/blog/psyllium-husk-coa-guide', description: 'How to verify the Certificate of Analysis from any supplier' },
+    ],
+    faqs: [
+      {
+        q: 'How do I find genuine psyllium husk suppliers in India?',
+        a: 'Start with B2B directories (Alibaba, IndiaMART, TradeIndia) for discovery, then verify each supplier independently: (1) Check IEC (Import Export Code) at DGFT website, (2) Verify APEDA registration for agricultural exporters, (3) Validate organic certificates on the certifying body database, (4) Request a sample with batch-specific COA before any purchase, (5) Ask for customer references in your market.',
+      },
+      {
+        q: 'What is IEC and how do I verify an Indian psyllium supplier\'s IEC?',
+        a: 'The Import Export Code (IEC) is a mandatory registration number issued by India\'s DGFT (Directorate General of Foreign Trade) to any entity legally exporting from India. You can verify any supplier\'s IEC at the DGFT website (dgft.gov.in). A supplier without a valid IEC cannot legally export psyllium husk.',
+      },
+      {
+        q: 'How do I check if an Indian psyllium supplier is APEDA registered?',
+        a: 'APEDA (Agricultural and Processed Food Products Export Development Authority) registers Indian agricultural exporters. You can verify APEDA registration at apeda.gov.in. APEDA registration is a credibility indicator for psyllium husk exporters — it indicates they are known to the Indian government\'s agricultural export authority.',
+      },
+      {
+        q: 'What are the red flags when evaluating psyllium husk suppliers in India?',
+        a: 'Key red flags: (1) Unwilling to share IEC or FSSAI license number, (2) Cannot provide batch-specific COA (only a generic "spec sheet"), (3) Organic certificate not verifiable on certifying body database, (4) No physical address or factory photos, (5) Price dramatically below market rate — often signals adulteration or grade mismatch, (6) Very slow response time or generic email templates.',
+      },
+    ],
+    body: `India has thousands of psyllium husk exporters — ranging from genuine manufacturers with full certification to small traders with no processing capacity. This guide helps you navigate supplier discovery and verification efficiently.
+
+**Step 1: Discovery — Where to Find Indian Psyllium Suppliers**
+
+B2B Directories: Alibaba.com, IndiaMART.com, TradeIndia.com, and ExportersIndia.com list hundreds of Indian psyllium suppliers. These are starting points only — listings are self-reported and unverified.
+
+Google Search: Search "[product] manufacturer exporter india" to find company websites directly. Companies with detailed websites, certifications pages, and blog content are more likely to be genuine manufacturers than pure traders.
+
+Trade Events: Food Ingredients Asia, Natural Products Expo (USA), Biofach (Germany) — Indian psyllium exporters attend these events. Meeting in person accelerates due diligence.
+
+APEDA Export Data: India's APEDA publishes export data that can be used to identify active exporters by product.
+
+**Step 2: Verification — The 5-Point Check**
+
+(1) IEC Verification: Every Indian exporter must have an Import Export Code (IEC) from DGFT. Verify at dgft.gov.in → Services → IEC Online. Enter the IEC number and confirm it matches the company name. No valid IEC = cannot legally export.
+
+(2) FSSAI License: Verify at fssai.gov.in. Every food ingredient processor/exporter must be FSSAI licensed. The license number should be on their letterhead and COA.
+
+(3) APEDA Registration: Verify at apeda.gov.in. Relevant for agricultural commodity exporters including psyllium husk.
+
+(4) Organic Certification Verification: If the supplier claims USDA Organic: verify at ams.usda.gov/organic-integrity. If they claim EU Organic: verify with the named certifying body (EcoCert, Bioagricert, Control Union, etc.) directly.
+
+(5) GST Registration: Verify at gstin.in. A legitimate Indian business has a valid GST registration (format: 2 digits state code + 10 digits PAN + 3 digits). Amar Herbal Origins GST: 24ICIPP6678D1Z4.
+
+**Step 3: Sample Request and COA Evaluation**
+
+Never commit to a bulk order without a sample. A credible supplier will:
+- Provide a 100–500g sample free of charge for qualified buyers
+- Include a batch-specific COA with the sample (from their in-house lab)
+- Offer to arrange third-party testing at an accredited lab (SGS, Intertek, Bureau Veritas)
+
+Test the sample in your own facility for: swelling factor, moisture, ash content, heavy metals, and microbiology.
+
+**Step 4: Factory Visit or Virtual Tour**
+
+For orders above $20,000, request a factory visit or virtual factory walkthrough (via video call). A genuine manufacturer will welcome this. Ask to see: raw material intake area, processing lines, QC lab, finished goods storage, and packaging area.
+
+**Why Amar Herbal Origins?**
+
+Amar Herbal Origins is a FSSAI, ISO 22000, APEDA, USDA Organic, EU Organic, Halal, and Kosher certified psyllium husk manufacturer in Amreli, Gujarat. Our IEC, FSSAI, APEDA, and organic certificates are all verifiable through official government and certifying body databases. We welcome due diligence — contact us to start the process.`,
+  },
+  // ── NEW: targets "psyllium husk price" (high commercial buyer intent) ──
+  {
+    slug: 'psyllium-husk-price-2026-india',
+    title: 'Psyllium Husk Price 2026: Current Rates from India (Unjha Mandi Guide)',
+    excerpt:
+      'Current psyllium husk price reference for B2B buyers in 2026. Understand how Unjha mandi rates translate to FOB export prices, what grade premiums apply, and when is the best time of year to buy psyllium husk from India.',
+    date: 'June 2026',
+    readTime: '6 min read',
+    category: 'Market Intelligence',
+    keywords: ['psyllium husk price 2026', 'psyllium husk price india 2026', 'isabgol price today', 'psyllium husk current price india', 'unjha psyllium husk rate', 'psyllium husk market price'],
+    relatedLinks: [
+      { label: 'Request Current Pricing', href: '/en/contact', description: 'Get a live FOB quotation for your grade and quantity' },
+      { label: 'FOB Price Factors Guide', href: '/en/blog/psyllium-husk-fob-price-guide', description: 'Deep dive on every factor that affects psyllium export pricing' },
+      { label: 'Bulk Procurement Guide', href: '/en/blog/psyllium-husk-bulk-procurement-guide', description: 'FCL vs LCL, safety stock strategy, blanket orders' },
+      { label: 'Psyllium Husk Exporter India', href: '/en/exporter', description: 'Export capabilities, certifications, and shipping information' },
+    ],
+    faqs: [
+      {
+        q: 'What is the price of psyllium husk from India in 2026?',
+        a: 'Indicative psyllium husk FOB price from Mundra port, India in 2026: Conventional Whole Psyllium Husk 99% — USD 1,100–1,450/MT; Psyllium Husk Powder 99% — USD 1,300–1,650/MT; Organic Psyllium Husk 99% — USD 1,600–2,100/MT. These are indicative ranges — actual price depends on quantity, current Unjha mandi rates, and grade specifications. Contact Amar Herbal Origins for a live quotation.',
+      },
+      {
+        q: 'What is the current isabgol price at Unjha mandi?',
+        a: 'Unjha APMC mandi sets the daily benchmark price for psyllium husk (isabgol) in India. Spot prices at Unjha fluctuate based on crop arrivals, demand, and season. FOB export prices are derived from Unjha mandi rates plus processing, packaging, and freight margin. Contact us for the current Unjha mandi rate and corresponding FOB export price.',
+      },
+      {
+        q: 'When is the best time to buy psyllium husk from India to get the lowest price?',
+        a: 'The best time to buy psyllium husk from India for lowest price is April–July, immediately post-harvest. The psyllium Rabi crop is harvested in February–April in Gujarat. As fresh stock enters the Unjha mandi in April–May, prices typically soften. Buyers who place orders or forward contracts during this window get the season\'s best pricing. Avoid buying in October–January when old stock is tight and prices peak.',
+      },
+      {
+        q: 'What causes psyllium husk prices to increase?',
+        a: 'Psyllium husk prices increase due to: (1) Poor monsoon withdrawal causing low crop yields, (2) Excessive rain during harvest damaging the crop, (3) Export demand surge from USA, Europe, or Middle East, (4) INR appreciation against USD making Indian goods more expensive, (5) Global freight rate increases (shipping container costs), (6) Low carryforward stock from previous season.',
+      },
+      {
+        q: 'How much does it cost to import psyllium husk from India to USA or Europe?',
+        a: 'Landed cost calculation: FOB price (USD 1,100–1,650/MT) + sea freight (USD 80–150/MT to USA, USD 100–200/MT to Europe, varies by route and market conditions) + import duty (0% for USA, UK, EU for HS 1211.90) + customs clearance and inland freight. Total CIF landed cost typically ranges from USD 1,200–1,900/MT for conventional grade depending on destination and quantity.',
+      },
+    ],
+    body: `Psyllium husk prices from India in 2026 are driven by the Unjha APMC mandi — the world's largest psyllium trading hub in Gujarat. Understanding how prices are set helps B2B buyers make better procurement decisions and time their orders for maximum cost efficiency.
+
+**2026 Indicative Price Ranges — FOB Mundra, India**
+
+Conventional Whole Psyllium Husk 99%: USD 1,100–1,450 per MT
+Conventional Psyllium Husk Powder 99% (40-100 mesh): USD 1,300–1,650 per MT
+Organic Whole Psyllium Husk 99% (USDA NOP / EU Organic): USD 1,600–2,000 per MT
+Organic Psyllium Husk Powder 99%: USD 1,800–2,100 per MT
+Psyllium Seeds (raw): USD 700–1,000 per MT
+Blonde Psyllium Husk (premium grade): USD 1,400–1,700 per MT
+
+Important: These are 2026 mid-year indicative ranges. Prices change weekly based on Unjha mandi conditions. Always contact us for the current live quotation before procurement planning.
+
+**How the Unjha Mandi Sets Global Psyllium Prices**
+
+The Unjha APMC (Agricultural Produce Market Committee) in Unjha, Mehsana, Gujarat is the world's psyllium price benchmark. Every working day, farmers and aggregators bring psyllium husk to Unjha for auction. The auction prices — called "mandi rates" — are public and updated daily.
+
+India's FOB export prices for psyllium husk are calculated as: Unjha mandi rate + processing and cleaning costs + packaging + transport to port + exporter margin = FOB price.
+
+When Unjha mandi rates rise, FOB export prices rise within days. When mandi rates fall, exporters can offer better pricing to international buyers.
+
+**Seasonal Price Pattern — When to Buy**
+
+Psyllium is a Rabi (winter) crop in Gujarat:
+
+Sowing: October–November
+Growing season: November–February
+Harvest: February–April
+Unjha arrival peak: April–June
+
+Best buying window (lowest prices): April–July — fresh crop floods the mandi, prices soften.
+Higher price period: October–January — old crop stock depletes, new crop not yet arrived.
+
+Experienced procurement managers place forward contracts in May–June to lock in harvest-season pricing for Q3/Q4 delivery.
+
+**Grade Premium Structure**
+
+Starting from conventional whole husk as the base price:
+
+- Psyllium Husk Powder: +10–20% (additional milling cost)
+- Organic Grade: +20–40% (farming premium + certification cost)
+- Blonde Grade: +10–15% (additional processing for lighter color)
+- Private Label: +15–25% (custom packaging, design, and smaller runs)
+
+**Landed Cost Calculation — Full Example**
+
+For a US buyer importing 20 MT conventional psyllium husk 99%:
+
+FOB Mundra: USD 1,250/MT × 20 MT = USD 25,000
+Sea freight (FCL Mundra–Los Angeles): ~USD 2,500–3,000 per container
+Import duty (USA): 0% (HS 1211.90)
+Customs clearance: ~USD 300–500
+Inland freight to warehouse: varies
+
+Total CIF Los Angeles: approximately USD 27,000–28,500 for 20 MT = USD 1,350–1,425/MT landed.
+
+Contact Amar Herbal Origins for current live pricing. We update our FOB quotations weekly based on current Unjha mandi rates.`,
+  },
+  // ── NEW: targets "castor oil manufacturer" (11 impressions @ pos 72) ──
+  {
+    slug: 'castor-oil-manufacturer-india',
+    title: 'Castor Oil Manufacturer India: Cold-Pressed, Pharmaceutical & Cosmetic Grade Guide',
+    excerpt:
+      'India is the world\'s largest castor oil producer (60%+ of global supply). Amar Herbal Origins manufactures cold-pressed castor oil in pharmaceutical BP/USP grade, cosmetic grade, and industrial grade from Gujarat. MOQ 200L. ISO 22000, FSSAI certified.',
+    date: 'June 2026',
+    readTime: '6 min read',
+    category: 'Export Guide',
+    keywords: ['castor oil manufacturer india', 'castor oil manufacturer gujarat', 'cold pressed castor oil india', 'castor oil exporter india', 'bulk castor oil supplier india', 'pharmaceutical grade castor oil india', 'castor oil supplier india', 'ricinus communis oil manufacturer'],
+    relatedLinks: [
+      { label: 'View Castor Oil Products', href: '/en/oils/castor-oil', description: 'BP/USP pharmaceutical, cosmetic & industrial grade castor oil' },
+      { label: 'Request a Quote', href: '/en/contact', description: 'Get FOB pricing for 200L+ bulk castor oil orders' },
+      { label: 'Herbal Oils Export', href: '/en/oils', description: 'Castor oil and karanja oil — cold-pressed from Gujarat' },
+      { label: 'White Label Oils', href: '/en/oils/white-label', description: 'Custom branded castor oil for your brand' },
+    ],
+    faqs: [
+      {
+        q: 'Which country is the largest producer of castor oil?',
+        a: 'India is the world\'s largest producer and exporter of castor oil, accounting for over 60% of global production. The primary growing region is Gujarat, particularly the districts of Mehsana, Banaskantha, Sabarkantha, and Kutch. India\'s castor seed (Ricinus communis) cultivation benefits from the state\'s semi-arid climate and long growing season.',
+      },
+      {
+        q: 'What is the difference between pharmaceutical grade and cosmetic grade castor oil?',
+        a: 'Pharmaceutical grade castor oil (BP/USP) meets British Pharmacopoeia or United States Pharmacopeia standards for purity, acid value, iodine value, and saponification value. It is used as an excipient and active ingredient in oral and topical pharmaceutical formulations. Cosmetic grade castor oil meets cosmetic ingredient standards — typically very similar purity but without the full pharmacopoeial documentation package. Industrial grade is less refined and used in lubricants, biofuels, and bioplastics.',
+      },
+      {
+        q: 'What is the MOQ for bulk castor oil from India?',
+        a: 'Amar Herbal Origins supplies bulk castor oil from 200 litres (approximately 200 kg) as the minimum order. Full ISO tank or IBC tote orders (1,000L+) receive better per-litre pricing. For pharmaceutical grade: 200L drums (HDPE or stainless steel). Full flexi-tank container: approximately 20,000 litres. Contact us for current FOB pricing from Kandla or Mundra port.',
+      },
+      {
+        q: 'What certifications does castor oil from India need for export?',
+        a: 'Key certifications for castor oil export from India: FSSAI (for food/cosmetic grade), ISO 22000 (food safety management), COA from accredited lab (acid value, iodine value, ricinoleic acid content, heavy metals, moisture). For pharmaceutical use: BP/USP specification COA. For organic: USDA NOP or EU Organic certificate. For Halal markets: Halal certificate.',
+      },
+    ],
+    body: `India is the world's dominant castor oil producer, accounting for over 60% of global supply. Gujarat's unique agro-climate — semi-arid with long growing seasons — is ideal for Ricinus communis (castor plant) cultivation. The result: India exports thousands of tonnes of castor oil annually to pharmaceutical companies, cosmetic brands, and industrial manufacturers across the world.
+
+**Why Indian Castor Oil Dominates Global Supply**
+
+The Ricinus communis plant thrives in Gujarat's districts of Mehsana, Banaskantha, Sabarkantha, and Kutch. These regions produce high-yield castor seed with consistent ricinoleic acid content (85–90%) — the key active fatty acid that makes castor oil commercially valuable.
+
+India's castor oil advantages over other origins: (1) Scale — Gujarat processes more castor seed than any other region globally, (2) Technology — modern cold-press and solvent extraction facilities, (3) Competitive pricing — volume and proximity to raw material keeps costs low, (4) Export infrastructure — Kandla and Mundra ports are optimized for bulk oil exports.
+
+**Castor Oil Grades — What Each Means**
+
+Pharmaceutical BP/USP Grade: Meets British Pharmacopoeia or United States Pharmacopeia monograph specifications. Parameters: ricinoleic acid ≥85%, acid value ≤2.0 mg KOH/g, iodine value 82–90, specific gravity 0.953–0.965. Used as oral laxative, excipient, emollient, solvent in injectable formulations.
+
+Cosmetic Grade: High purity castor oil for skin care, hair care, lip products (lipstick, gloss), mascara, and other personal care formulations. Slightly less stringent documentation than pharmaceutical but same purity level.
+
+Food Grade: For use in food applications — castor oil as a mould-release agent, coating agent, and in certain food preservation applications. Must meet food safety standards.
+
+Industrial Grade: For industrial applications including lubricants, hydraulic fluids, bioplastics, paints, and biofuel. Lower cost per litre, less refined.
+
+**Applications of Castor Oil by Sector**
+
+Pharmaceutical: Oral laxative (stimulant cathartic), IV solubility enhancer, emollient in ointments, excipient in capsule formulations, injection vehicle (when ultra-purified).
+
+Cosmetics/Personal Care: The global castor oil cosmetics market is growing rapidly. Key applications: hair oil/serum, brow and lash growth products, lip gloss base, moisturizer, body oil, shampoo conditioner formulation.
+
+Industrial: Castor oil-based polyols for polyurethane (PU) foam manufacturing, hydraulic fluids, greases, bio-lubricants, corrosion-resistant coatings, and as a plasticizer.
+
+Biopesticide/Agriculture: Castor oil as a biopesticide carrier and emulsifier in organic farming.
+
+**Karanja Oil — Complementary Industrial and Cosmetic Oil**
+
+Amar Herbal Origins also supplies Karanja oil (Pongamia pinnata) alongside castor oil. Karanja oil contains unique insecticidal compounds (karanjin, pongamol) making it valuable for biopesticide formulations, mosquito repellents, and traditional hair care.
+
+**Packaging and Logistics**
+
+Standard packaging: 200L HDPE drums, 1,000L IBC totes, ISO flexitank. Export port: Kandla or Mundra. Transit to Rotterdam: 18–20 days. Transit to Los Angeles: 20–24 days. Transit to Jebel Ali (UAE): 7–10 days.
+
+Amar Herbal Origins manufactures and exports cold-pressed castor oil and karanja oil from Gujarat, India. Contact us for current pricing and COA.`,
+  },
+  // ── NEW: targets "moringa powder exporter india" + herb export queries ──
+  {
+    slug: 'moringa-powder-exporter-india',
+    title: 'Moringa Powder Exporter India: Spray-Dried Leaf Powder B2B Supplier Guide',
+    excerpt:
+      'India\'s moringa leaf powder (Moringa oleifera) is the world\'s leading source for superfood brands, supplement manufacturers, and nutraceutical companies. Amar Herbal Origins exports spray-dried moringa powder with 25–28% protein from Gujarat. ISO 22000, Organic certified.',
+    date: 'June 2026',
+    readTime: '5 min read',
+    category: 'Export Guide',
+    keywords: ['moringa powder exporter india', 'moringa leaf powder supplier india', 'bulk moringa powder india', 'moringa powder manufacturer india', 'organic moringa powder india', 'moringa oleifera powder export', 'moringa powder b2b supplier'],
+    relatedLinks: [
+      { label: 'View Herbs Catalogue', href: '/en/herbs', description: 'Moringa, amla, mint, oregano — dried herbs export from India' },
+      { label: 'White Label Herbs', href: '/en/herbs/white-label', description: 'Custom branded moringa powder for your supplement brand' },
+      { label: 'Request a Sample', href: '/en/contact', description: 'Free 50–100g moringa powder sample with COA' },
+      { label: 'Amla Powder Export', href: '/en/herbs/amla', description: 'High-Vitamin C Indian gooseberry powder from Gujarat' },
+    ],
+    faqs: [
+      {
+        q: 'Which country is the largest exporter of moringa powder?',
+        a: 'India is the world\'s largest producer and exporter of moringa powder (Moringa oleifera leaf powder). India accounts for approximately 80% of global moringa production, with key growing regions in Rajasthan, Gujarat, Andhra Pradesh, Tamil Nadu, and Maharashtra. Indian moringa powder is exported to USA, Europe, Japan, Australia, and Southeast Asia for use in superfood supplements and functional foods.',
+      },
+      {
+        q: 'What is the protein content of moringa leaf powder from India?',
+        a: 'Spray-dried moringa leaf powder from India typically contains 25–28% protein (dry weight basis). Moringa oleifera leaves contain all 9 essential amino acids, making it a complete plant protein source. Additionally, moringa powder contains high levels of iron (28 mg/100g), calcium (2000 mg/100g), Vitamin A, Vitamin C, and Vitamin E — all contributing to its "superfood" positioning.',
+      },
+      {
+        q: 'What is the difference between spray-dried and freeze-dried moringa powder?',
+        a: 'Spray-dried moringa powder: hot air is used to remove moisture rapidly. More affordable, widely available. Slight reduction in heat-sensitive nutrients (Vitamin C) but protein and mineral content is largely preserved. Freeze-dried moringa powder: moisture removed through sublimation at very low temperatures. Better nutrient retention, especially for Vitamin C and enzymes. Significantly more expensive — premium supplement applications. Amar Herbal Origins supplies spray-dried moringa powder as standard, with freeze-dried available on request.',
+      },
+    ],
+    body: `Moringa oleifera — known as the "miracle tree" or "drumstick tree" in India — has become one of the world's fastest-growing superfood ingredients. India produces approximately 80% of global moringa supply, with Gujarat and Rajasthan being major processing hubs for export-grade moringa leaf powder.
+
+**Why India is the Global Hub for Moringa Export**
+
+Moringa oleifera grows prolifically in India's tropical and semi-arid climates. Key advantages of Indian-origin moringa powder:
+
+1. Volume and consistency: India's large-scale moringa cultivation ensures year-round supply in export quantities
+2. Cost competitiveness: India offers the lowest cost per kg of moringa powder globally
+3. Processing infrastructure: Modern spray-drying and freeze-drying facilities in Gujarat and Rajasthan
+4. Certification availability: USDA Organic, EU Organic, and ISO 22000 certified moringa from India
+
+**Moringa Powder Nutritional Profile (per 100g spray-dried)**
+
+Protein: 25–28%
+Dietary Fiber: 20–25%
+Iron: 28 mg (per Indian Government FSSAI data)
+Calcium: ~2,000 mg
+Vitamin A: ~9,000 IU
+Vitamin C: 17–50 mg (varies by processing method — freeze-dried retains more)
+Potassium: ~1,300 mg
+Amino acids: all 9 essential amino acids present
+
+**Applications**
+
+Supplement industry: Green superfood powders, protein blends, detox formulas, multivitamin capsules
+Functional food: Moringa-fortified pasta, bread, snack bars, tea
+Cosmetics: Moringa seed oil (separate product) in skin care; moringa powder as face mask ingredient
+Animal nutrition: Moringa as a livestock feed supplement in organic farming
+
+**Quality Parameters for Export-Grade Moringa Powder**
+
+Moisture: ≤8%
+Protein: ≥25%
+Ash: ≤10%
+Heavy metals (lead ≤3 ppm, cadmium ≤0.5 ppm, arsenic ≤1 ppm per NLT standards)
+Pesticide residues: EU MRL compliant
+Microbiology: Total plate count ≤100,000 CFU/g, E. coli absent in 1g, Salmonella absent in 25g
+Color: Dark green to olive green
+Mesh: 80–100 mesh (fine powder)
+
+**Packaging for Export**
+
+Standard: 25 kg paper bags with inner PE liner, or 25 kg HDPE drums
+Retail: 100g, 250g, 500g pouches for private label
+MOQ: 100 kg bulk; 50 kg for private label
+
+Amar Herbal Origins exports spray-dried moringa leaf powder from Gujarat, India. Organic certified grades available. Contact us for current pricing and COA.`,
+  },
+  // ── NEW: targets "turmeric exporter india", "cumin exporter india" ──
+  {
+    slug: 'indian-spices-exporter-india',
+    title: 'Indian Spices Exporter: Turmeric, Cumin, Coriander & Fenugreek B2B Guide 2026',
+    excerpt:
+      'India exports 75%+ of the world\'s spices. This guide covers bulk spice sourcing from Gujarat — turmeric (2–5% curcumin), cumin seeds, coriander, fenugreek, and ajwain. ISO 22000, FSSAI certified. MOQ 500 kg. FOB Mundra. Free sample available.',
+    date: 'June 2026',
+    readTime: '7 min read',
+    category: 'Export Guide',
+    keywords: ['indian spices exporter india', 'turmeric exporter india', 'cumin seeds exporter india', 'coriander exporter india', 'fenugreek exporter india', 'bulk spices supplier india', 'spice exporter gujarat', 'ajwain exporter india'],
+    relatedLinks: [
+      { label: 'View Spices Catalogue', href: '/en/spices', description: 'Turmeric, cumin, coriander, fenugreek, ajwain — bulk B2B export' },
+      { label: 'Turmeric Export Details', href: '/en/spices/turmeric', description: 'Alleppey, Rajapore, Salem turmeric — 2–5% curcumin guaranteed' },
+      { label: 'Fenugreek Seeds Export', href: '/en/spices/fenugreek', description: 'Bulk fenugreek seeds from Gujarat and Rajasthan' },
+      { label: 'White Label Spices', href: '/en/spices/white-label', description: 'Custom branded spice products for your brand' },
+      { label: 'Request a Free Sample', href: '/en/contact', description: 'Get 50–100g samples of any spice with full COA' },
+    ],
+    faqs: [
+      {
+        q: 'Which state in India exports the most spices?',
+        a: 'Gujarat, Rajasthan, Andhra Pradesh, and Kerala are India\'s top spice-producing and exporting states. Gujarat is particularly dominant for cumin seeds (jeera), fenugreek (methi), ajwain (carom seeds), and fennel. Rajasthan also produces large quantities of cumin and coriander. Kerala dominates black pepper and cardamom. For bulk spice export to international markets, Gujarat and Rajasthan are the primary sourcing regions for Amar Herbal Origins.',
+      },
+      {
+        q: 'What is the curcumin content in Indian turmeric for export?',
+        a: 'Indian turmeric varieties have different curcumin content: Alleppey variety (Kerala origin): 4–5% curcumin — premium grade for supplement and nutraceutical use. Rajapore variety (Maharashtra/Rajasthan): 3–4% curcumin — food grade standard. Salem variety (Tamil Nadu): 2–3% curcumin — food industry standard. Buyers requiring high curcumin content (4–5%) for supplement applications should specify Alleppey variety. All grades are tested by HPLC for curcumin content in the COA.',
+      },
+      {
+        q: 'What is the HS code for cumin seeds export from India?',
+        a: 'HS codes for Indian spice exports: Cumin seeds (whole): 0909.21.00. Cumin seeds (ground): 0909.22.00. Coriander seeds: 0909.21.00. Turmeric (whole): 0910.30.00. Turmeric (powder): 0910.30.00. Fenugreek seeds: 0909.61.00. Ajwain/carom seeds: 0909.21.00. Import duty: Most developed markets (USA, EU, UK, Australia) have 0% import duty on these HS codes for Indian spices under MFN tariff rates.',
+      },
+      {
+        q: 'How do I buy bulk turmeric from India?',
+        a: 'To buy bulk turmeric from India: (1) Specify the variety (Alleppey for high curcumin, Rajapore for food grade), (2) Specify form — whole fingers, slices, or powder, (3) Specify quantity — MOQ 500 kg for turmeric from Amar Herbal Origins, (4) Request a sample with COA showing curcumin content by HPLC, (5) Confirm certifications (organic if needed), (6) Receive proforma invoice and arrange payment. Amar Herbal Origins exports turmeric with full COA documentation from Gujarat, India.',
+      },
+    ],
+    body: `India is the world's largest producer, consumer, and exporter of spices. The Indian spice trade dates back millennia — and today India exports approximately 4 million tonnes of spices annually worth over USD 4 billion. For B2B buyers worldwide, India remains the unrivaled source for authentic, high-quality spices at competitive prices.
+
+**India's Spice Export Dominance**
+
+India accounts for: 75% of global turmeric supply, 70% of global cumin supply, 30% of global coriander supply, 75% of global fenugreek supply, 90% of global ajwain supply. For buyers seeking authentic Indian spices, Gujarat and Rajasthan are the primary sourcing regions for cumin, fenugreek, ajwain, and coriander — while Kerala is dominant for turmeric and black pepper.
+
+**Turmeric (Curcuma longa)**
+
+Turmeric is India's most exported spice by value. Key applications: food coloring and flavoring, curcumin-based supplements and nutraceuticals, cosmetics and personal care, Ayurvedic formulations, functional food and beverage.
+
+Grades by curcumin content:
+- Alleppey Finger: 4–5% curcumin (premium supplement grade)
+- Rajapore: 3–4% curcumin (standard food industry)
+- Salem: 2–3% curcumin (economy food grade)
+
+Forms available: whole fingers, slices, powder (80–100 mesh), spray-dried extract (95% curcumin standardized extract — separate product)
+
+**Cumin Seeds (Cuminum cyminum — Jeera)**
+
+India's Gujarat and Rajasthan produce the world's finest cumin seeds. Gujarat cumin (Bold and Eagle varieties) is globally preferred for its aroma, essential oil content (2.5–4%), and low defects. Key applications: food seasoning, essential oil distillation, Ayurvedic formulations, animal feed additives.
+
+Cumin HS code: 0909.21.00 (whole), 0909.22.00 (ground)
+MOQ: 500 kg | Export port: Mundra | Transit to EU: 18–24 days
+
+**Coriander (Coriandrum sativum)**
+
+Rajasthan produces the majority of India's coriander (dhania). Available forms: whole seeds, split seeds, powder. Applications: food seasoning, essential oil, pharmaceutical (digestive formulations).
+
+**Fenugreek Seeds (Trigonella foenum-graecum — Methi)**
+
+Gujarat's fenugreek is exported for supplement applications (blood sugar management, testosterone support) and food. Key compound: 4-hydroxyisoleucine. Indian fenugreek seed extract is a major nutraceutical ingredient.
+
+**Ajwain / Carom Seeds (Trachyspermum ammi)**
+
+Gujarat and Rajasthan are the primary producers. Ajwain contains thymol (40–50% of essential oil) — making it valuable for essential oil production, digestive supplement formulations, and traditional medicine.
+
+**Documentation for Spice Export**
+
+For any Indian spice export, we provide: COA (certificate of analysis), phytosanitary certificate, fumigation certificate, FSSAI certificate, COO (country of origin — FIEO/APEDA), organic certificate (where applicable), non-GMO declaration.
+
+Amar Herbal Origins exports Indian spices — turmeric, cumin, coriander, fenugreek, and ajwain — from Gujarat, India. ISO 22000, FSSAI, and APEDA certified. Contact us for current pricing and samples.`,
+  },
+  // ── NEW: targets "psyllium husk hs code" (3–10 impressions near top-10) ──
+  {
+    slug: 'psyllium-husk-hs-code-import-duties',
+    title: 'Psyllium Husk HS Code & Import Duties: Complete Guide for Global Buyers',
+    excerpt:
+      'Psyllium husk HS code is 1211.90.90. Import duty is 0% in USA, EU, UK, Canada, and Australia. This complete guide covers HS code classification, EUR 1 certificate for EU, customs documentation, and import duty rates in 20+ destination countries for psyllium husk and isabgol.',
+    date: 'June 2026',
+    readTime: '6 min read',
+    category: 'Export Guide',
+    keywords: ['psyllium husk hs code', 'isabgol hs code', 'psyllium husk import duty', 'ispaghula husk hs code', 'psyllium husk customs classification', 'psyllium husk hs code india', 'psyllium husk powder hs code', 'isabgol hs code india'],
+    relatedLinks: [
+      { label: 'Psyllium Husk Supplier Germany', href: '/en/blog/psyllium-husk-supplier-germany', description: 'EU compliance: EUR 1, Ph. Eur., EU Organic, pesticide MRL' },
+      { label: 'How to Import from India', href: '/en/blog/how-to-import-psyllium-husk-from-india', description: 'Step-by-step guide: supplier, documentation, customs clearance' },
+      { label: 'Certifications Guide', href: '/en/blog/psyllium-husk-certifications-export', description: 'Market-by-market certification requirements for psyllium export' },
+      { label: 'Get Import Documentation', href: '/en/contact', description: 'Request full export documentation for your customs clearance' },
+    ],
+    faqs: [
+      {
+        q: 'What is the HS code for psyllium husk?',
+        a: 'Psyllium husk HS code: 1211.90.90 (Chapter 12 — Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit; industrial or medicinal plants; straw and fodder. Subheading: Plants and parts of plants — other). This HS code applies to both whole psyllium husk and psyllium husk powder. India export HS code: 1211 90 90. EU import CN code: 1211 90 86.',
+      },
+      {
+        q: 'What is the import duty for psyllium husk in the USA?',
+        a: 'USA import duty for psyllium husk (HS code 1211.90.90): 0% under MFN (Most Favored Nation) tariff. India is a beneficiary under GSP (Generalized System of Preferences — check current status as GSP has been subject to renewal). There are no anti-dumping duties on psyllium husk from India to USA. Import process: FDA Prior Notice is required for all food ingredient shipments to the USA.',
+      },
+      {
+        q: 'What is the EU import duty for psyllium husk from India?',
+        a: 'EU import duty for psyllium husk from India (HS code 1211.90.86 under EU Combined Nomenclature): 0% MFN tariff rate. The EUR 1 movement certificate (Form EUR 1) enables preferential duty treatment for qualifying Indian exports under EU-India GSP preferences. Indian psyllium exporters can issue EUR 1 certificates to support preferential duty entry into all 27 EU member states.',
+      },
+      {
+        q: 'What is the HS code for psyllium husk powder?',
+        a: 'Psyllium husk powder uses the same HS code as whole psyllium husk: 1211.90.90 (India HTS) / 1211.90.86 (EU CN). The powder form is classified identically to whole husk because it is derived from the same plant part. Import duty is also 0% in USA, EU, UK, Canada, and Australia for psyllium husk powder.',
+      },
+      {
+        q: 'Does psyllium husk from India have any restrictions on import?',
+        a: 'Psyllium husk imports are generally unrestricted in most markets. Key customs requirements: (1) Phytosanitary certificate from India NPPO, (2) Commercial invoice, packing list, bill of lading, (3) COA from accredited lab, (4) Organic certificate (if claiming organic), (5) Halal certificate (for UAE/GCC markets), (6) FDA Prior Notice (USA), (7) EUR 1 (for EU preferential tariff). Psyllium husk does not require import licenses or quota in USA, EU, UK, Canada, or Australia.',
+      },
+    ],
+    body: `Understanding the HS code for psyllium husk and the applicable import duties in your destination country is essential for accurate landed cost calculation and customs clearance planning. This guide covers everything importers need to know.
+
+**Psyllium Husk HS Code Classification**
+
+The Harmonized System (HS) code for psyllium husk internationally is based on HS Chapter 12:
+
+**HS Code: 1211.90.90** (India export HTS code)
+
+Breaking down the classification:
+- Chapter 12: Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit; industrial or medicinal plants
+- Heading 1211: Plants and parts of plants (including seeds and fruits), primarily used in perfumery, pharmacy, or for insecticidal, fungicidal, or similar purposes
+- Subheading 1211.90: Other (not fresh/chilled, not liquorice root, not ginseng, not other specified)
+- Final digit: 90 = other
+
+This HS code applies to: whole psyllium husk, psyllium husk powder, blonde psyllium husk, organic psyllium husk, psyllium seeds, isabgol husk — all forms are classified under 1211.90.
+
+**Import Duty Rates by Country (2026)**
+
+| Destination | HS Code Used | MFN Duty Rate | Notes |
+|---|---|---|---|
+| USA | 1211.90.9090 | 0% | FDA Prior Notice required |
+| EU (all 27 countries) | 1211 90 86 | 0% | EUR 1 enables GSP preference |
+| United Kingdom | 1211 90 90 | 0% | Post-Brexit UK Global Tariff |
+| Canada | 1211.90.90.00 | 0% | MFN rate for HS 1211.90 |
+| Australia | 1211.90.90 | 0% | FTA with India not yet in force |
+| UAE | 1211.90 | 0% | India-UAE CEPA (signed 2022) |
+| Japan | 1211.90 | 0% | Under Japan-India CEPA |
+| South Korea | 1211.90 | 0% | Under CEPA |
+| Saudi Arabia | 1211.90 | 5% | GCC Unified Customs Tariff |
+
+*Note: Verify current duty rates with your customs broker before import — tariff classifications and rates can change.*
+
+**EUR 1 Certificate — For EU Buyers**
+
+The EUR 1 movement certificate enables Indian exporters to claim preferential duty treatment for eligible products under EU-India GSP (Generalized System of Preferences). For psyllium husk:
+
+1. Amar Herbal Origins issues the EUR 1 certificate with each EU-bound shipment
+2. The certificate must be presented at EU customs entry
+3. Preferential origin: India (IND)
+4. Valid for 10 months from issue date
+
+Even though the MFN duty is already 0%, having the EUR 1 provides additional documentation for origin declaration — important for compliance records and potential future tariff changes.
+
+**India Customs Export Documentation (From India)**
+
+Required for any psyllium husk export from India:
+1. Shipping Bill (filed with Indian Customs)
+2. Phytosanitary Certificate (from National Plant Protection Organisation, India)
+3. COA (Certificate of Analysis) — from accredited lab
+4. MSDS (Material Safety Data Sheet)
+5. Commercial Invoice and Packing List
+6. Bill of Lading (sea freight) or Airway Bill (air freight)
+7. COO (Country of Origin certificate) — from FIEO or APEDA
+8. Organic Certificate (if claiming organic grade)
+9. Halal Certificate (for UAE/GCC markets)
+
+**Japan Import — Positive List System**
+
+Japan's Positive List System for pesticide residues requires comprehensive pesticide residue testing for all food ingredient imports. Psyllium husk imported into Japan must be tested against the Japan Positive List. Amar Herbal Origins provides Japan Positive List-compliant COA with comprehensive pesticide screening on request.
+
+**USA — FDA Prior Notice**
+
+All food ingredient shipments to the USA must be filed with the FDA via Prior Notice at least 2 hours before arrival by air or 8 hours before arrival by sea. Your customs broker typically files this. Amar Herbal Origins provides all FDA-required documentation (COA, country of origin, manufacturer details) to support your Prior Notice filing.
+
+Contact Amar Herbal Origins for complete customs documentation packages for any destination market.`,
+  },
 ];
 
 export const BLOG_CATEGORIES = ['All', 'Export Guide', 'Market Intelligence', 'Quality & Certs', 'Packaging', 'Sourcing'] as const;
 export type BlogCategory = typeof BLOG_CATEGORIES[number];
+

@@ -8,25 +8,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const canonical = buildCanonical(locale, '/manufacturer');
   return {
-    title: 'Herbal Products Manufacturer India | Psyllium Husk, Spices, Herbs & Oils | Amar Herbal Origins',
+    title: 'Psyllium Husk Manufacturer India | ISO Certified | Amar Herbal Origins',
     description:
-      'ISO 22000 certified manufacturer of Psyllium Husk (Isabgol), Indian Spices, Herbs, Cold-Pressed Oils & Ready-to-Eat products in Gujarat, India. In-house QC lab. Farm-direct sourcing. B2B export to 30+ countries.',
+      'Certified psyllium husk manufacturer in Gujarat, India. ISO 22000, FSSAI, USDA Organic. Farm-direct from Unjha. 98–99% purity. MOQ 1 MT. Full COA. Export to 30+ countries. Free sample available.',
     keywords: [
-      'herbal products manufacturer india',
       'psyllium husk manufacturer india',
+      'psyllium husk manufacturers in india',
       'psyllium husk manufacturer gujarat',
       'isabgol manufacturer india',
-      'spices manufacturer india',
-      'herbal extract manufacturer gujarat',
-      'agri products manufacturer exporter india',
+      'psyllium husk manufacturing company india',
+      'psyllium husk manufacturers in gujarat',
+      'isabgol manufacturing plant india',
+      'bulk psyllium husk manufacturer',
+      'organic psyllium husk manufacturer india',
     ],
     alternates: { canonical, languages: buildAlternates('/manufacturer') },
     openGraph: {
-      title: 'Herbal Products Manufacturer India | Amar Herbal Origins',
-      description: 'ISO 22000 certified manufacturer of Psyllium Husk, Spices, Herbs & Oils in Gujarat. Farm-direct, in-house lab. B2B export to 30+ countries.',
+      title: 'Psyllium Husk Manufacturer India | ISO Certified | Amar Herbal Origins',
+      description: 'ISO 22000 certified psyllium husk manufacturer in Gujarat, India. Farm-direct. 98–99% purity. Full COA. B2B export to 30+ countries.',
       url: canonical,
       siteName: 'Amar Herbal Origins',
       type: 'website',
+      images: [{ url: 'https://amarherbalorigins.com/og-home.jpg', width: 1200, height: 630 }],
     },
   };
 }
@@ -56,26 +59,42 @@ const FACILITY = [
 const FAQS = [
   {
     q: 'Where is your psyllium husk manufacturing facility located?',
-    a: 'Our processing facility is located in Gujarat, India — the world\'s leading psyllium husk production region. We source raw material directly from contracted farms in Unjha, Mehsana, Sidhpur (Gujarat) and Jodhpur (Rajasthan).',
+    a: 'Our processing facility is located in Amreli district, Gujarat, India — the world\'s leading psyllium husk production region. We source raw material directly from contracted farms in Unjha, Mehsana, Sidhpur (Gujarat) and Jodhpur (Rajasthan). Gujarat alone accounts for over 60% of India\'s psyllium husk production.',
   },
   {
     q: 'What quality standards does your manufacturing process comply with?',
-    a: 'Our manufacturing process is ISO 22000 certified and complies with FSSAI regulations. Product specifications meet USP (United States Pharmacopeia) and European Pharmacopoeia (Ph. Eur.) monograph requirements for Ispaghula Husk.',
+    a: 'Our manufacturing process is ISO 22000 certified and complies with FSSAI regulations. Product specifications meet USP (United States Pharmacopeia) and European Pharmacopoeia (Ph. Eur.) monograph requirements for Ispaghula Husk. We hold APEDA registration for export and Halal/Kosher certifications.',
   },
   {
     q: 'What is the production capacity and lead time?',
-    a: 'We have sufficient production capacity to fulfill both small trial orders (500 kg) and large FCL orders (20–40 MT). Standard lead time post-order confirmation is 7–14 days for production and quality testing.',
+    a: 'We have sufficient production capacity to fulfill both small trial orders (500 kg) and large FCL orders (20–40 MT). Standard lead time post-order confirmation is 7–14 days for production and quality testing. For urgent requirements, expedited processing is available — contact our team.',
   },
   {
     q: 'Do you manufacture both conventional and organic psyllium husk?',
-    a: 'Yes. We maintain separate manufacturing lines for conventional and USDA/EU Organic certified psyllium husk to prevent any cross-contamination. Both grades are available with full certification documentation.',
+    a: 'Yes. We maintain separate manufacturing lines for conventional and USDA/EU Organic certified psyllium husk to prevent any cross-contamination. Both grades are available with full certification documentation including organic certificate, COA, and phytosanitary certificate.',
+  },
+  {
+    q: 'What is the minimum order quantity (MOQ) for psyllium husk?',
+    a: 'Our standard MOQ is 1 Metric Ton (MT) for bulk psyllium husk (whole husk, powder, or seeds). For organic grade, the MOQ is 500 kg. For private label/white-label orders, MOQ starts from 100 kg. Free 100–500g samples are provided before bulk orders to all qualified buyers.',
+  },
+  {
+    q: 'What is the FOB price of psyllium husk from India?',
+    a: 'Psyllium husk FOB price from Mundra port (India) typically ranges from USD 1,100–1,650 per MT for conventional grade and USD 1,600–2,100 per MT for organic grade, depending on quantity, purity specification, and current Unjha mandi rates. Contact us for a current quotation.',
+  },
+  {
+    q: 'Which countries do you export psyllium husk to?',
+    a: 'We export psyllium husk to 30+ countries including USA, Germany, UK, Canada, Australia, UAE, Saudi Arabia, Netherlands, France, Japan, South Korea, Singapore, Malaysia, Poland, Sweden, and more. We handle all export documentation including COA, phytosanitary certificate, EUR 1, and country-specific certifications.',
+  },
+  {
+    q: 'Do you offer private label psyllium husk manufacturing?',
+    a: 'Yes. We offer full private label and white-label psyllium husk manufacturing from 100 kg MOQ. Services include custom packaging design, multilingual labeling, various pack sizes (retail 200g to bulk 25 kg bags), and full NDA signing. Your brand, our ISO-certified manufacturing quality.',
   },
 ];
 
 export default async function ManufacturerPage({ params }: Props) {
   const { locale } = await params;
 
-  const jsonLd = {
+  const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: FAQS.map(f => ({
@@ -85,9 +104,56 @@ export default async function ManufacturerPage({ params }: Props) {
     })),
   };
 
+  // LocalBusiness schema — signals physical manufacturing location to Google
+  const localBusinessJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': ['LocalBusiness', 'FoodEstablishment'],
+    '@id': 'https://amarherbalorigins.com/#manufacturer',
+    name: 'Amar Herbal Origins — Psyllium Husk Manufacturer',
+    description: 'ISO 22000 certified psyllium husk (isabgol) manufacturer and exporter in Gujarat, India. Farm-direct sourcing from Unjha, Mehsana, Sidhpur. Export to 30+ countries.',
+    url: 'https://amarherbalorigins.com/en/manufacturer',
+    telephone: '+91-94084-65040',
+    email: 'amarherbalorigins@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'SARDAR CHOK, Navi Haliyad',
+      addressLocality: 'Haliyad Navi',
+      addressRegion: 'Gujarat',
+      addressCountry: 'IN',
+      postalCode: '365440',
+    },
+    geo: { '@type': 'GeoCoordinates', latitude: '21.5937', longitude: '71.9629' },
+    openingHours: 'Mo-Sa 09:00-18:00',
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', name: 'ISO 22000:2018', credentialCategory: 'Food Safety Management System' },
+      { '@type': 'EducationalOccupationalCredential', name: 'FSSAI License', credentialCategory: 'Indian Food Safety Authority' },
+      { '@type': 'EducationalOccupationalCredential', name: 'USDA NOP Organic', credentialCategory: 'USDA Organic Certification' },
+      { '@type': 'EducationalOccupationalCredential', name: 'EU Organic 2018/848', credentialCategory: 'European Organic Certification' },
+      { '@type': 'EducationalOccupationalCredential', name: 'APEDA Registration', credentialCategory: 'Indian Agricultural Export Authority' },
+    ],
+    makesOffer: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Psyllium Husk Powder', description: '98–99% purity, 40–100 mesh, ISO 22000 certified' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Whole Psyllium Husk', description: '99% purity, high swell factor, pharmaceutical grade' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Organic Psyllium Husk', description: 'USDA NOP & EU Organic certified, separate processing lines' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Psyllium Seeds', description: 'Sorted & cleaned, Non-GMO, from Gujarat farms' } },
+    ],
+    sameAs: ['https://amarherbalorigins.com/#organization'],
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `https://amarherbalorigins.com/${locale}` },
+      { '@type': 'ListItem', position: 2, name: 'Psyllium Husk Manufacturer India', item: `https://amarherbalorigins.com/${locale}/manufacturer` },
+    ],
+  };
+
   return (
     <main>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       {/* ── Hero ── */}
       <section style={{ background: 'linear-gradient(135deg, #1C1204 0%, #2d1f08 60%, #3d2a0a 100%)', padding: '5rem 0 4rem', position: 'relative', overflow: 'hidden' }}>

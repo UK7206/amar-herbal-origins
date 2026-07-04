@@ -15,10 +15,10 @@ type Props = { params: Promise<{ locale: string }> };
 
 const META: Record<string, { title: string; description: string }> = {
   en: {
-    // 60 chars — within Google's limit; covers all product categories
-    title: 'Herbal Products Exporter India | Psyllium Husk, Spices, Herbs & Oils | Amar Herbal Origins',
+    // 66 chars — leads with strongest keyword, fits Google's display limit
+    title: 'Psyllium Husk Manufacturer & Exporter India | Amar Herbal Origins',
     description:
-      'Amar Herbal Origins — Gujarat-based B2B exporter of Psyllium Husk (Isabgol), Indian Spices, Herbs, Cold-Pressed Oils & Khakhra. ISO 22000, FSSAI, APEDA certified. Farm-direct. Free sample — ships to 30+ countries.',
+      "India's certified psyllium husk (Isabgol) manufacturer & B2B exporter from Gujarat. ISO 22000, USDA Organic, Halal. Spices, herbs & cold-pressed oils. MOQ 1 MT. Free sample. Ships to 30+ countries.",
   },
   es: {
     title: 'Exportador Productos Herbales India | Psyllium, Especias, Hierbas | Amar Herbal Origins',

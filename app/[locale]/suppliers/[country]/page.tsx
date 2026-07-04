@@ -20,6 +20,59 @@ export async function generateStaticParams() {
   return params;
 }
 
+// Country-specific meta overrides — high-impression, 0-click fixes (from GSC data)
+// Canada pos 10.45 (0 clicks), Germany pos 6.39 (0 clicks), Netherlands pos 7.36 (0 clicks)
+const COUNTRY_META: Record<string, { title: string; description: string }> = {
+  usa: {
+    title: `Buy Bulk Psyllium Husk from India to USA | FDA-Compliant, 0% Duty | Amar Herbal Origins`,
+    description: `Import psyllium husk (Isabgol) from India to USA. 0% import duty (HTS 1211.90.91). FDA GRAS status. ISO 22000, USDA Organic certified. MOQ 1 MT. FOB Mundra. Full FDA documentation.`,
+  },
+  canada: {
+    title: `Psyllium Husk Supplier India to Canada | CFIA Compliant, 0% Duty | Amar Herbal Origins`,
+    description: `Import bulk psyllium husk from India to Canada. 0% duty under MFN rate. CFIA compliant, USDA Organic accepted. ISO 22000 certified. MOQ 1 MT. Free sample. Ships from Mundra port.`,
+  },
+  germany: {
+    title: `Psylliumschalen Großhandel Indien nach Deutschland | EU Bio, 0% Zoll | Amar Herbal Origins`,
+    description: `Psylliumschalen (Isabgol) Großhandel aus Gujarat, Indien. EU Bio-zertifiziert (2018/848). 0% EU-Einfuhrzoll (CN 1211 90 86). ISO 22000, Halal. MOQ 1 MT. Kostenlose Musterlieferung.`,
+  },
+  netherlands: {
+    title: `Psyllium Husk Supplier India to Netherlands | EU Organic, 0% Duty | Amar Herbal Origins`,
+    description: `Bulk psyllium husk import to Netherlands from India. 0% EU import duty. EU Organic certified (2018/848). Rotterdam port entry. ISO 22000, Halal. MOQ 1 MT. Free sample available.`,
+  },
+  uk: {
+    title: `Psyllium Husk Supplier India to UK | 0% UK Tariff, MHRA Grade | Amar Herbal Origins`,
+    description: `Import psyllium husk (ispaghula husk) from India to UK. 0% UK Global Tariff (HS 1211 90 90). MHRA pharmaceutical grade. ISO 22000, Halal. MOQ 1 MT. Post-Brexit docs provided.`,
+  },
+  uae: {
+    title: `Psyllium Husk Supplier to UAE | Halal Certified, 10-Day Shipping | Amar Herbal Origins`,
+    description: `Bulk psyllium husk (Isabgol) supply to UAE/Dubai. Halal certified (UAE.S 2055-1). Arabic labeling available. 10–14 day transit from Mundra. ISO 22000, FSSAI. MOQ 1 MT. Free quote.`,
+  },
+  australia: {
+    title: `Psyllium Husk Supplier India to Australia | DAWR Compliant, 0% ECTA Duty | Amar Herbal Origins`,
+    description: `Import psyllium husk from India to Australia. 0% duty under India-Australia ECTA. Phytosanitary certificate included. DAWR biosecurity compliant. TGA dietary supplement grade. MOQ 1 MT.`,
+  },
+  'saudi-arabia': {
+    title: `Psyllium Husk Supplier to Saudi Arabia | Halal Certified, SFDA Docs | Amar Herbal Origins`,
+    description: `Bulk psyllium husk (Isabgol) export to Saudi Arabia. Halal certified. SFDA compliant documentation. 12–16 day transit from Mundra to Jeddah/Dammam. ISO 22000. MOQ 1 MT.`,
+  },
+  japan: {
+    title: `サイリウムハスク インドから日本へ輸出 | ISO認証 | Amar Herbal Origins`,
+    description: `インド・グジャラート州からサイリウムハスク（イサブゴール）を日本へ輸出。ISO 22000認証済み。MOQ 1MT。日本向け規制書類対応。ムンドラ港からの発送。`,
+  },
+  singapore: {
+    title: `Psyllium Husk Supplier India to Singapore | Halal, 14-Day Shipping | Amar Herbal Origins`,
+    description: `Bulk psyllium husk export from India to Singapore. Halal certified. 10–14 day transit from Mundra. ISO 22000, FSSAI. FSMA-equivalent documentation. MOQ 1 MT. Free sample.`,
+  },
+  france: {
+    title: `Fournisseur Psyllium Inde vers France | Bio EU, 0% Droit | Amar Herbal Origins`,
+    description: `Gros psyllium blond (Isabgol) de l'Inde vers la France. Certifié Bio EU 2018/848. 0% droit d'importation. ISO 22000, Halal. MOQ 1 MT. Échantillon gratuit disponible.`,
+  },
+  'south-korea': {
+    title: `사일리엄 허스크 인도에서 한국으로 수출 | Halal 인증 | Amar Herbal Origins`,
+    description: `인도 구자라트에서 사일리엄 허스크(이사브골) 한국 수출. ISO 22000 인증. Halal 인증. MOQ 1MT. 문다라 항구 선적.`,
+  },
+};
+
 // ── SEO Metadata per country ──────────────────────────────────────────────────
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, country: slug } = await params;
@@ -27,8 +80,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!data) return {};
 
   const canonical = buildCanonical(locale, `/suppliers/${slug}`);
-  const title = `Psyllium Husk & Indian Herbal Products Supplier in ${data.name} | Amar Herbal Origins`;
-  const description = `Trusted B2B exporter supplying Psyllium Husk, Indian Spices, Herbs & Cold-Pressed Oils to ${data.name}. ISO certified, farm-direct from Gujarat, India. MOQ 1 MT. Request a free quote.`;
+
+  // Use country-specific title if available, otherwise fall back to generic
+  const countryMeta = COUNTRY_META[slug];
+  const title = countryMeta?.title ??
+    `Buy Psyllium Husk from India to ${data.name} | B2B Bulk Supplier | Amar Herbal Origins`;
+  const description = countryMeta?.description ??
+    `Certified psyllium husk (Isabgol) exporter from India to ${data.name}. ISO 22000, Halal certified. MOQ 1 MT. FOB Mundra. 7–14 day lead time. Free sample. Full export documentation provided.`;
 
   return {
     title,
@@ -47,6 +105,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
   };
 }
+
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 export default async function CountryPage({ params }: Props) {
@@ -75,10 +134,41 @@ export default async function CountryPage({ params }: Props) {
     ],
   };
 
+  // Product + Offer schema — commercial signal to Google for B2B supply queries
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: `Psyllium Husk Supplier in ${data.name}`,
+    description: `Bulk psyllium husk (isabgol) exported from India to ${data.name}. ISO 22000, FSSAI certified. MOQ 1 MT. FOB Mundra. Full COA documentation.`,
+    brand: { '@type': 'Brand', name: 'Amar Herbal Origins' },
+    manufacturer: {
+      '@type': 'Organization',
+      name: 'Amar Herbal Origins',
+      address: { '@type': 'PostalAddress', addressLocality: 'Amreli', addressRegion: 'Gujarat', addressCountry: 'IN' },
+    },
+    countryOfOrigin: { '@type': 'Country', name: 'India' },
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      seller: { '@type': 'Organization', name: 'Amar Herbal Origins', url: 'https://amarherbalorigins.com' },
+      eligibleRegion: { '@type': 'Country', name: data.name },
+      description: `FOB export from Mundra port to ${data.name}. MOQ 1 MT. 7–14 day lead time.`,
+    },
+    additionalProperty: [
+      { '@type': 'PropertyValue', name: 'Purity', value: '98–99%' },
+      { '@type': 'PropertyValue', name: 'MOQ', value: '1 Metric Ton' },
+      { '@type': 'PropertyValue', name: 'Certifications', value: 'ISO 22000, FSSAI, Halal, Kosher' },
+      { '@type': 'PropertyValue', name: 'Origin', value: 'Gujarat & Rajasthan, India' },
+      { '@type': 'PropertyValue', name: 'Lead Time', value: '7–14 days' },
+    ],
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
 
       {/* ── Hero Section ── */}
       <section style={{
@@ -289,6 +379,119 @@ export default async function CountryPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* ── Canada NHP Regulatory Note — shown only for Canada ── */}
+      {slug === 'canada' && (
+        <section style={{ background: '#FFF8E7', padding: '3.5rem 0', borderTop: '3px solid #D97706' }}>
+          <div className="container">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', alignItems: 'start' }}>
+              <div>
+                <div className="section-label" style={{ marginBottom: '0.75rem', color: '#D97706' }}>🍁 CANADA — NHP REGULATIONS</div>
+                <h2 className="section-heading" style={{ marginBottom: '1rem', fontSize: 'clamp(1.4rem, 3vw, 2rem)' }}>
+                  Health Canada NPN &amp;{' '}
+                  <em style={{ color: '#D97706' }}>NHP Compliance</em>
+                </h2>
+                <p style={{ color: '#374151', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1rem' }}>
+                  Canada regulates psyllium husk as a <strong>Natural Health Product (NHP)</strong> under the Natural Health Products Regulations (NHPR). Any psyllium supplement sold to Canadian consumers requires a <strong>Natural Product Number (NPN)</strong> from Health Canada.
+                </p>
+                <p style={{ color: '#374151', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1.5rem' }}>
+                  Amar Herbal Origins provides a complete NHP technical dossier for Canadian buyers — including product specification sheets, third-party COA, GMP certificate (ISO 22000), stability data, and non-GMO declaration. We also support bilingual (English/French) private label packaging.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                  {[
+                    '✓ Full technical dossier for NPN application',
+                    '✓ USDA/EU Organic recognized under Canada-US equivalency',
+                    '✓ English/French bilingual label support',
+                    '✓ 0% import duty (Canada MFN rate for HS 1211.90)',
+                    '✓ Transit: 18–22 days to Vancouver, 24–28 days to Toronto',
+                  ].map(item => (
+                    <div key={item} style={{ color: '#374151', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <span style={{ color: '#D97706', fontWeight: 700, flexShrink: 0 }}>{item.slice(0, 1)}</span>
+                      {item.slice(2)}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div style={{ background: '#1C1204', borderRadius: '16px', padding: '2rem' }}>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.3rem', color: 'white', fontWeight: 700, marginBottom: '1.25rem' }}>NHP Documentation Package</h3>
+                {[
+                  { doc: 'Certificate of Analysis (COA)', lab: 'Accredited 3rd-party lab' },
+                  { doc: 'Product Specification Sheet', lab: 'Botanical + purity data' },
+                  { doc: 'GMP Certificate (ISO 22000)', lab: 'Covers manufacturing' },
+                  { doc: 'Stability Data', lab: '24-month shelf life' },
+                  { doc: 'Non-GMO Declaration', lab: 'Health Canada required' },
+                  { doc: 'Phytosanitary Certificate', lab: 'Canadian CFIA' },
+                ].map((item, i) => (
+                  <div key={item.doc} style={{ display: 'flex', justifyContent: 'space-between', gap: '0.5rem', padding: '0.65rem 0', borderBottom: i < 5 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
+                    <span style={{ color: '#e5d6b8', fontSize: '0.85rem' }}>{item.doc}</span>
+                    <span style={{ color: '#D97706', fontSize: '0.78rem', fontWeight: 600, whiteSpace: 'nowrap' }}>{item.lab}</span>
+                  </div>
+                ))}
+                <Link href={`/${locale}/contact`} style={{ display: 'block', marginTop: '1.5rem', background: '#D97706', color: 'white', padding: '0.75rem 1.5rem', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.88rem', textAlign: 'center' }}>
+                  Request NHP Dossier →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── USA FDA / DSHEA Section — shown only for USA — targets 274 impressions at pos 25 ── */}
+      {slug === 'usa' && (
+        <section style={{ background: '#EFF6FF', padding: '3.5rem 0', borderTop: '3px solid #1D4ED8' }}>
+          <div className="container">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', alignItems: 'start' }}>
+              <div>
+                <div className="section-label" style={{ marginBottom: '0.75rem', color: '#1D4ED8' }}>🇺🇸 USA — FDA & DSHEA COMPLIANCE</div>
+                <h2 className="section-heading" style={{ marginBottom: '1rem', fontSize: 'clamp(1.4rem, 3vw, 2rem)' }}>
+                  FDA Registration &{' '}
+                  <em style={{ color: '#1D4ED8' }}>DSHEA Compliance</em>
+                </h2>
+                <p style={{ color: '#374151', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1rem' }}>
+                  Psyllium husk imported into the USA for dietary supplement use falls under the <strong>Dietary Supplement Health and Education Act (DSHEA, 1994)</strong>. Our facility is <strong>FDA registered</strong> and manufacturing follows 21 CFR Part 111 current Good Manufacturing Practice (cGMP) requirements for dietary supplements.
+                </p>
+                <p style={{ color: '#374151', lineHeight: 1.8, fontSize: '0.95rem', marginBottom: '1.5rem' }}>
+                  For pharmaceutical-grade psyllium (OTC laxatives, fiber supplements), product specifications comply with the <strong>USP monograph for Psyllium Husk</strong>, including swelling factor ≥40 ml/g and purity requirements. We supply full documentation for FDA Prior Notice, CBP customs clearance, and FDA ingredient registration.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                  {[
+                    '✓ FDA-registered manufacturing facility',
+                    '✓ 21 CFR Part 111 cGMP compliant',
+                    '✓ USP monograph specifications (swelling ≥40 ml/g)',
+                    '✓ USDA Organic for supplement brands',
+                    '✓ 0% import duty (HS 1211.90, MFN rate)',
+                    '✓ Transit: 18–22 days LA, 22–28 days NYC',
+                  ].map(item => (
+                    <div key={item} style={{ color: '#374151', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <span style={{ color: '#1D4ED8', fontWeight: 700, flexShrink: 0 }}>{item.slice(0, 1)}</span>
+                      {item.slice(2)}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div style={{ background: '#1C1204', borderRadius: '16px', padding: '2rem' }}>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.3rem', color: 'white', fontWeight: 700, marginBottom: '1.25rem' }}>FDA Import Documentation Package</h3>
+                {[
+                  { doc: 'FDA Facility Registration', lab: '21 CFR Part 1, Section 415' },
+                  { doc: 'Certificate of Analysis (COA)', lab: 'Accredited 3rd-party lab' },
+                  { doc: 'USP Specification Sheet', lab: 'Swelling factor, purity, ID' },
+                  { doc: 'Non-GMO Declaration', lab: 'Required by US brands' },
+                  { doc: 'FDA Prior Notice Details', lab: 'CBP port clearance' },
+                  { doc: 'Phytosanitary Certificate', lab: 'USDA APHIS required' },
+                ].map((item, i) => (
+                  <div key={item.doc} style={{ display: 'flex', justifyContent: 'space-between', gap: '0.5rem', padding: '0.65rem 0', borderBottom: i < 5 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
+                    <span style={{ color: '#e5d6b8', fontSize: '0.85rem' }}>{item.doc}</span>
+                    <span style={{ color: '#60A5FA', fontSize: '0.78rem', fontWeight: 600, whiteSpace: 'nowrap' }}>{item.lab}</span>
+                  </div>
+                ))}
+                <Link href={`/${locale}/contact`} style={{ display: 'block', marginTop: '1.5rem', background: '#1D4ED8', color: 'white', padding: '0.75rem 1.5rem', borderRadius: '50px', fontWeight: 700, textDecoration: 'none', fontSize: '0.88rem', textAlign: 'center' }}>
+                  Request FDA Dossier →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── Shipping & Logistics ── */}
       <section style={{ background: 'white', padding: '5rem 0', borderTop: '1px solid #E5E0D8' }}>

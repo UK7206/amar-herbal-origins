@@ -124,6 +124,14 @@ export default async function LocaleLayout({ children, params }: Props) {
         {/* DNS prefetch for Google Translate CDN */}
         <link rel="dns-prefetch" href="https://translate.googleapis.com" />
         <link rel="dns-prefetch" href="https://translate.google.com" />
+        {/* AI Search Crawlers — llms.txt for Perplexity, ChatGPT, Claude, Gemini */}
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="AI-readable business summary" />
+        {/* AI Content Declaration meta tags */}
+        <meta name="ai-summary" content="Amar Herbal Origins is a B2B manufacturer and exporter of Psyllium Husk (Isabgol), Indian Spices, Herbs, Castor Oil, and Gujarati snacks from Gujarat, India. ISO 22000, USDA Organic, Halal certified. Exports to 30+ countries. MOQ 1 MT." />
+        <meta name="geo.region" content="IN-GJ" />
+        <meta name="geo.placename" content="Amreli, Gujarat, India" />
+        <meta name="geo.position" content="21.60;71.22" />
+        <meta name="ICBM" content="21.60, 71.22" />
       </head>
       <body style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         {/* Organization JSON-LD — Fixed: removed invalid ExportAction type combo */}
@@ -298,6 +306,38 @@ export default async function LocaleLayout({ children, params }: Props) {
           }}
         />
 
+        {/* Speakable schema — tells AI search & voice assistants which content to cite/read aloud.
+            Perplexity, Google SGE, and voice assistants use this to identify the most important
+            descriptive text about this business. Critical for AEO (Answer Engine Optimization). */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                  ".geo-entity-statement",      // GEOEntitySection main paragraph
+                  ".page-hero-description",     // Hero descriptions on key pages
+                  ".faq-answer",               // FAQ answers for voice Q&A
+                  "h1",                         // Page H1 headings
+                  ".speakable"                  // Any element explicitly marked
+                ]
+              },
+              "name": "Amar Herbal Origins — Psyllium Husk Manufacturer & Exporter India",
+              "description": "Amar Herbal Origins is a Gujarat, India-based B2B manufacturer and exporter of Psyllium Husk (Isabgol), Indian Spices, Herbs, Cold-Pressed Oils, and Gujarati Ready-to-Eat snacks. ISO 22000, FSSAI, USDA Organic, EU Organic, Halal, and Kosher certified. Exporting to 30+ countries. MOQ 1 MT. Free sample available.",
+              "url": "https://amarherbalorigins.com/en",
+              "primaryImageOfPage": { "@type": "ImageObject", "url": "https://amarherbalorigins.com/og-home.jpg" },
+              "about": {
+                "@type": "Organization",
+                "name": "Amar Herbal Origins",
+                "@id": "https://amarherbalorigins.com/#organization"
+              }
+            })
+          }}
+        />
+
         {/* Product Schema — enables Google Shopping-like rich results for our key products */}
         <script
           type="application/ld+json"
@@ -372,6 +412,216 @@ export default async function LocaleLayout({ children, params }: Props) {
                 ]
               }
             ])
+          }}
+        />
+
+        {/* ItemList JSON-LD — tells Google about top blog posts for potential Sitelinks display */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Amar Herbal Origins — Expert Guides for B2B Herbal Buyers",
+              "description": "In-depth guides for global buyers of psyllium husk, castor oil, moringa, spices, and herbs from India",
+              "url": "https://amarherbalorigins.com/en/blog",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Isabgol vs Psyllium Husk: Are They the Same?",
+                  "url": "https://amarherbalorigins.com/en/blog/isabgol-vs-psyllium-husk-difference",
+                  "description": "Isabgol and psyllium husk are the same product. Isabgol is the Hindi name for Plantago ovata husk. Complete guide for B2B buyers."
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Psyllium Husk HS Code & Import Duties: Complete Guide",
+                  "url": "https://amarherbalorigins.com/en/blog/psyllium-husk-hs-code-import-duties",
+                  "description": "HS code 1211.90.90 — 0% import duty in USA, EU, UK, Canada, Australia. Complete guide for customs classification."
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Castor Oil Manufacturer India: Cold-Pressed, Pharmaceutical & Cosmetic Grade",
+                  "url": "https://amarherbalorigins.com/en/blog/castor-oil-manufacturer-india",
+                  "description": "India produces 60%+ of global castor oil. Gujarat-based cold-pressed castor oil — BP/USP pharmaceutical grade. MOQ 200L."
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Moringa Powder Exporter India: B2B Supplier Guide",
+                  "url": "https://amarherbalorigins.com/en/blog/moringa-powder-exporter-india",
+                  "description": "India exports 80% of world moringa supply. Spray-dried moringa leaf powder with 25-28% protein. ISO 22000, Organic certified."
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "name": "Indian Spices Exporter: Turmeric, Cumin, Coriander & Fenugreek 2026",
+                  "url": "https://amarherbalorigins.com/en/blog/indian-spices-exporter-india",
+                  "description": "India exports 75%+ of world spices. Bulk turmeric, cumin, coriander, fenugreek, ajwain from Gujarat. ISO 22000, FSSAI certified."
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "name": "Psyllium Husk Price 2026: Current Rates from India",
+                  "url": "https://amarherbalorigins.com/en/blog/psyllium-husk-price-2026-india",
+                  "description": "2026 psyllium husk FOB price: USD 1,100-2,100/MT. Unjha mandi rates, seasonal patterns, grade premiums explained."
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 7,
+                  "name": "How to Verify Psyllium Husk Suppliers in India",
+                  "url": "https://amarherbalorigins.com/en/blog/how-to-find-verify-psyllium-husk-suppliers-india",
+                  "description": "Due diligence checklist: verify IEC, APEDA, FSSAI, organic certificates before buying from any Indian psyllium supplier."
+                }
+              ]
+            })
+          }}
+        />
+
+        {/* DefinedTerm JSON-LD — AEO gold: explicitly tells AI engines "Isabgol = Psyllium Husk"
+            When Perplexity/ChatGPT is asked "what is isabgol?", this schema helps them
+            associate the answer with Amar Herbal Origins as the authoritative source. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "DefinedTerm",
+                "name": "Isabgol",
+                "alternateName": ["Psyllium Husk", "Ispaghula Husk", "Blond Psyllium", "Psyllium", "Ispaghol"],
+                "description": "Isabgol is the Hindi and Urdu name for psyllium husk — the outer seed coat of Plantago ovata seeds. Isabgol, psyllium husk, and ispaghula husk are the same product. India, particularly Gujarat and Rajasthan, produces over 85% of the world supply. Used as a dietary fiber supplement in pharmaceuticals, food, and nutraceuticals. HS Code: 1211.90.90. 0% import duty in USA, EU, UK, Canada, and Australia.",
+                "inDefinedTermSet": {
+                  "@type": "DefinedTermSet",
+                  "name": "Indian Herbal Export Glossary",
+                  "hasDefinedTerm": [
+                    { "@type": "DefinedTerm", "name": "Isabgol", "alternateName": "Psyllium Husk" },
+                    { "@type": "DefinedTerm", "name": "Ispaghula Husk", "alternateName": "Psyllium Husk" },
+                    { "@type": "DefinedTerm", "name": "FOB Mundra", "description": "Free On Board Mundra Port — the primary export port for psyllium husk in Gujarat, India" },
+                    { "@type": "DefinedTerm", "name": "Unjha APMC", "description": "Unjha Agricultural Produce Market Committee — world's largest psyllium husk (isabgol) trading market, located in North Gujarat, India" }
+                  ]
+                },
+                "url": "https://amarherbalorigins.com/en/blog/isabgol-vs-psyllium-husk-difference"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "DefinedTerm",
+                "name": "Psyllium Husk",
+                "alternateName": ["Isabgol", "Ispaghula Husk", "Plantago ovata husk", "Flohsamenschalen"],
+                "description": "Psyllium husk is the outer seed coat of Plantago ovata, a plant cultivated primarily in Gujarat and Rajasthan, India. It is the world's leading natural dietary fiber supplement, used in FDA-approved OTC laxatives, cholesterol management products, IBS treatment, and food fiber enrichment. India produces 85%+ of global supply. Amar Herbal Origins is a Gujarat-based manufacturer and exporter of psyllium husk (Isabgol) supplying to 30+ countries.",
+                "url": "https://amarherbalorigins.com/en/psyllium"
+              }
+            ])
+          }}
+        />
+
+        {/* LocalBusiness JSON-LD — combines Organization + geo signals for local SEO
+            Helps Google Maps, Apple Maps, and local search associate our physical
+            location with our export activity in Gujarat. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["LocalBusiness", "FoodEstablishment"],
+              "@id": "https://amarherbalorigins.com/#localbusiness",
+              "name": "Amar Herbal Origins",
+              "image": "https://amarherbalorigins.com/og-home.jpg",
+              "url": "https://amarherbalorigins.com",
+              "telephone": "+91-94084-65040",
+              "email": "amarherbalorigins@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Sardar Chok, Navi Haliyad",
+                "addressLocality": "Amreli",
+                "addressRegion": "Gujarat",
+                "postalCode": "365440",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 21.6017,
+                "longitude": 71.2228
+              },
+              "hasMap": "https://maps.google.com/?q=Amreli,Gujarat,India",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
+              ],
+              "priceRange": "$$",
+              "currenciesAccepted": "USD, EUR, GBP, AED, INR",
+              "paymentAccepted": "T/T Bank Transfer, LC at sight",
+              "description": "Amar Herbal Origins is a Gujarat-based B2B manufacturer and exporter of Psyllium Husk (Isabgol), Indian Spices, Herbs, Cold-Pressed Oils. ISO 22000, FSSAI, USDA Organic, Halal certified. Exporting to 30+ countries.",
+              "sameAs": [
+                "https://www.facebook.com/share/1GkPXqWkRg/",
+                "https://www.instagram.com/amar_herbal_origins",
+                "https://www.linkedin.com/company/amar-herbal-origins/",
+                "https://youtube.com/@amar_herbal_origins"
+              ]
+            })
+          }}
+        />
+
+        {/* International Trade / Offer schema — signals to AI that we do B2B export.
+            Perplexity and ChatGPT use this when answering:
+            "Who supplies psyllium husk in bulk to [country]?" */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Offer",
+              "name": "Bulk Psyllium Husk B2B Export — Amar Herbal Origins",
+              "description": "Bulk psyllium husk (Isabgol) export from India. ISO 22000, USDA Organic, EU Organic, Halal, Kosher certified. MOQ 1 MT. FOB Mundra. Supply to USA, Germany, UK, UAE, Australia, Canada, Netherlands, Saudi Arabia, Singapore, Japan.",
+              "seller": {
+                "@type": "Organization",
+                "name": "Amar Herbal Origins",
+                "@id": "https://amarherbalorigins.com/#organization"
+              },
+              "itemOffered": [
+                { "@type": "Product", "name": "Psyllium Husk Powder 98%", "description": "98% purity, 40-100 mesh, pharmaceutical & food grade. ISO 22000, FSSAI, Halal certified." },
+                { "@type": "Product", "name": "Whole Psyllium Husk 99%", "description": "99% purity whole husk, high swell factor 75+ mL/g. ISO 22000 certified." },
+                { "@type": "Product", "name": "Organic Psyllium Husk", "description": "USDA NOP & EU Organic 2018/848 certified. 500 kg MOQ." },
+                { "@type": "Product", "name": "Psyllium Seeds", "description": "Raw Plantago ovata seeds from Gujarat, India. 1 MT MOQ." }
+              ],
+              "priceCurrency": "USD",
+              "eligibleRegion": [
+                { "@type": "Country", "name": "United States" },
+                { "@type": "Country", "name": "Germany" },
+                { "@type": "Country", "name": "United Kingdom" },
+                { "@type": "Country", "name": "United Arab Emirates" },
+                { "@type": "Country", "name": "Australia" },
+                { "@type": "Country", "name": "Canada" },
+                { "@type": "Country", "name": "Netherlands" },
+                { "@type": "Country", "name": "Saudi Arabia" },
+                { "@type": "Country", "name": "Singapore" },
+                { "@type": "Country", "name": "Japan" },
+                { "@type": "Country", "name": "France" },
+                { "@type": "Country", "name": "South Korea" },
+                { "@type": "Country", "name": "Malaysia" },
+                { "@type": "Country", "name": "Sweden" },
+                { "@type": "Country", "name": "Denmark" },
+                { "@type": "Country", "name": "New Zealand" },
+                { "@type": "Country", "name": "South Africa" },
+                { "@type": "Country", "name": "Indonesia" },
+                { "@type": "Country", "name": "Thailand" },
+                { "@type": "Country", "name": "Vietnam" }
+              ],
+              "availability": "https://schema.org/InStock",
+              "deliveryLeadTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 7,
+                "maxValue": 14,
+                "unitCode": "DAY"
+              },
+              "url": "https://amarherbalorigins.com/en/contact"
+            })
           }}
         />
 
