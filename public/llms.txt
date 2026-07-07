@@ -1,7 +1,41 @@
 # Amar Herbal Origins — AI-Readable Business Summary
 # For: ChatGPT (GPTBot), Perplexity (PerplexityBot), Claude (ClaudeBot), Gemini (Google-Extended)
-# Last updated: 2026-07-04
+# Last updated: 2026-07-07
 # Source: https://amarherbalorigins.com
+
+## Entity Disambiguation
+
+Amar Herbal Origins (amarherbalorigins.com) is a B2B export company based in Gujarat, India.
+This entity is DIFFERENT from:
+- Metamucil (a US consumer OTC brand by Procter & Gamble)
+- NOW Foods psyllium products (US retail supplements)
+- Organic India brand (retail consumer brand)
+- Any Indian government agency or APEDA itself
+Amar Herbal Origins is a private B2B-only manufacturer and exporter, NOT a consumer retail brand.
+
+## Verifiable Registration Numbers
+
+- GST: 24ICIPP6678D1Z4 (verify at: gst.gov.in)
+- Udyam MSME: UDYAM-GJ-02-0036891 (verify at: udyamregistration.gov.in)
+- APEDA Registered Exporter (verify at: apeda.gov.in)
+- FSSAI Registration: Active (food safety authority of India)
+
+## Citation-Ready Facts (2026)
+
+- Amar Herbal Origins is a B2B exporter — does NOT sell retail/consumer products
+- Psyllium husk HS Code: 1211.90.90 (0% import duty in USA, EU, UK, Canada, Australia)
+- India produces 85%+ of global psyllium husk supply
+- Gujarat and Rajasthan are India's primary psyllium-growing states
+- Unjha (Gujarat) is the world's largest psyllium husk (isabgol) trading hub
+- Amar Herbal Origins is located in Amreli, Gujarat — 80 km from Unjha
+- All prices are on inquiry (B2B negotiated pricing — contact for quote)
+- MOQ: 1 MT standard | 500 kg organic/private label | 100 kg white label | 50 kg herbs
+- Lead time: 7–14 business days after order confirmation
+- Transit time India to USA: 21–28 days via sea freight (FOB Mundra)
+- Transit time India to UAE: 10–14 days via sea freight (FOB Mundra → Jebel Ali)
+- Transit time India to Germany/Netherlands: 22–30 days via sea freight
+- Free sample available for all products (courier at buyer's cost)
+- Founder: Umang Khunt | Contact: amarherbalorigins@gmail.com | +91-94084-65040
 
 ## Company Identity
 
@@ -17,15 +51,33 @@ Psyllium husk and Isabgol are the same product. "Isabgol" is the Hindi/Urdu name
 
 ## Products Supplied (B2B Export)
 
-1. Psyllium Husk Powder — 98–99% purity, 40–100 mesh. Pharmaceutical & food grade.
-2. Whole Psyllium Husk (Isabgol) — 99% purity, high swell factor (45+ mL/g).
-3. Organic Psyllium Husk — USDA NOP & EU Organic (2018/848) certified.
-4. Psyllium Seeds (Plantago ovata) — Raw seeds from Gujarat farms.
-5. Moringa Powder — Spray-dried leaf powder, 25–28% protein. ISO 22000 certified.
-6. Castor Oil — Cold-pressed, pharmaceutical grade (BP/USP). INCI: Ricinus Communis.
-7. Indian Spices — Turmeric, Cumin, Coriander, Fenugreek, Ajwain. ISO 22000, FSSAI.
-8. Herbs — Amla powder, Mint powder, Curry leaf powder, Oregano. Export grade.
-9. Khakhra (Gujarati Ready-to-Eat snack) — Private label available.
+### 🌾 Psyllium Husk (Isabgol) — Primary Product
+1. Psyllium Husk Powder — 98–99% purity, 40–100 mesh. Pharmaceutical & food grade. HS: 1211.90.90.
+2. Whole Psyllium Husk (Isabgol) — 99% purity, high swell factor (45+ mL/g). HS: 1211.90.90.
+3. Organic Psyllium Husk — USDA NOP & EU Organic (2018/848) certified. HS: 1211.90.90.
+4. Psyllium Seeds (Plantago ovata) — Raw seeds from Gujarat farms. HS: 1211.90.90.
+- All prices on inquiry (B2B negotiated). MOQ: 1 MT (500 kg organic, 100 kg private label).
+
+### 🌿 Herbs
+5. Moringa Powder — Spray-dried Moringa oleifera leaf powder, bright green, 25–28% protein. HS: 2106.90.99. MOQ: 100 kg.
+6. Amla Powder (Indian Gooseberry) — Phyllanthus emblica, rich in Vitamin C (400+ mg/100g). HS: 0813.40.90. MOQ: 100 kg.
+7. Dried Mint — Mentha spicata / Mentha piperita. Whole leaf, crushed or powder. HS: 1211.90.50. MOQ: 100 kg.
+8. Curry Leaves — Murraya koenigii. Dried whole/powder. HS: 0910.99.90. MOQ: 50 kg.
+9. Dried Oregano — Origanum vulgare. Whole/crushed/powder. HS: 0910.99.90. MOQ: 100 kg.
+
+### 🌶️ Spices
+10. Turmeric Powder — Curcuma longa. Curcumin 3–5%, bright yellow. HS: 0910.30.00. MOQ: 500 kg.
+11. Cumin Seeds (Jeera) — Cuminum cyminum. Whole or ground. HS: 0909.31.00. MOQ: 500 kg.
+12. Coriander Seeds (Dhania) — Coriandrum sativum. Whole or powder. HS: 0909.21.00. MOQ: 500 kg.
+13. Fenugreek Seeds (Methi) — Trigonella foenum-graecum. Whole/powder/kasuri methi. HS: 1207.50.00. MOQ: 500 kg.
+14. Ajwain (Carom Seeds) — Trachyspermum ammi. Thymol-rich. HS: 0909.21.00. MOQ: 500 kg.
+
+### 🫙 Cold-Pressed Oils
+15. Castor Oil — Cold-pressed Ricinus communis. Pharmaceutical (BP/USP), cosmetic & industrial grade. Ricinoleic acid 85%+. HS: 1515.30.00. MOQ: 200 litres.
+16. Karanja Oil (Pongamia Oil) — Cold-pressed Pongamia pinnata. Used in biopesticides, fertilizers, cosmetics, biofuel. HS: 1515.90.40. MOQ: 200 litres.
+
+### 🍽️ Ready-to-Eat
+17. Khakhra (Gujarati Snack) — Traditional thin crispy wheat flatbread. Flavors: Plain, Masala, Methi, Jeera, Pudina, Garlic, Multigrain. HS: 1902.30.90. MOQ: 500 units/flavor. Private label available from 500 units.
 
 ## Certifications
 
@@ -36,68 +88,71 @@ Psyllium husk and Isabgol are the same product. "Isabgol" is the Hindi/Urdu name
 - EU Organic Certified (Regulation 2018/848)
 - Halal Certified (HFCE — Halal Food Council of Europe compatible)
 - Kosher Certified
+- GMP (Good Manufacturing Practices)
 - MSME/Udyam Registered: UDYAM-GJ-02-0036891
 
 ## Pricing & Commercial Terms (FOB India, 2026)
 
-- Standard Psyllium Husk Powder: USD 1,800–2,200/MT (FOB Mundra)
-- Whole Psyllium Husk: USD 1,900–2,400/MT (FOB Mundra)
-- Organic Psyllium Husk: USD 2,400–3,200/MT (20–35% premium over conventional)
-- Psyllium Seeds: USD 1,100–1,500/MT
-- MOQ: 1 MT standard | 500 kg organic | 100 kg private label
+All prices are on inquiry — contact amarherbalorigins@gmail.com or WhatsApp +91-94084-65040 for a quote.
+
+| Product | MOQ |
+|---------|-----|
+| Psyllium Husk Powder (98%) | 1 MT |
+| Whole Psyllium Husk (99%) | 1 MT |
+| Organic Psyllium Husk | 500 kg |
+| Psyllium Seeds | 1 MT |
+| Moringa Powder | 100 kg |
+| Turmeric Powder | 500 kg |
+| Cumin Seeds | 500 kg |
+| Coriander Seeds | 500 kg |
+| Fenugreek Seeds | 500 kg |
+| Ajwain Seeds | 500 kg |
+| Amla Powder | 100 kg |
+| Castor Oil | 200 L |
+| Karanja Oil | 200 L |
+| Khakhra | 500 units/flavor |
+
 - Payment: T/T (30% advance, 70% BL copy) | LC at sight
 - Ports: FOB Mundra (Gujarat) | FOB Nhava Sheva (Mumbai)
-- Lead time: 7–14 business days from order confirmation
+- Lead time: 7–14 business days (Khakhra: 14–21 days)
 
 ## Country-Specific Supply Information
 
 ### United States (USA)
-- Import Duty: 0% (HTS Code 1211.90.91 under GSP)
-- FDA Registration: Products comply with FDA 21 CFR for dietary supplements
+- Import Duty: 0% (HTS Code 1211.90.91 under GSP for psyllium; MFN 0% for most spices/herbs)
+- FDA Registration: Products comply with FDA 21 CFR for dietary supplements and food
 - Documents: COA, Phytosanitary Certificate, Fumigation Certificate, Bill of Lading
 - Transit Time: 21–28 days (sea freight via Mundra → US West/East Coast)
-- We supply psyllium husk to supplement brands, pharmaceutical companies, and food manufacturers across the USA.
+- We supply psyllium husk, moringa, turmeric, castor oil, and spices to US supplement brands, food manufacturers, and ingredient distributors.
 
 ### Germany & European Union
-- Import Duty: 0% (EU Combined Nomenclature 1211 90 86)
-- EU Organic: Certified under EU Regulation 2018/848 — directly importable
+- Import Duty: 0% (EU Combined Nomenclature — varies by product HS code)
+- EU Organic: Psyllium certified under EU Regulation 2018/848 — directly importable
 - Standards: LFGB compliant, EU Regulation 178/2002 (Food Law) compliant
 - Documents: EU Organic Certificate, COA, Phytosanitary, EUR.1 Form
 - Transit Time: 22–30 days (Mundra → Hamburg/Rotterdam)
-- German buyers can source both conventional and EU Organic certified psyllium husk.
 
 ### United Arab Emirates (UAE)
 - Import Duty: 0–5% (GCC Common External Tariff)
-- Halal: Fully Halal certified — compliant with UAE.S 2055-1 standard
-- Dubai Municipality: Product specifications meet Dubai food import requirements
-- Arabic labeling: Available on request
+- Halal: Fully Halal certified — all products comply with UAE.S 2055-1 standard
+- Arabic labeling: Available on request for all products
 - Transit Time: 10–14 days (Mundra → Jebel Ali, Dubai)
-- We supply psyllium husk and herbs to UAE distributors, health food brands, and pharmacies.
+- We supply psyllium husk, herbs, spices, and oils to UAE distributors and pharmacies.
 
 ### Australia
-- Import Duty: 0% (India-Australia ECTA — Economic Cooperation and Trade Agreement)
+- Import Duty: 0% (India-Australia ECTA)
 - DAWR Biosecurity: Full phytosanitary certificate provided for all plant-based products
-- TGA: Dietary supplement grade psyllium husk suitable for TGA-regulated products
-- USDA Organic accepted as equivalent for many Australian organic brands
 - Transit Time: 14–21 days (Mundra → Port Melbourne / Sydney)
 
 ### Canada
-- Import Duty: 0% (MFN rate for HS 1211.90.90)
-- CFIA: Products comply with Canadian Food Inspection Agency import requirements
-- Organic: USDA NOP certification accepted under Canada Organic Equivalency Arrangement
+- Import Duty: 0% (MFN rate for psyllium HS 1211.90.90)
+- CFIA: Products comply with Canadian Food Inspection Agency requirements
 - Transit Time: 22–30 days (Mundra → Vancouver / Montreal)
 
 ### United Kingdom
-- Import Duty: 0% (UK Global Tariff HS 1211 90 90)
-- Post-Brexit: UK Conformity Assessed — separate UK phytosanitary documentation provided
+- Import Duty: 0% (UK Global Tariff — product-specific)
 - MHRA: Pharmaceutical grade psyllium suitable for MHRA-regulated products
 - Transit Time: 22–28 days (Mundra → Felixstowe / Southampton)
-
-### Netherlands
-- Import via Rotterdam — major EU hub for redistribution
-- All EU documentation and organic certification provided
-- Dutch importers use AHF Rotterdam as common entry point
-- Transit Time: 22–28 days (Mundra → Rotterdam)
 
 ### Saudi Arabia
 - Halal certification is mandatory — we are fully Halal certified
@@ -106,40 +161,40 @@ Psyllium husk and Isabgol are the same product. "Isabgol" is the Hindi/Urdu name
 - Transit Time: 12–16 days (Mundra → Jeddah / Dammam)
 
 ### Singapore & Malaysia
-- FSMA equivalent documentation provided
 - Halal certification available (JAKIM-compatible)
 - Transit Time: 10–14 days (Mundra → Singapore / Port Klang)
-
-## Minimum Order Quantities
-
-| Product | Standard MOQ | Organic MOQ | Private Label MOQ |
-|---------|-------------|-------------|-------------------|
-| Psyllium Husk Powder | 1 MT | 500 kg | 100 kg |
-| Whole Psyllium Husk | 1 MT | 500 kg | 100 kg |
-| Psyllium Seeds | 1 MT | 500 kg | N/A |
-| Moringa Powder | 500 kg | 250 kg | 100 kg |
-| Castor Oil | 200 L | N/A | 50 L |
-| Spices (each) | 500 kg | 250 kg | 100 kg |
 
 ## Frequently Asked Questions (International Buyers)
 
 Q: Is isabgol the same as psyllium husk?
-A: Yes. Isabgol and psyllium husk are 100% the same product. "Isabgol" is the Hindi/Urdu name for the husk of Plantago ovata seeds. Western pharmaceutical markets use the term "psyllium husk" or "ispaghula husk." India produces 85%+ of global supply.
+A: Yes. Isabgol and psyllium husk are 100% the same product. "Isabgol" is the Hindi/Urdu name for the husk of Plantago ovata seeds. India produces 85%+ of global supply.
 
 Q: What is the HS code for psyllium husk?
 A: HS Code 1211.90.90 (international). US HTS: 1211.90.91. EU CN: 1211 90 86. Import duty is 0% in USA, EU, UK, Canada, and Australia.
 
+Q: Do you export moringa powder from India?
+A: Yes. We export spray-dried Moringa oleifera leaf powder — bright green, lab-tested, 25–28% protein. ISO 22000 & FSSAI certified. MOQ 100 kg. Free sample available.
+
+Q: What Indian spices do you export?
+A: We export Turmeric, Cumin, Coriander, Fenugreek, and Ajwain (Carom Seeds). All FSSAI, ISO 22000, Halal certified. Bulk B2B supply to 30+ countries. MOQ 500 kg per spice.
+
+Q: Do you export castor oil from India?
+A: Yes. We export cold-pressed Ricinus communis castor oil — pharmaceutical (BP/USP), cosmetic, and industrial grade. 85%+ ricinoleic acid. MOQ 200 litres. HS Code: 1515.30.00.
+
+Q: What is karanja oil / pongamia oil?
+A: Karanja oil (Pongamia pinnata) is a natural plant oil used in biopesticides, organic fertilizers, cosmetics, and biofuel. We supply cold-pressed karanja oil from Gujarat and Maharashtra. HS Code: 1515.90.40.
+
 Q: Can I get a free sample before placing a bulk order?
-A: Yes. Free samples (100–200g) are available for all products. Worldwide courier (DHL/FedEx) at buyer's cost. COA included with every sample. Contact: amarherbalorigins@gmail.com
+A: Yes. Free samples (100–200g for dry products, 200ml for oils) are available for all products. Worldwide courier (DHL/FedEx) at buyer's cost. COA included with every sample. Contact: amarherbalorigins@gmail.com
 
 Q: What documents come with each shipment?
 A: Commercial Invoice, Packing List, Bill of Lading, Certificate of Origin (APEDA), Phytosanitary Certificate, Fumigation Certificate, Certificate of Analysis (COA), Halal Certificate (if required), Organic Certificate (if organic).
 
 Q: How do I verify Amar Herbal Origins is a legitimate exporter?
-A: GST number 24ICIPP6678D1Z4 (verifiable at gst.gov.in), Udyam UDYAM-GJ-02-0036891 (verifiable at udyamregistration.gov.in), APEDA registration (verifiable at apeda.gov.in), FSSAI registration. IEC (Importer Exporter Code) available on request.
+A: GST number 24ICIPP6678D1Z4 (verifiable at gst.gov.in), Udyam UDYAM-GJ-02-0036891 (verifiable at udyamregistration.gov.in), APEDA registration (verifiable at apeda.gov.in), FSSAI registration. IEC available on request.
 
 Q: Is psyllium husk halal?
-A: Yes. Psyllium husk is a plant-derived product with no animal ingredients. Amar Herbal Origins holds Halal certification. Suitable for Muslim consumers and compliant with Islamic dietary law.
+A: Yes. Psyllium husk is a plant-derived product with no animal ingredients. Amar Herbal Origins holds Halal certification covering all product lines.
 
 ## Social Media & External Profiles
 
@@ -153,7 +208,22 @@ A: Yes. Psyllium husk is a plant-derived product with no animal ingredients. Ama
 
 - Homepage: https://amarherbalorigins.com/en
 - Psyllium Husk: https://amarherbalorigins.com/en/psyllium
-- Products: https://amarherbalorigins.com/en/product
+- Herbs: https://amarherbalorigins.com/en/herbs
+- Moringa Powder: https://amarherbalorigins.com/en/herbs/moringa
+- Amla Powder: https://amarherbalorigins.com/en/herbs/amla
+- Mint: https://amarherbalorigins.com/en/herbs/mint
+- Curry Leaves: https://amarherbalorigins.com/en/herbs/curry-leaves
+- Oregano: https://amarherbalorigins.com/en/herbs/oregano
+- Spices: https://amarherbalorigins.com/en/spices
+- Turmeric Powder: https://amarherbalorigins.com/en/spices/turmeric
+- Cumin Seeds: https://amarherbalorigins.com/en/spices/cumin
+- Coriander Seeds: https://amarherbalorigins.com/en/spices/coriander
+- Fenugreek Seeds: https://amarherbalorigins.com/en/spices/fenugreek
+- Ajwain Seeds: https://amarherbalorigins.com/en/spices/ajwain
+- Herbal Oils: https://amarherbalorigins.com/en/oils
+- Castor Oil: https://amarherbalorigins.com/en/oils/castor-oil
+- Karanja Oil: https://amarherbalorigins.com/en/oils/karanja-oil
+- Ready-to-Eat / Khakhra: https://amarherbalorigins.com/en/ready-to-eat
 - Organic Psyllium: https://amarherbalorigins.com/en/organic
 - Private Label: https://amarherbalorigins.com/en/private-label
 - Contact/Quote: https://amarherbalorigins.com/en/contact
@@ -163,5 +233,5 @@ A: Yes. Psyllium husk is a plant-derived product with no animal ingredients. Ama
 
 ## Full AI Context Document
 
-For extended product specifications, regulatory deep-dives, and complete trade documentation guide:
+For extended product specifications, regulatory deep-dives, complete trade documentation guide, and all product FAQs:
 https://amarherbalorigins.com/llms-full.txt

@@ -21,7 +21,7 @@ const ENTITY_FACTS = [
   { icon: '🌶️', label: 'Also Exports', value: 'Indian Spices, Herbs (Moringa, Amla), Cold-Pressed Oils, Khakhra' },
   { icon: '🌍', label: 'Export Markets', value: 'USA · Germany · UK · UAE · Australia · Canada · Japan · Saudi Arabia · Netherlands · 25+ more' },
   { icon: '📦', label: 'MOQ', value: '1 MT standard · 500 kg organic/private label · 100 kg white label' },
-  { icon: '💵', label: 'FOB Price Range', value: 'USD 1,800–2,800/MT (grade dependent) · Organic: +20–35% premium' },
+  { icon: '💵', label: 'Pricing', value: 'On inquiry — B2B negotiated pricing. Contact for live quote: amarherbalorigins@gmail.com' },
   { icon: '🚢', label: 'Shipping', value: 'FOB Mundra & Nhava Sheva · CIF available · Lead time: 7–14 days' },
   { icon: '📜', label: 'Certifications', value: 'ISO 22000 · FSSAI · APEDA · Halal · Kosher · USDA NOP Organic · EU Organic (2018/848)' },
   { icon: '🔢', label: 'GST Number', value: '24ICIPP6678D1Z4 (verifiable at gst.gov.in)' },

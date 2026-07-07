@@ -14,7 +14,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: 'Indian Herbal & Agri Products Export Directory | Amar Herbal Origins',
     description:
       'Browse our complete B2B export directory — Psyllium Husk grades, Indian Spices, Herbs, Oils, international shipping routes, certifications, and wholesale specifications. Browse by topic letter.',
-    robots: { index: true, follow: true },
+    // Phase 2 fix: only index English /k/ directory — non-English are duplicate, causing conflicts
+    robots: locale === 'en'
+      ? { index: true, follow: true }
+      : { index: false, follow: false },
     alternates: {
       canonical,
       languages: buildAlternates('/k'),

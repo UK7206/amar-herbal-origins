@@ -8,9 +8,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const canonical = buildCanonical(locale, '/exporter');
   return {
-    title: 'Herbal Products Exporter from India | Psyllium Husk, Spices, Herbs, Oils | Amar Herbal Origins',
+    title: 'Psyllium Husk Exporter India 2026 | ISO 22000 | B2B Bulk Supply | Amar Herbal Origins',
     description:
-      'Amar Herbal Origins — Gujarat-based exporter of Psyllium Husk, Indian Spices, Herbs, Cold-Pressed Oils & Ready-to-Eat foods. ISO 22000, FSSAI, APEDA certified. B2B bulk supply to 30+ countries. Free sample.',
+      'Gujarat-based B2B exporter of Psyllium Husk (Isabgol), Spices, Herbs & Cold-Pressed Oils. ISO 22000 · USDA Organic · Halal certified. MOQ 1 MT. Free sample available. Export to 30+ countries.',
     keywords: [
       'herbal products exporter india',
       'psyllium husk exporter india',
@@ -108,9 +108,72 @@ export default async function ExporterPage({ params }: Props) {
     })),
   };
 
+  // HowTo schema — targets "how to import psyllium husk from India" queries
+  // Enables HowTo rich results with numbered steps in Google Search
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Import Psyllium Husk from India',
+    description: 'Step-by-step guide for B2B buyers to import psyllium husk (isabgol) from India — from supplier selection to customs clearance.',
+    image: 'https://amarherbalorigins.com/og-home.jpg',
+    totalTime: 'P30D',
+    estimatedCost: { '@type': 'MonetaryAmount', currency: 'USD', value: 'On inquiry' },
+    supply: [
+      { '@type': 'HowToSupply', name: 'Proforma Invoice from Amar Herbal Origins' },
+      { '@type': 'HowToSupply', name: 'Phytosanitary Certificate (Government of India)' },
+      { '@type': 'HowToSupply', name: 'Certificate of Analysis (COA)' },
+      { '@type': 'HowToSupply', name: 'Halal / Organic Certificate (if applicable)' },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Choose Product Grade',
+        text: 'Select psyllium husk grade: 85% (standard), 95% (premium), 98% (pharmaceutical powder), 99% (whole husk ultra-pure), or USDA Organic. Specify quantity in metric tons and destination port.',
+        url: `https://amarherbalorigins.com/${locale}/product`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Request a Free Sample',
+        text: 'Contact Amar Herbal Origins via email (amarherbalorigins@gmail.com) or WhatsApp (+91-94084-65040) to request a free 100–200g sample with Certificate of Analysis for lab testing.',
+        url: `https://amarherbalorigins.com/${locale}/contact`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Receive Proforma Invoice & Confirm Order',
+        text: 'Once sample testing is approved, receive a Proforma Invoice with FOB price, weight, packing, and payment terms. Pay 30% advance T/T to confirm production.',
+        url: `https://amarherbalorigins.com/${locale}/contact`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Production & Quality Control',
+        text: 'Your order is produced and tested batch-by-batch in our in-house QC lab. Third-party testing (Eurofins / SGS) available on request. Lead time: 7–14 business days.',
+        url: `https://amarherbalorigins.com/${locale}/quality`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Shipment & Export Documentation',
+        text: 'Goods shipped FOB Mundra or Nhava Sheva. Documents provided: Commercial Invoice, Packing List, Bill of Lading, Certificate of Origin (APEDA), Phytosanitary Certificate, Fumigation Certificate, COA.',
+        url: `https://amarherbalorigins.com/${locale}/exporter`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 6,
+        name: 'Customs Clearance at Destination',
+        text: 'HS Code 1211.90.90 (0% import duty in USA, EU, UK, Canada, Australia). Submit required documents to your customs broker. For USA: File FDA Prior Notice before vessel arrival. Transit: 10–28 days depending on destination.',
+        url: `https://amarherbalorigins.com/${locale}/suppliers`,
+      },
+    ],
+  };
+
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       {/* ── Hero ── */}
       <section style={{ background: 'linear-gradient(135deg, #1C1204 0%, #2d1f08 60%, #3d2a0a 100%)', padding: '5rem 0 4rem', position: 'relative', overflow: 'hidden' }}>

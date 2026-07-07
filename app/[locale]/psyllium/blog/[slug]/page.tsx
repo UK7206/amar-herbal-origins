@@ -77,27 +77,63 @@ export default async function PsylliumBlogPostPage({ params }: Props) {
   const colorTheme = '#92400e';
   const colorLight = '#fef3c7';
 
+  const canonicalUrl = `https://amarherbalorigins.com/${locale}/psyllium/blog/${slug}`;
+
+  // NewsArticle schema (upgraded from Article) — enables Google Top Stories + rich results
+  // Required: image, headline, datePublished, author with Person/Org type
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'NewsArticle',
     headline: post.title,
     description: post.excerpt,
+    image: [
+      'https://amarherbalorigins.com/og-home.jpg',
+      'https://amarherbalorigins.com/psyllium-hero.png',
+    ],
     datePublished: post.date,
-    author: { '@type': 'Organization', name: 'Amar Herbal Origins' },
+    dateModified: post.date,
+    url: canonicalUrl,
+    inLanguage: locale,
+    author: {
+      '@type': 'Person',
+      name: 'Umang Khunt',
+      url: 'https://amarherbalorigins.com/en/about',
+      affiliation: {
+        '@type': 'Organization',
+        name: 'Amar Herbal Origins',
+        url: 'https://amarherbalorigins.com',
+      },
+    },
     publisher: {
       '@type': 'Organization',
       name: 'Amar Herbal Origins',
-      logo: { '@type': 'ImageObject', url: 'https://amarherbalorigins.com/logo.png' },
+      url: 'https://amarherbalorigins.com',
+      logo: { '@type': 'ImageObject', url: 'https://amarherbalorigins.com/logo.png', width: 200, height: 60 },
     },
     keywords: post.keywords.join(', '),
-    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://amarherbalorigins.com/${locale}/psyllium/blog/${slug}` },
+    articleSection: post.category,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
   };
+
+  // FAQPage schema (conditional) — powers FAQ rich results on blog posts that have faqs
+  const faqJsonLd = post.faqs && post.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faqs.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  } : null;
 
   const clr = CAT_COLORS[post.category] ?? { color: '#6b7280', bg: '#f3f4f6', border: '#e5e7eb' };
 
   return (
     <main style={{ fontFamily: "'Inter', sans-serif", color: '#1a1a1a' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {faqJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      )}
 
       {/* Hero */}
       <section style={{ background: 'linear-gradient(135deg, #2b1f0c 0%, #1e1406 100%)', padding: '4rem 0 3.5rem', position: 'relative', overflow: 'hidden' }}>

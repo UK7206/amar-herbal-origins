@@ -47,6 +47,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${title} | Amar Herbal Origins`,
     description,
     keywords: [kw.keyword, 'psyllium husk exporter', 'isabgol supplier india', 'amar herbal origins'],
+    // Phase 2 fix: noindex non-English /k/ pages to resolve 557 canonical conflicts in GSC.
+    // These pages have no unique translated content — only English versions should be indexed.
+    robots: locale === 'en'
+      ? { index: true, follow: true }
+      : { index: false, follow: false },
     openGraph: {
       title: `${title} | Amar Herbal Origins`,
       description,

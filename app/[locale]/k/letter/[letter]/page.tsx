@@ -28,12 +28,15 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { letter } = await params;
+  const { locale, letter } = await params;
   const decoded = decodeURIComponent(letter).toUpperCase();
   return {
     title: `Psyllium Topics Starting With "${decoded}" | Amar Herbal Origins`,
     description: `Browse all psyllium husk export topics, grades, and specifications starting with the letter "${decoded}". B2B wholesale supplier from India.`,
-    robots: { index: true, follow: true },
+    // Phase 2 fix: noindex non-English letter pages — no translated content, causes canonical conflicts
+    robots: locale === 'en'
+      ? { index: true, follow: true }
+      : { index: false, follow: false },
   };
 }
 

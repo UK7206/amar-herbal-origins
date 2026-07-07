@@ -8,9 +8,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const canonical = buildCanonical(locale, '/organic');
   return {
-    title: 'Organic Psyllium Husk Exporter India | USDA & EU Certified | Amar Herbal Origins',
+    title: 'Organic Psyllium Husk Exporter India 2026 | USDA NOP + EU Organic Certified | MOQ 500kg',
     description:
-      'Certified organic psyllium husk exporter from India. USDA NOP & EU Organic certified. Clean-label, non-GMO. Bulk B2B supply for supplement brands and health food companies worldwide.',
+      'USDA NOP & EU Organic (2018/848) certified psyllium husk from Gujarat, India. Dedicated organic processing lines, full traceability. MOQ 500 kg. Free sample. B2B supply to supplement & health food brands in 30+ countries.',
     keywords: [
       'organic psyllium husk exporter india',
       'usda organic psyllium husk india',
@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     alternates: { canonical, languages: buildAlternates('/organic') },
     openGraph: {
-      title: 'Organic Psyllium Husk Exporter India | USDA & EU Certified | Amar Herbal Origins',
-      description: 'USDA & EU Organic certified psyllium husk from India. Non-GMO, clean-label. Bulk B2B supply.',
+      title: 'Organic Psyllium Husk Exporter India | USDA NOP + EU Organic | Amar Herbal Origins',
+      description: 'USDA & EU Organic certified psyllium husk from India. Dedicated organic lines, full traceability. MOQ 500 kg. Free sample.',
       url: canonical,
       siteName: 'Amar Herbal Origins',
       type: 'website',

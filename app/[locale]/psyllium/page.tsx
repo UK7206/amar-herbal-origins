@@ -25,6 +25,21 @@ const META: Record<string, { title: string; description: string }> = {
     description:
       'مصدر ومصنع رائد لقشر السيليوم من غوجارات، الهند. معتمد ISO 22000 وعضوي وحلال.',
   },
+  es: {
+    title: 'Exportador de Psyllium de India | Fabricante & Proveedor al Por Mayor | Amar Herbal Origins',
+    description:
+      'Exportador líder de cáscara de psyllium (Isabgol) de Gujarat, India. Certificado ISO 22000, USDA Orgánico, Halal. Suministro B2B a más de 30 países.',
+  },
+  zh: {
+    title: '印度洋车前子壳出口商 | 制造商 & 批发供应商 | Amar Herbal Origins',
+    description:
+      '领先的洋车前子壳（Isabgol）出口商，来自印度古吉拉特邦。ISO 22000、USDA有机、清真认证。向30多个国家提供B2B批量供应。',
+  },
+  ja: {
+    title: 'インドのサイリウムハスク輸出業者 | 製造・卸売サプライヤー | Amar Herbal Origins',
+    description:
+      'インド・グジャラート州のサイリウムハスク（イサブゴール）大手輸出業者。ISO 22000・USDAオーガニック・ハラール認証取得。30ヶ国以上にB2B一括供給。',
+  },
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -104,7 +119,6 @@ export default async function PsylliumHubPage({ params }: Props) {
         offers: {
           '@type': 'Offer',
           availability: 'https://schema.org/InStock',
-          priceCurrency: 'USD',
           seller: { '@type': 'Organization', name: 'Amar Herbal Origins' },
         },
       },

@@ -9,14 +9,21 @@ const PRIMARY_LOCALE = 'en';
 // ── Route definitions ──────────────────────────────────────────────
 // Main site static pages
 const MAIN_ROUTES = [
-  { path: '',            priority: 1.0,  freq: 'weekly'  },
-  { path: '/about',      priority: 0.85, freq: 'monthly' },
-  { path: '/contact',    priority: 0.9,  freq: 'monthly' },
-  { path: '/packaging',  priority: 0.75, freq: 'monthly' },
-  { path: '/white-label',priority: 0.8,  freq: 'monthly' },
-  { path: '/quality',    priority: 0.8,  freq: 'monthly' },
-  { path: '/news',       priority: 0.7,  freq: 'weekly'  },
-  { path: '/stock',      priority: 0.7,  freq: 'weekly'  },
+  { path: '',                priority: 1.0,  freq: 'weekly'  },
+  { path: '/about',          priority: 0.85, freq: 'monthly' },
+  { path: '/contact',        priority: 0.9,  freq: 'monthly' },
+  { path: '/packaging',      priority: 0.75, freq: 'monthly' },
+  { path: '/white-label',    priority: 0.8,  freq: 'monthly' },
+  { path: '/quality',        priority: 0.8,  freq: 'monthly' },
+  { path: '/news',           priority: 0.7,  freq: 'weekly'  },
+  { path: '/stock',          priority: 0.7,  freq: 'weekly'  },
+  // High-impression commercial pages
+  { path: '/exporter',       priority: 0.92, freq: 'monthly' },
+  { path: '/organic',        priority: 0.90, freq: 'monthly' },
+  { path: '/private-label',  priority: 0.88, freq: 'monthly' },
+  { path: '/manufacturer',   priority: 0.88, freq: 'monthly' },
+  { path: '/product',        priority: 0.90, freq: 'weekly'  },
+  // NOTE: /suppliers NOT here — generated dynamically in supplier section below
 ] as const;
 
 // 🌾 Psyllium mini-site
@@ -81,7 +88,7 @@ const READY_TO_EAT_ROUTES = [
   { path: '/ready-to-eat/suppliers',     priority: 0.85, freq: 'monthly' },
 ] as const;
 
-// Psyllium blog articles (derived dynamically from master data)
+// Blog posts — dynamically derived from master data (new posts auto-included)
 const BLOG_SLUGS = BLOG_POSTS.map(post => post.slug);
 
 // ── Helpers ────────────────────────────────────────────────────────
@@ -129,7 +136,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
   pushRoutes(entries, OILS_ROUTES, now);
   pushRoutes(entries, READY_TO_EAT_ROUTES, now);
 
-  // Psyllium supplier country pages
+  // ── Supplier pages ────────────────────────────────────────────────
+  // /suppliers index — one per locale (no duplicate from MAIN_ROUTES)
+  for (const locale of LOCALES) {
+    entries.push({
+      url: `${BASE_URL}/${locale}/suppliers`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: locale === PRIMARY_LOCALE ? 0.85 : 0.72,
+      alternates: { languages: buildAlternates('/suppliers') },
+    });
+  }
+
+  // /en/suppliers/[country] — top-level country pages (English only — canonical)
+  for (const slug of COUNTRY_SLUGS) {
+    entries.push({
+      url: `${BASE_URL}/en/suppliers/${slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.90,
+      alternates: { languages: buildAlternates(`/suppliers/${slug}`) },
+    });
+  }
+
+  // Psyllium supplier country pages (all locales — have unique geo-targeted content)
   for (const slug of COUNTRY_SLUGS) {
     for (const locale of LOCALES) {
       entries.push({
@@ -194,34 +224,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Legacy /suppliers redirect pages (still indexed)
-  for (const locale of LOCALES) {
-    entries.push({
-      url: `${BASE_URL}/${locale}/suppliers`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: locale === PRIMARY_LOCALE ? 0.8 : 0.7,
-      alternates: { languages: buildAlternates('/suppliers') },
-    });
-  }
-
-  // Psyllium blog index + articles
+  // ── Blog pages ─────────────────────────────────────────────────────
+  // Blog index — all locales
   for (const locale of LOCALES) {
     entries.push({
       url: `${BASE_URL}/${locale}/psyllium/blog`,
       lastModified: now,
       changeFrequency: 'weekly',
-      priority: locale === PRIMARY_LOCALE ? 0.75 : 0.65,
+      priority: locale === PRIMARY_LOCALE ? 0.78 : 0.60,
       alternates: { languages: buildAlternates('/psyllium/blog') },
     });
   }
+
+  // Blog articles:
+  // - English: highest priority (0.80) — canonical version, unique content
+  // - Other locales: lower priority (0.52) — same English content rendered, hreflang alternate only
   for (const slug of BLOG_SLUGS) {
-    for (const locale of LOCALES) {
+    // English — full priority
+    entries.push({
+      url: `${BASE_URL}/en/psyllium/blog/${slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.80,
+      alternates: { languages: buildAlternates(`/psyllium/blog/${slug}`) },
+    });
+    // Non-English — lower priority alternate pages
+    for (const locale of LOCALES.filter(l => l !== 'en')) {
       entries.push({
         url: `${BASE_URL}/${locale}/psyllium/blog/${slug}`,
         lastModified: now,
         changeFrequency: 'monthly',
-        priority: locale === PRIMARY_LOCALE ? 0.72 : 0.62,
+        priority: 0.52,
         alternates: { languages: buildAlternates(`/psyllium/blog/${slug}`) },
       });
     }

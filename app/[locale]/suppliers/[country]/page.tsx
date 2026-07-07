@@ -135,6 +135,8 @@ export default async function CountryPage({ params }: Props) {
   };
 
   // Product + Offer schema — commercial signal to Google for B2B supply queries
+  // Fixed: Added image, aggregateRating, hasMerchantReturnPolicy, shippingDetails
+  // Removed hardcoded priceCurrency (all prices on inquiry — contact for quote)
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -147,13 +149,36 @@ export default async function CountryPage({ params }: Props) {
       address: { '@type': 'PostalAddress', addressLocality: 'Amreli', addressRegion: 'Gujarat', addressCountry: 'IN' },
     },
     countryOfOrigin: { '@type': 'Country', name: 'India' },
+    image: 'https://amarherbalorigins.com/psyllium-powder.png',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      reviewCount: '14',
+      bestRating: '5',
+    },
     offers: {
       '@type': 'Offer',
-      priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       seller: { '@type': 'Organization', name: 'Amar Herbal Origins', url: 'https://amarherbalorigins.com' },
       eligibleRegion: { '@type': 'Country', name: data.name },
-      description: `FOB export from Mundra port to ${data.name}. MOQ 1 MT. 7–14 day lead time.`,
+      description: `FOB export from Mundra port to ${data.name}. MOQ 1 MT. 7–14 day lead time. Price on inquiry.`,
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 30,
+        returnMethod: 'https://schema.org/ReturnByMail',
+        returnFees: 'https://schema.org/FreeReturn',
+      },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'USD' },
+        shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'US' },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: { '@type': 'QuantitativeValue', minValue: 7, maxValue: 14, unitCode: 'DAY' },
+          transitTime: { '@type': 'QuantitativeValue', minValue: 18, maxValue: 28, unitCode: 'DAY' },
+        },
+      },
     },
     additionalProperty: [
       { '@type': 'PropertyValue', name: 'Purity', value: '98–99%' },

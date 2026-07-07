@@ -1969,6 +1969,230 @@ All food ingredient shipments to the USA must be filed with the FDA via Prior No
 
 Contact Amar Herbal Origins for complete customs documentation packages for any destination market.`,
   },
+  {
+    slug: 'psyllium-husk-manufacturer-india',
+    title: 'Psyllium Husk Manufacturer India: How to Source Direct from Gujarat (2026 Guide)',
+    excerpt:
+      'Sourcing psyllium husk directly from a manufacturer in India — not a trader — saves 25–40% on cost and gives you full supply chain control. This guide explains how to identify genuine Indian manufacturers, what certifications to require, and how to place your first order.',
+    date: 'July 2026',
+    readTime: '8 min read',
+    category: 'Sourcing',
+    keywords: [
+      'psyllium husk manufacturer india',
+      'isabgol manufacturer gujarat',
+      'psyllium husk manufacturer supplier india',
+      'bulk psyllium husk manufacturer',
+      'psyllium husk factory india',
+    ],
+    body: `If you are importing psyllium husk (Isabgol) for your supplement brand, food business, or pharmaceutical company, you have two sourcing options: buy from a trading company that re-sells others' stock, or buy direct from a manufacturer in India. The difference in cost, quality control, and reliability is significant.
+
+**What Is a Psyllium Husk Manufacturer vs. a Trader?**
+
+A psyllium husk manufacturer operates its own processing facility — cleaning, husking, grinding, and grading the raw Plantago ovata seeds. A trader buys finished husk from manufacturers and re-sells it with a markup. When you buy direct from a manufacturer, you eliminate the trader margin (typically 10–20%), gain access to custom grades and specifications, and can audit the facility directly.
+
+Amar Herbal Origins is a manufacturer and exporter based in Amreli, Gujarat — 80 km from Unjha, the world's largest psyllium trading hub. We process Plantago ovata seeds sourced directly from farms in Gujarat and Rajasthan.
+
+**Why Gujarat for Psyllium Husk Manufacturing?**
+
+India produces 85%+ of the world's psyllium husk supply. Within India, Gujarat and Rajasthan account for 90%+ of production. Gujarat — specifically the Unjha, Mehsana, and Patan belt — is home to the Unjha APMC mandi, the world's single largest psyllium trading and processing centre. Manufacturers in this region have:
+
+- Direct access to farm-fresh Plantago ovata seeds
+- Established processing infrastructure (mechanical huskers, air classifiers, grinders, dryers)
+- Decades of export experience and understanding of international quality standards
+- Local price discovery via daily APMC mandi auctions
+
+**Key Certifications to Require from Any Indian Psyllium Manufacturer**
+
+Before placing an order with any Indian manufacturer, verify these certifications independently:
+
+1. ISO 22000:2018 — Food Safety Management System. This is the minimum international standard for food ingredient manufacturing. Ask for the actual certificate, not just a logo. Verify the certifying body is accredited by UKAS, DAkkS, or equivalent national accreditation body.
+
+2. FSSAI — Food Safety and Standards Authority of India. All Indian food manufacturers must hold a valid FSSAI Central License. Verify at foscos.fssai.gov.in using the manufacturer's license number.
+
+3. APEDA Registration — Agricultural and Processed Food Products Export Development Authority. APEDA registration confirms the company is a registered agricultural exporter. Verify at apeda.gov.in.
+
+4. GST Registration — Verify the GST number at gst.gov.in. The GSTIN should match the company's registered state and business name.
+
+5. USDA NOP Organic / EU Organic — If you need organic psyllium husk, verify the organic certificate is current and issued by a USDA-accredited certification body (e.g., ECOCERT, LACON, OneCert).
+
+6. Halal / Kosher — For Muslim-majority markets (UAE, Saudi Arabia, Malaysia) or Jewish markets, verify these certificates are current and issued by a recognised authority.
+
+**Amar Herbal Origins Manufacturer Credentials**
+
+Amar Herbal Origins is independently verifiable through Indian government databases:
+
+- GST: 24ICIPP6678D1Z4 (verify at gst.gov.in)
+- Udyam/MSME: UDYAM-GJ-02-0036891 (verify at udyamregistration.gov.in)
+- APEDA Registered Exporter (verify at apeda.gov.in)
+- FSSAI: Active registration (verify at foscos.fssai.gov.in)
+- IEC (Import Export Code) from DGFT: Available on request
+
+**Psyllium Husk Grades Available from Indian Manufacturers**
+
+Indian psyllium husk manufacturers typically offer the following grades:
+
+- 85% Grade (Standard/Commercial): Swell volume 45–55 mL/g. Used in bulk fiber products, animal feed, and economy supplement blends.
+- 95% Grade (Premium): Swell volume 55–65 mL/g. Common in food applications.
+- 98% Grade (Pharmaceutical): Swell volume 65–75 mL/g. USP/BP compliant. Used in OTC laxatives, IBS medications.
+- 99% Grade (Ultra-Premium): Swell volume 75+ mL/g. Highest purity. Used in premium nutraceutical brands and encapsulation.
+
+Forms: Whole husk (natural cut), Powder (40/60/80/100 mesh), Granules, Raw Seeds.
+
+**How to Place Your First Order with an Indian Psyllium Manufacturer**
+
+Step 1: Shortlist 2–3 manufacturers based on APEDA registration and GST verification. Do not rely on directories alone — always verify independently.
+
+Step 2: Request a free sample (100–200g) with a full Certificate of Analysis (COA). The COA should include: purity %, swell volume (mL/g), moisture, ash content, microbial limits (TPC, E.coli, Salmonella, Yeast & Mold), and pesticide residue screening.
+
+Step 3: Have the sample tested by an independent laboratory in your country (Eurofins, SGS, Intertek, or equivalent). This is essential for pharmaceutical and food-grade procurement.
+
+Step 4: Once sample testing passes, negotiate FOB price, payment terms (standard: 30% T/T advance, 70% against B/L copy), and lead time (typical: 7–14 business days).
+
+Step 5: Confirm your purchase order in writing. A reputable manufacturer will issue a Proforma Invoice (PI) with full shipment details before accepting payment.
+
+**MOQ and Packaging**
+
+Standard MOQ from Indian manufacturers: 1 Metric Ton (MT). Organic/private label: 500 kg. White label: 100 kg. Packaging: 25 kg kraft paper bags with inner poly liner, or custom packaging per buyer's specification.
+
+Contact Amar Herbal Origins for manufacturer-direct psyllium husk supply from Gujarat, India.`,
+    faqs: [
+      {
+        q: 'What is the difference between a psyllium husk manufacturer and a trader in India?',
+        a: 'A manufacturer owns and operates a processing facility — cleaning, husking, grinding, and grading Plantago ovata seeds. A trader buys finished husk from manufacturers and re-sells with a markup. Buying direct from a manufacturer saves 10–20% in cost and gives you direct quality control access.',
+      },
+      {
+        q: 'How do I verify a psyllium husk manufacturer in India is legitimate?',
+        a: 'Independently verify: (1) GST number at gst.gov.in, (2) APEDA registration at apeda.gov.in, (3) FSSAI license at foscos.fssai.gov.in, (4) Udyam/MSME registration at udyamregistration.gov.in. Ask for the actual ISO certificate — not just a logo — and verify the certifying body is accredited.',
+      },
+      {
+        q: 'What is the MOQ for psyllium husk direct from an Indian manufacturer?',
+        a: 'Standard MOQ is 1 Metric Ton (1,000 kg) for regular grades. Organic or private label psyllium starts from 500 kg. White-label packaging starts from 100 kg. Free samples (100–200g) are available before bulk commitment.',
+      },
+      {
+        q: 'Which city in India has the best psyllium husk manufacturers?',
+        a: 'Unjha, Gujarat is the world\'s largest psyllium husk (Isabgol) trading and processing hub. Nearby districts including Mehsana, Patan, and Amreli also have major manufacturers. Gujarat produces the majority of India\'s psyllium supply. Rajasthan (Barmer, Jalore) is the second major growing region.',
+      },
+    ],
+    relatedLinks: [
+      { label: 'View Psyllium Husk Products', href: '/en/psyllium', description: 'All psyllium grades available for B2B export from India.' },
+      { label: 'Request a Free Sample', href: '/en/contact', description: 'Get a free sample with COA before placing your bulk order.' },
+      { label: 'Organic Psyllium Husk', href: '/en/organic', description: 'USDA NOP and EU Organic certified psyllium husk from Gujarat.' },
+    ],
+  },
+  {
+    slug: 'castor-oil-manufacturer-india',
+    title: 'Castor Oil Manufacturer India: Gujarat Cold-Pressed BP/USP Grade (2026)',
+    excerpt:
+      'India produces 80%+ of the world\'s castor oil. Gujarat is the epicentre. This guide covers how to source pharmaceutical-grade (BP/USP), cosmetic, and industrial castor oil directly from Indian manufacturers — with certifications, specifications, and MOQ details.',
+    date: 'July 2026',
+    readTime: '7 min read',
+    category: 'Sourcing',
+    keywords: [
+      'castor oil manufacturer india',
+      'castor oil exporter india',
+      'castor oil gujarat manufacturer',
+      'pharmaceutical grade castor oil india',
+      'cold pressed castor oil manufacturer',
+    ],
+    body: `India is the world's dominant castor oil producer — accounting for over 80% of global output. Within India, Gujarat produces approximately 85% of India's castor seeds (Ricinus communis). This makes Gujarat-based castor oil manufacturers the most cost-competitive and technically capable source for B2B buyers worldwide.
+
+**Why India Dominates Castor Oil Production**
+
+Castor plant (Ricinus communis) thrives in Gujarat's semi-arid climate — particularly in the Saurashtra, Mehsana, and Banaskantha districts. India's castor seed cultivation covers over 900,000 hectares, with Gujarat alone accounting for 750,000+ hectares. The combination of ideal agroclimatic conditions, well-established crushing infrastructure, and decades of export experience makes Indian manufacturers the preferred source for pharmaceutical, cosmetic, and industrial castor oil buyers globally.
+
+**Grades of Castor Oil Available from Indian Manufacturers**
+
+**1. Pharmaceutical Grade (BP/USP)**
+- Ricinoleic acid: Minimum 85% (typically 87–90%)
+- Acid value: Max 2.0 mg KOH/g
+- Peroxide value: Max 10 meq/kg
+- Colour: Pale yellow to almost colourless
+- Applications: Oral laxative (pharmacopoeia-grade), softgel capsule shell, pharmaceutical excipient, topical applications
+
+**2. Cosmetic Grade**
+- Ricinoleic acid: Min 85%
+- Heavy metals: Below cosmetic safety limits
+- Applications: Hair serum, skin moisturizer, eyelash growth serum, lip balm, soap, shampoo
+
+**3. Food Grade**
+- Meets food additive specifications (E 1503 in EU)
+- Applications: Food release agent, mould inhibitor in candy, food packaging coating
+
+**4. Industrial Grade**
+- Highest acid value tolerance
+- Applications: Lubricants, hydraulic fluids, paints, coatings, biodiesel, plasticizers, nylon 11 polymer
+
+**5. Hydrogenated Castor Oil (HCO)**
+- Solid at room temperature (wax-like)
+- Applications: Cosmetic waxes, pharmaceutical tablet coatings, adhesives
+
+**Key Specifications — Castor Oil Certificate of Analysis**
+
+When sourcing from any Indian manufacturer, request a COA with these parameters:
+- Ricinoleic Acid content (min 85% — below this is substandard)
+- Acid Value (max 2.0 for pharma, 4.0 for industrial)
+- Hydroxyl Value (155–175 mg KOH/g — indicates purity)
+- Moisture & Volatile Matter (max 0.3%)
+- Saponification Value (176–187 mg KOH/g)
+- Iodine Value (82–90 g I₂/100g)
+- Specific Gravity at 25°C (0.956–0.969)
+- Colour (Gardner or Lovibond scale)
+- Heavy Metals (for pharma/cosmetic grade)
+
+**HS Code and Import Duties**
+
+HS Code: 1515.30.00 (Castor oil and its fractions)
+- USA: 0% import duty (HTS 1515.30.00, MFN rate)
+- EU: 0% import duty (EU Combined Nomenclature)
+- UK: 0% import duty (UK Global Tariff)
+- India Export: No export duty
+
+**Certifications to Require from Indian Castor Oil Manufacturers**
+
+1. ISO 22000 — Food Safety Management (for food/pharma grade)
+2. FSSAI — Indian food safety licence (verify at foscos.fssai.gov.in)
+3. GMP — Good Manufacturing Practices certificate
+4. Halal Certificate — Required for UAE, Saudi Arabia, Malaysia, Indonesia
+5. Kosher Certificate — Required for Israeli and Jewish market buyers
+6. REACH Compliance Statement — Required for EU chemical/cosmetic buyers
+7. Pharmacopoeia Compliance Report — BP/USP analysis report for pharmaceutical buyers
+
+**Amar Herbal Origins — Castor Oil from Gujarat**
+
+Amar Herbal Origins supplies cold-pressed Ricinus communis castor oil from Gujarat, India. Our castor oil is sourced from dedicated cold-press mills in the Saurashtra region — ensuring fresh, first-press oil with maximum ricinoleic acid content.
+
+Verifiable credentials: GST 24ICIPP6678D1Z4, APEDA registered, Udyam UDYAM-GJ-02-0036891, ISO 22000, FSSAI, GMP, Halal, Kosher certified.
+
+Grades available: Pharmaceutical (BP/USP), Cosmetic, Food Grade, Industrial.
+MOQ: 200 litres (1 drum). Available in HDPE drums (200L, 50L) and IBC totes (1000L).
+Packaging: Custom private label bottles (100ml–5L) available from 200L MOQ.
+Lead time: 7–14 business days from order confirmation.
+
+Contact us at amarherbalorigins@gmail.com or WhatsApp +91-94084-65040 for a price quote and free sample.`,
+    faqs: [
+      {
+        q: 'Which country is the largest manufacturer of castor oil?',
+        a: 'India is the world\'s largest castor oil manufacturer, producing 80%+ of global supply. Within India, Gujarat accounts for 85% of castor seed cultivation and processing. The Saurashtra region of Gujarat is the global epicentre of castor oil manufacturing.',
+      },
+      {
+        q: 'What is the difference between BP and USP grade castor oil?',
+        a: 'BP (British Pharmacopoeia) and USP (United States Pharmacopeia) are both pharmaceutical-grade standards for castor oil. BP is used in UK/EU regulated markets; USP is used in the USA. Both require minimum 85% ricinoleic acid, low acid value, and strict microbial limits. Most Indian manufacturers can supply both grades with the respective COA.',
+      },
+      {
+        q: 'What is the HS code for castor oil from India?',
+        a: 'HS Code: 1515.30.00 (Castor oil and its fractions, whether or not refined). Import duty is 0% in the USA (HTS 1515.30.00), EU (Combined Nomenclature), and UK (UK Global Tariff).',
+      },
+      {
+        q: 'What is the MOQ for castor oil from India?',
+        a: 'Minimum order quantity from Amar Herbal Origins is 200 litres (1 standard HDPE drum). For IBC totes (1000 litres), MOQ is 1 tote. Container load (FCL 20ft) holds approximately 80–100 drums (16,000–20,000 litres). Price on inquiry.',
+      },
+    ],
+    relatedLinks: [
+      { label: 'Castor Oil Products', href: '/en/oils/castor-oil', description: 'Cold-pressed pharmaceutical, cosmetic & industrial castor oil from Gujarat.' },
+      { label: 'Karanja Oil', href: '/en/oils/karanja-oil', description: 'Cold-pressed Pongamia pinnata oil — biopesticide and cosmetic applications.' },
+      { label: 'Request Free Sample', href: '/en/contact', description: 'Get a free 200ml castor oil sample with full COA before bulk order.' },
+    ],
+  },
 ];
 
 export const BLOG_CATEGORIES = ['All', 'Export Guide', 'Market Intelligence', 'Quality & Certs', 'Packaging', 'Sourcing'] as const;

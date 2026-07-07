@@ -136,6 +136,30 @@ const FAQS = [
       'Amar Herbal Origins is a Gujarat-based B2B exporter of Psyllium Husk (Isabgol), Indian Spices, Herbs, Cold-Pressed Oils, and Gujarati Ready-to-Eat snacks. Registered under GST (24ICIPP6678D1Z4) and Udyam (UDYAM-GJ-02-0036891). FSSAI and APEDA certified. Registered address: Sardar Chok, Navi Haliyad, Amreli, Gujarat — 365440, India. We export to 30+ countries with farm-direct sourcing and full COA documentation.',
     learnMore: { href: '/en/about', label: 'About Amar Herbal Origins →' },
   },
+  {
+    question: 'Do you manufacture and export castor oil from India?',
+    answer:
+      'Yes. Amar Herbal Origins manufactures and exports cold-pressed Ricinus communis castor oil from Gujarat, India — the state that produces 70%+ of India\'s castor oil output. We supply pharmaceutical-grade (BP/USP) castor oil with 85%+ ricinoleic acid content, cosmetic-grade, and industrial-grade variants. All batches are tested and supplied with a full Certificate of Analysis. MOQ: 200 litres. Available in drums (200L) or IBC totes.',
+    learnMore: { href: '/en/oils/castor-oil', label: 'Castor Oil Export from India →' },
+  },
+  {
+    question: 'How do I find verified psyllium husk suppliers in India?',
+    answer:
+      'To verify an Indian psyllium husk supplier: (1) Check their GST number on gst.gov.in — it should be active and match their state. (2) Verify APEDA registration at apeda.gov.in — this confirms they are a licensed agricultural exporter. (3) Request their FSSAI license number and check it at foscos.fssai.gov.in. (4) Request a COA from a third-party lab (Eurofins, SGS, or NABL-certified lab). Amar Herbal Origins: GST 24ICIPP6678D1Z4, APEDA registered, Udyam UDYAM-GJ-02-0036891 — all publicly verifiable.',
+    learnMore: { href: '/en/blog/how-to-find-verify-psyllium-husk-suppliers-india', label: 'How to Verify Indian Suppliers →' },
+  },
+  {
+    question: 'How to buy psyllium husk in bulk wholesale quantities?',
+    answer:
+      'Bulk psyllium husk wholesale from India: (1) Determine grade needed — 85%, 95%, 98%, or 99% purity, whole husk or powder. (2) Contact Amar Herbal Origins via email or WhatsApp for a price quote (all prices on inquiry — negotiated B2B). (3) Request a free sample (100–200g) for quality testing before committing to bulk order. (4) Standard MOQ: 1 Metric Ton. Container loads (18–20 MT per 20-foot FCL) receive the best pricing. (5) Payment: 30% T/T advance, 70% against Bill of Lading copy. (6) Shipping: FOB Mundra or CIF your port.',
+    learnMore: { href: '/en/blog/wholesale-bulk-psyllium-husk-india', label: 'Bulk Wholesale Psyllium Guide →' },
+  },
+  {
+    question: 'Can I source private label psyllium husk with my own brand from India?',
+    answer:
+      'Yes. Amar Herbal Origins offers complete private label and white-label psyllium husk services. We handle: custom packaging design (pouches, bottles, bulk bags), multilingual label printing (30+ languages), FDA/EU/TGA-compliant label formats, various pack sizes (100g capsule fill → 25 kg bulk bag), and NDA/confidentiality agreement signing. MOQ for private label: 100 kg. Turnaround: 15–21 days after label artwork approval. Your brand, our certified quality.',
+    learnMore: { href: '/en/private-label', label: 'Private Label Services →' },
+  },
 ];
 
 const FAQ_SCHEMA = {
