@@ -349,8 +349,11 @@ export default async function LocaleLayout({ children, params }: Props) {
               "name": "Amar Herbal Origins — Psyllium Husk Manufacturer & Exporter India",
               "description": "Amar Herbal Origins is a Gujarat, India-based B2B manufacturer and exporter of Psyllium Husk (Isabgol), Indian Spices, Herbs, Cold-Pressed Oils, and Gujarati Ready-to-Eat snacks. ISO 22000, FSSAI, USDA Organic, EU Organic, Halal, and Kosher certified. Exporting to 30+ countries. MOQ 1 MT. Free sample available.",
               "url": "https://amarherbalorigins.com/en",
-              "primaryImageOfPage": { "@type": "ImageObject", "url": "https://amarherbalorigins.com/og-home.jpg" },
-              "about": {
+              "primaryImageOfPage": { "@type": "ImageObject", "url": "https://amarherbalorigins.com/og-home.jpg" }
+            })
+          }}
+        />
+
         {/* Product Schema — enables Google Product Snippets + Merchant Listings rich results */}
         <script
           type="application/ld+json"
