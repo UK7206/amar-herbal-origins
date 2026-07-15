@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { COUNTRY_SLUGS } from '@/lib/countries-data';
 import { BLOG_POSTS } from '@/lib/blog-data';
+import seoKeywords from '@/lib/seo-keywords.json';
 
 const BASE_URL = 'https://amarherbalorigins.com';
 const LOCALES = ['en', 'de', 'fr', 'ar', 'es', 'zh', 'ja'] as const;
@@ -258,6 +259,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: { languages: buildAlternates(`/psyllium/blog/${slug}`) },
       });
     }
+  }
+
+  // ── /k/ Programmatic SEO pages ─────────────────────────────────────
+  // English only: non-English /k/ pages are noindex (no translated content)
+  // These 5000+ pages were missing from the sitemap — causing 4,606 "discovered
+  // but not indexed" entries in Google Search Console. Adding them signals
+  // to Google that they are canonical, intentional pages worth crawling.
+
+  // /en/k — directory hub (links to all letter pages)
+  entries.push({
+    url: `${BASE_URL}/en/k`,
+    lastModified: now,
+    changeFrequency: 'weekly',
+    priority: 0.70,
+    alternates: { languages: buildAlternates('/k') },
+  });
+
+  // /en/k/letter/[letter] — alphabet navigation pages
+  const kwLetters = new Set<string>();
+  for (const kw of seoKeywords as { keyword: string; slug: string }[]) {
+    const firstChar = kw.keyword.trim().charAt(0).toUpperCase();
+    kwLetters.add(/[A-Z]/.test(firstChar) ? firstChar : '#');
+  }
+  for (const letter of kwLetters) {
+    entries.push({
+      url: `${BASE_URL}/en/k/letter/${letter}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.55,
+    });
+  }
+
+  // /en/k/[slug] — all individual keyword pages (the money pages)
+  for (const kw of seoKeywords as { keyword: string; slug: string }[]) {
+    entries.push({
+      url: `${BASE_URL}/en/k/${kw.slug}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.65,
+      alternates: { languages: buildAlternates(`/k/${kw.slug}`) },
+    });
   }
 
   return entries;

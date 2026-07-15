@@ -387,7 +387,7 @@ Contact us for current FOB pricing, grade specifications, and a free sample (cou
   },
   {
     slug: 'top-psyllium-husk-exporters-india',
-    title: 'Top 5 Psyllium Husk Exporters in India (2025)',
+    title: 'Top Psyllium Husk Exporters in India 2026 — How to Choose the Right One',
     excerpt:
       'India supplies 85%+ of the world\'s psyllium husk. Here\'s what separates the top exporters — certifications, quality controls, export experience, and how to evaluate the right supplier for your business.',
     date: 'June 2025',
@@ -428,7 +428,7 @@ At Amar Herbal Origins, we welcome due diligence and provide all documentation u
   },
   {
     slug: 'how-to-import-psyllium-husk-from-india',
-    title: 'How to Import Psyllium Husk from India: Step-by-Step Guide',
+    title: 'How to Import Psyllium Husk from India: Step-by-Step Guide [2026 Updated]',
     excerpt:
       'A practical step-by-step guide for importers: how to find a supplier, what documents you need, how to handle customs clearance, and what to expect from your first psyllium husk import from India.',
     date: 'June 2025',
@@ -510,7 +510,7 @@ Amar Herbal Origins exports regularly to US buyers across the nutraceutical, sup
   },
   {
     slug: 'organic-psyllium-husk-market-guide',
-    title: 'Organic Psyllium Husk: Market Growth & Supplier Selection Guide 2025',
+    title: 'Organic Psyllium Husk Market 2026: Growth, Certifications & How to Source Direct',
     excerpt:
       'The organic psyllium husk segment is growing 2.5x faster than conventional. Understand the market dynamics, certification requirements, and how to find a reliable USDA/EU organic certified supplier from India.',
     date: 'May 2025',
@@ -753,7 +753,7 @@ Amar Herbal Origins holds all major export certifications including ISO 22000, F
   },
   {
     slug: 'psyllium-husk-coa-guide',
-    title: 'How to Read a Psyllium Husk COA (Certificate of Analysis)',
+    title: 'Psyllium Husk COA Guide: What Every Buyer Must Check in 2026 [Free Checklist]',
     excerpt:
       'The Certificate of Analysis is the most critical document in any psyllium husk purchase. Learn exactly what parameters to check, what the numbers mean, and what red flags to watch for.',
     date: 'February 2025',
@@ -812,7 +812,7 @@ At Amar Herbal Origins, we provide in-house COA with every shipment and can arra
   },
   {
     slug: 'isabgol-vs-psyllium-husk-difference',
-    title: 'Isabgol vs Psyllium Husk: Are They the Same? Complete B2B Sourcing Guide',
+    title: 'Isabgol vs Psyllium Husk: Are They the Same? [2026 Answer + Sourcing Guide]',
     excerpt:
       'Isabgol and psyllium husk are 100% the same product — isabgol is the Hindi/Gujarati name for psyllium husk (Plantago ovata). Learn the difference between isabgol husk, psyllium seeds, and ispaghula husk, plus how to source bulk psyllium from India with full COA and certifications.',
     date: 'June 2026',
@@ -1087,13 +1087,20 @@ Tariff rates change. Always verify current rates with your import customs broker
   },
   {
     slug: 'pharmaceutical-grade-psyllium-husk-guide',
-    title: 'Pharmaceutical Grade Psyllium Husk: USP, BP & Ph. Eur. Standards Explained',
+    title: 'Pharmaceutical Grade Psyllium Husk: USP, BP & Ph.Eur. — Complete B2B Guide 2026',
     excerpt:
       'Pharma companies require psyllium husk that meets USP, BP, or European Pharmacopoeia specifications. Learn what "pharma grade" means for psyllium, what testing is required, and how to verify compliance.',
     date: 'March 2025',
     readTime: '8 min read',
     category: 'Quality & Certs',
     keywords: ['pharmaceutical grade psyllium husk', 'psyllium husk usp grade', 'psyllium husk bp grade', 'pharmacopoeia psyllium'],
+    relatedLinks: [
+      { label: 'Psyllium Husk Quality & Testing', href: '/en/psyllium/quality', description: 'Full test parameters: swelling factor, heavy metals, microbiology, COA format' },
+      { label: 'How to Read a Psyllium COA', href: '/en/psyllium/blog/psyllium-husk-coa-guide', description: 'Decode every parameter in a Certificate of Analysis before buying' },
+      { label: 'ISO 22000, Halal & USDA Organic Certifications', href: '/en/psyllium/blog/psyllium-husk-certifications-export', description: 'Which certification does your market need?' },
+      { label: 'Request Pharma-Grade Sample', href: '/en/contact', description: 'Get a 100–500g pharma-grade psyllium husk sample with full COA' },
+      { label: 'Private Label Psyllium Capsules', href: '/en/psyllium/private-label', description: 'USP-grade psyllium husk for private label supplement manufacturing' },
+    ],
     body: `Psyllium husk is an official pharmacopoeial ingredient with monographs in the United States Pharmacopeia (USP), British Pharmacopoeia (BP), and European Pharmacopoeia (Ph. Eur.). Pharmaceutical manufacturers require psyllium that meets these specifications — not just food-grade quality standards.
 
 **What Does "Pharma Grade" Mean for Psyllium Husk?**
@@ -1134,16 +1141,41 @@ For pharma applications, suppliers must provide:
 (7) TSE/BSE statement (confirming no animal-derived materials)
 
 Amar Herbal Origins supplies pharma-grade psyllium husk tested against USP, BP, and Ph. Eur. specifications. Our COA includes all pharmacopoeial test parameters with test methods cited. Full pharma-grade documentation package provided on request.`,
+    faqs: [
+      {
+        q: 'What is the difference between pharmaceutical grade and food grade psyllium husk?',
+        a: 'Pharmaceutical grade psyllium husk must meet pharmacopoeial specifications (USP, BP, or Ph. Eur.) with stricter purity limits, documented test methods, and tighter heavy metals and microbial controls. Food grade psyllium meets FSSAI or food safety standards which are less stringent. Pharma grade requires a full COA citing specific pharmacopoeial test methods and comes with additional regulatory documentation like TSE/BSE declarations.',
+      },
+      {
+        q: 'Does psyllium husk meet USP and European Pharmacopoeia standards?',
+        a: 'Yes. Psyllium husk is officially monographed in USP (Psyllium Husk, USP), British Pharmacopoeia (Ispaghula Husk, BP), and European Pharmacopoeia (Ispaghula Husk, Ph. Eur.). Each pharmacopoeia specifies swelling index, loss on drying, ash content, and microbial limits. Amar Herbal Origins supplies psyllium husk with COA parameters tested against all three pharmacopoeial standards.',
+      },
+      {
+        q: 'Is psyllium husk Halal and Kosher certified?',
+        a: 'Yes. Psyllium husk (Isabgol) is naturally plant-derived and is Halal and Kosher by nature. Amar Herbal Origins holds formal Halal certification (FSSAI-recognized Halal certifying body) and Kosher certification. Certificates are provided with every shipment and are available for regulatory submissions.',
+      },
+      {
+        q: 'What is the swelling factor/index required for pharmaceutical grade psyllium husk?',
+        a: 'The USP specifies a swelling volume of not less than 40 mL/g for psyllium husk. The European Pharmacopoeia (Ph. Eur.) specifies a swelling index of not less than 9 for ispaghula husk. Our 99% purity psyllium husk consistently achieves swelling volumes of 42–48 mL/g (whole husk) and 52–58 mL/g (powder), exceeding both USP and Ph. Eur. minimums.',
+      },
+    ],
   },
   {
     slug: 'psyllium-husk-vs-inulin-comparison',
-    title: 'Psyllium Husk vs Inulin vs Guar Gum: Which Fiber for Your Product?',
+    title: 'Psyllium Husk vs Inulin vs Guar Gum: Which Fiber Wins? [2026 Comparison]',
     excerpt:
       'Comparing psyllium husk with other popular dietary fibers for supplement and food formulations. Understand the functional differences, cost comparison, and best application for each ingredient.',
     date: 'February 2025',
     readTime: '6 min read',
     category: 'Sourcing',
     keywords: ['psyllium husk vs inulin', 'psyllium husk fiber comparison', 'dietary fiber ingredient comparison', 'psyllium vs guar gum'],
+    relatedLinks: [
+      { label: 'Bulk Psyllium Husk B2B Pricing', href: '/en/psyllium/blog/psyllium-husk-fob-price-guide', description: 'Current FOB India pricing for psyllium husk vs other dietary fibers' },
+      { label: 'Wholesale Psyllium Husk from India', href: '/en/psyllium/blog/wholesale-bulk-psyllium-husk-india', description: 'MOQ, FCL vs LCL, lead times and bulk procurement guide' },
+      { label: 'Organic Psyllium Husk Supplier', href: '/en/psyllium/blog/organic-psyllium-husk-market-guide', description: 'USDA/EU Organic certified psyllium for clean-label fiber formulations' },
+      { label: 'Psyllium Husk Products & Grades', href: '/en/psyllium/products', description: 'Whole husk, powder, blonde & organic — compare grades and applications' },
+      { label: 'Request a Free Sample', href: '/en/contact', description: 'Compare psyllium husk quality with your current fiber supplier' },
+    ],
     body: `Supplement formulators and food product developers often evaluate psyllium husk against other dietary fiber options: inulin, guar gum, methylcellulose, and oat fiber. Here's a functional comparison to help you choose the right ingredient for your application.
 
 **Psyllium Husk — The Benchmark Soluble Fiber**
@@ -1189,6 +1221,24 @@ Oat fiber (beta-glucan from oat bran) is another soluble fiber with heart health
 | Baked goods fiber enrichment | Oat Fiber |
 
 For B2B bulk supply of psyllium husk for supplement and food applications, contact Amar Herbal Origins for pricing and samples.`,
+    faqs: [
+      {
+        q: 'What is the difference between psyllium husk and inulin?',
+        a: 'Psyllium husk and inulin are both dietary fibers but work through different mechanisms. Psyllium husk forms a viscous gel in the gut (soluble fiber), which slows digestion, reduces cholesterol absorption, and relieves constipation through a mechanical effect. Inulin (chicory root fiber) is a prebiotic fermented by gut bacteria, supporting microbiome diversity. For cholesterol management and bowel regularity, psyllium husk has the strongest clinical evidence and FDA-approved health claims.',
+      },
+      {
+        q: 'What is the difference between guar gum and psyllium husk?',
+        a: 'Guar gum is a galactomannan (a polysaccharide) extracted from guar beans, primarily used as a food thickener and stabilizer. Psyllium husk is the seed coat of Plantago ovata, used primarily as a dietary fiber supplement with FDA-approved health claims for cholesterol and bowel regularity. Guar gum excels in food texture applications; psyllium husk excels in nutraceutical and therapeutic fiber applications. Cost-wise, psyllium husk is generally 30–50% cheaper than high-purity guar gum for supplement applications.',
+      },
+      {
+        q: 'Is psyllium husk or inulin better for constipation?',
+        a: 'Psyllium husk is clinically superior for constipation relief. It forms a gel that adds bulk to stool and retains water, creating softer stools and stimulating bowel movement. Inulin helps over time by improving gut bacteria populations, but has a slower effect on constipation. For acute and chronic constipation relief, psyllium husk (isabgol) is the first-line dietary fiber recommendation in gastroenterology guidelines globally.',
+      },
+      {
+        q: 'Which fiber is cheaper: psyllium husk, inulin, or guar gum?',
+        a: 'Psyllium husk is the most cost-effective option for most supplement applications. Typical FOB India prices for bulk psyllium husk (99% purity) range from USD 1.80–2.80/kg depending on grade and order volume. Inulin (chicory-derived) typically costs USD 3.50–6.00/kg. High-purity guar gum for supplement use costs USD 2.50–4.50/kg. For mass-market fiber supplements targeting cholesterol or bowel health, psyllium husk offers the best cost-to-efficacy ratio.',
+      },
+    ],
   },
   {
     slug: 'psyllium-husk-seeds-export-india',
@@ -1286,7 +1336,7 @@ At Amar Herbal Origins, we provide current USDA NOP and EU Organic certificates 
   },
   {
     slug: 'psyllium-husk-supplier-australia',
-    title: 'Psyllium Husk Supplier Australia: TGA, ACO & FSANZ Requirements Guide',
+    title: 'Psyllium Husk Supplier Australia 2026: TGA, ACO & FSANZ — Complete Import Guide',
     excerpt:
       'Australia\'s psyllium husk market is regulated by TGA for therapeutic products and FSANZ for food applications. This guide explains exactly what Australian buyers need from their Indian psyllium supplier.',
     date: 'November 2024',
@@ -2193,6 +2243,230 @@ Contact us at amarherbalorigins@gmail.com or WhatsApp +91-94084-65040 for a pric
       { label: 'Request Free Sample', href: '/en/contact', description: 'Get a free 200ml castor oil sample with full COA before bulk order.' },
     ],
   },
+
+  // NEW: Isabgol Education Cluster
+  {
+    slug: 'isabgol-same-as-psyllium-husk',
+    title: 'Is Isabgol the Same as Psyllium Husk? [2026 Definitive Answer]',
+    excerpt:
+      'Yes — isabgol and psyllium husk are 100% the same ingredient. Isabgol is the Hindi/Gujarati name; psyllium husk is the international name. Everything a buyer needs to know about forms, grades, and how to import from India.',
+    date: 'July 2026',
+    readTime: '4 min read',
+    category: 'Sourcing',
+    keywords: ['is isabgol same as psyllium husk', 'isabgol and psyllium husk same', 'isabgol vs psyllium husk difference', 'isabgol psyllium husk', 'isabgol meaning in english'],
+    relatedLinks: [
+      { label: 'Isabgol vs Psyllium Husk Full Guide', href: '/en/psyllium/blog/isabgol-vs-psyllium-husk-difference', description: 'Deep dive: product forms, grades, quality hierarchy and import documentation' },
+      { label: 'Psyllium Husk Products and Grades', href: '/en/psyllium/products', description: 'Whole husk, powder, organic and blonde from one Gujarat supplier' },
+      { label: 'Psyllium Husk COA Guide', href: '/en/psyllium/blog/psyllium-husk-coa-guide', description: 'What to check in a Certificate of Analysis before you buy' },
+      { label: 'Request a Free Sample', href: '/en/contact', description: 'Get isabgol psyllium husk samples with full COA within 24 hours' },
+    ],
+    body: `If you have searched for isabgol and psyllium husk and wondered whether they are the same thing — the answer is yes. They are identical products with different names.
+
+**What Is Isabgol?**
+
+Isabgol is the Hindi, Urdu, and Gujarati name for the husk of the Plantago ovata seed. The word comes from Persian — asp (horse) + gol (ear), describing the shape of the seed. Isabgol has been used in Ayurvedic medicine in India for centuries.
+
+**What Is Psyllium Husk?**
+
+Psyllium husk is the international English name for the exact same product — the seed coat of Plantago ovata. Western supplement brands (including Metamucil) use the term psyllium husk in all product labelling.
+
+**Are They the Same? 100% Yes.**
+
+Same plant: Plantago ovata. Same part: the outer seed husk (seed coat). Same active ingredient: mucilaginous arabinoxylans (soluble dietary fiber). Same health benefits: bowel regularity, cholesterol reduction, blood sugar management. Same HS Code: 1211.90.90. The only difference is language.
+
+**What Is Ispaghula Husk?**
+
+Ispaghula husk is the pharmacopoeial name used in the British Pharmacopoeia (BP) and European Pharmacopoeia (Ph. Eur.) for the same product. EU and UK pharmaceutical companies use ispaghula in regulatory submissions; American companies use psyllium. The product is identical. Name summary: Isabgol = Ispaghol = Psyllium Husk = Ispaghula Husk = Plantago ovata husk.
+
+**Which Name to Use in Import Documents?**
+
+For international trade, always use Psyllium Husk on purchase orders and customs declarations. For EU pharmaceutical submissions: use Ispaghula Husk to match the Ph. Eur. monograph. For USA pharmaceutical submissions: use Psyllium Husk to match the USP monograph.
+
+**Where Is Isabgol Produced?**
+
+India produces over 85% of the world supply. Primary regions: Unjha and Mehsana in Gujarat (highest volume), Sidhpur in Gujarat (premium quality), and Jodhpur and Pali districts in Rajasthan. Amar Herbal Origins sources directly from farms in these regions. Contact us for pricing, samples, and full COA documentation.`,
+    faqs: [
+      {
+        q: 'Is isabgol and psyllium husk the same thing?',
+        a: 'Yes, 100%. Isabgol is the Hindi/Gujarati/Urdu name for psyllium husk. Both words refer to the outer seed coat of the Plantago ovata plant grown in India. The botanical source, fiber content, health benefits, and HS trade code are identical.',
+      },
+      {
+        q: 'What does isabgol mean in English?',
+        a: "Isabgol translates to horse's ear from Persian/Urdu — a reference to the shape of the Plantago ovata seed. In English, the same product is called psyllium husk or ispaghula husk. All three names are used for the same ingredient in international trade.",
+      },
+      {
+        q: 'Which is better: isabgol or psyllium husk?',
+        a: "They are not two different products — isabgol IS psyllium husk. The quality depends on the grade (99% vs 98% purity, whole husk vs powder, organic vs conventional) and the specific supplier's processing and testing standards, not the name used.",
+      },
+      {
+        q: 'How do I import isabgol psyllium husk from India?',
+        a: 'To import psyllium husk from India: (1) Find an FSSAI-certified Indian exporter, (2) Request a COA and sample, (3) Place order with HS Code 1211.90.90 on your purchase order, (4) Supplier ships with commercial invoice, packing list, Certificate of Origin, and phytosanitary certificate, (5) Clear customs in your country. Contact Amar Herbal Origins to start the process with a free sample.',
+      },
+    ],
+  },
+  {
+    slug: 'isabgol-vs-metamucil',
+    title: 'Is Isabgol the Same as Metamucil? [2026 Comparison]',
+    excerpt:
+      "Metamucil's active ingredient is psyllium husk — exactly the same as isabgol. The raw material is identical; Metamucil just adds flavoring and brand packaging. The complete comparison for buyers and supplement manufacturers.",
+    date: 'July 2026',
+    readTime: '4 min read',
+    category: 'Sourcing',
+    keywords: ['is metamucil and isabgol same', 'isabgol vs metamucil', 'metamucil psyllium husk isabgol', 'metamucil raw material', 'psyllium husk same as metamucil'],
+    relatedLinks: [
+      { label: 'Isabgol vs Psyllium Husk Full Guide', href: '/en/psyllium/blog/isabgol-vs-psyllium-husk-difference', description: 'All the names for the same product explained — isabgol, psyllium, ispaghula' },
+      { label: 'Private Label Psyllium Supplement', href: '/en/psyllium/blog/private-label-psyllium-husk-manufacturer-india', description: 'Create your own psyllium husk supplement — like Metamucil but with your brand' },
+      { label: 'Psyllium Husk Products and Grades', href: '/en/psyllium/products', description: 'Same raw material as Metamucil — sourced direct from Gujarat farms' },
+      { label: 'Request a Free Sample', href: '/en/contact', description: 'Sample the same grade psyllium husk used in global supplement brands' },
+    ],
+    body: `If you have wondered whether isabgol and Metamucil are the same thing — the short answer is: Metamucil's active ingredient IS isabgol (psyllium husk). The raw material inside Metamucil is sourced from India and is called isabgol or psyllium husk.
+
+**What Is Metamucil Made Of?**
+
+Metamucil's active ingredient is psyllium husk — specifically psyllium husk from Plantago ovata, the same plant grown in Gujarat and Rajasthan, India. Metamucil is manufactured by Procter and Gamble and sold as a branded fiber supplement in the USA, UK, Australia, and many other markets. Metamucil = Psyllium Husk (isabgol) + flavoring + sweetener + branding.
+
+**Is Isabgol the Same as Metamucil?**
+
+The ingredient — yes, identical. The product — no. Metamucil is a finished consumer product with added flavoring, sweeteners, and brand packaging. Isabgol or psyllium husk refers to the raw ingredient alone, without any additives. If you are a supplement manufacturer looking to create a psyllium husk product, you can source the raw psyllium husk from Indian exporters like Amar Herbal Origins and formulate your own product.
+
+**Isabgol vs Metamucil: Key Differences**
+
+Isabgol (raw ingredient): Just the plant husk, no additives. Sold in bulk B2B to manufacturers. Typical FOB India price: USD 2-3 per kg for 99% purity. Metamucil (finished product): Psyllium husk + flavoring + sweeteners + retail packaging. Sells at USD 15-25 per 300g retail pack — roughly 10x the raw ingredient cost.
+
+**How to Create a Private Label Psyllium Supplement**
+
+Source 99% purity psyllium husk powder from Amar Herbal Origins, add your flavoring and sweetener formulation, fill and package. Contact us for private label inquiry and minimum order quantities.`,
+    faqs: [
+      {
+        q: 'Is Metamucil made from isabgol?',
+        a: "Yes. Metamucil's active ingredient is psyllium husk — which is the same product as isabgol. Isabgol is the Hindi/Gujarati name for psyllium husk (Plantago ovata seed husk). The raw material in Metamucil is sourced from India.",
+      },
+      {
+        q: 'Can I take isabgol instead of Metamucil?',
+        a: 'The active ingredient is the same. Plain psyllium husk (isabgol) contains the same fiber as Metamucil. The difference is Metamucil adds flavoring and sweeteners. Always consult a healthcare professional before changing your supplement routine.',
+      },
+      {
+        q: 'How much does psyllium husk cost compared to Metamucil?',
+        a: 'Bulk psyllium husk from India costs approximately USD 2-3 per kg for 99% purity at FOB India prices. Metamucil retails at approximately USD 15-25 per 300g pack — roughly 10-15x the raw ingredient cost. For B2B supplement manufacturers, sourcing direct from India dramatically reduces ingredient costs.',
+      },
+      {
+        q: 'Can I create a private label psyllium husk supplement like Metamucil from India?',
+        a: 'Yes. Indian exporters like Amar Herbal Origins supply 99% purity psyllium husk powder of the same grade used by global supplement brands. You can source the raw psyllium husk, add your own formulation, and package under your brand. We also offer private label services with custom packaging.',
+      },
+    ],
+  },
+  // NEW: B2B Commercial Cluster
+  {
+    slug: 'psyllium-husk-private-label-india',
+    title: 'Private Label Psyllium Husk Supplements from India: MOQ, Branding and Process [2026]',
+    excerpt:
+      "Want to launch your own psyllium husk supplement brand? India is the world's number one source for private label psyllium husk. Here is how the process works — MOQ, formulation, packaging, labelling, and lead times from an Indian manufacturer.",
+    date: 'July 2026',
+    readTime: '7 min read',
+    category: 'Export Guide',
+    keywords: ['private label psyllium husk', 'psyllium husk private label india', 'white label psyllium supplement', 'private label isabgol', 'psyllium husk manufacturer private label'],
+    relatedLinks: [
+      { label: 'Private Label Psyllium Manufacturer', href: '/en/psyllium/blog/private-label-psyllium-husk-manufacturer-india', description: 'Complete white label guide — product formats, branding options, MOQ' },
+      { label: 'Psyllium Husk Products and Grades', href: '/en/psyllium/products', description: 'All grades available for private label: whole husk, powder, organic, blonde' },
+      { label: 'Pharmaceutical Grade Psyllium Guide', href: '/en/psyllium/blog/pharmaceutical-grade-psyllium-husk-guide', description: 'USP/BP grade for supplement manufacturing compliance' },
+      { label: 'Request Private Label Quote', href: '/en/contact', description: 'Get MOQ, lead times and branding options for your private label psyllium brand' },
+    ],
+    body: `Private label psyllium husk supplements are one of the fastest-growing segments in the dietary supplement market. With global psyllium supply dominated by India (85% of world production), launching a private label psyllium brand from an Indian manufacturer offers significant cost, quality, and speed advantages.
+
+**What Is Private Label Psyllium Husk?**
+
+Private label means you purchase psyllium husk from an Indian manufacturer, packaged and labelled under your brand name. The end consumer sees your brand; the manufacturer remains invisible. This is how most supplement brands in the USA, UK, Australia, and EU source their psyllium husk products.
+
+**Product Formats Available for Private Label**
+
+Psyllium Husk Powder: Fine powder (40-100 mesh). Available in 99% and 98% purity, organic and conventional. Whole Psyllium Husk: Coarser texture for fiber drink products. Psyllium Husk Capsules: Pre-filled vegetable capsules (500mg, 700mg). Organic Psyllium Husk: USDA/EU Organic certified. Blonde Psyllium Husk: Premium light-colored grade.
+
+**Typical MOQ and Lead Times**
+
+Raw psyllium husk (bulk): MOQ 1 MT. Lead time 7-14 days. Private label finished product: MOQ 500-1,000 units for capsules, 500kg for powders. Lead time 3-6 weeks including label printing.
+
+**Regulatory Requirements by Market**
+
+USA: FDA dietary supplement GMP compliance (21 CFR Part 111). Psyllium husk has FDA-approved health claim for cholesterol reduction. EU: No Novel Food authorization required. Supplement labeling per Regulation 1169/2011. UK: MHRA notification if making medicinal claims. Australia: TGA Listed Medicine required for therapeutic claims.
+
+Amar Herbal Origins provides private label psyllium husk with all required documentation: COA, MSDS, allergen declaration, GMO statement, TSE/BSE statement, and country-specific certificates (Halal, Kosher, Organic, ISO 22000). Contact us with your target market and formulation requirements.`,
+    faqs: [
+      {
+        q: 'What is the minimum order for private label psyllium husk from India?',
+        a: 'For raw psyllium husk bulk supply, minimum order is 1 Metric Ton (MT). For private label finished product with custom packaging, MOQ depends on format: capsules from 500-1,000 units, powder in custom packaging from 500kg. Contact Amar Herbal Origins for a detailed MOQ and pricing quote.',
+      },
+      {
+        q: 'Can I sell private label psyllium husk in the USA under an FDA health claim?',
+        a: 'Yes. Psyllium husk has FDA-authorized health claims including "May reduce the risk of heart disease" via LDL cholesterol reduction. Your finished product must contain at least 1.78g of psyllium husk soluble fiber per serving and meet FDA labeling requirements.',
+      },
+      {
+        q: 'How long does private label psyllium husk take from India?',
+        a: 'For raw bulk supply: 7-14 business days. For private label finished product with custom packaging: 3-6 weeks. Sea freight from India to USA/UK/EU: 18-30 days. Total lead time from order to delivery: typically 6-10 weeks for first orders including sea freight.',
+      },
+      {
+        q: 'What certifications does private label psyllium husk need for the EU market?',
+        a: 'For EU supplement market: COA meeting EU food safety standards, EU Organic certification if selling as organic, contaminant compliance per Regulation 1881/2006, pesticide compliance per Regulation 396/2005, labeling per 1169/2011. No Novel Food authorization required. Amar Herbal Origins provides all EU-required documentation.',
+      },
+    ],
+  },
+  {
+    slug: 'organic-psyllium-husk-supplier-india-2026',
+    title: 'Organic Psyllium Husk Supplier India 2026: USDA, EU Certified — How to Source Direct',
+    excerpt:
+      "India is the source of 90% of the world's organic psyllium husk. How to find a USDA/EU Organic certified Indian supplier, what certifications to check, 2026 pricing benchmarks, and how to verify organic authenticity before placing a bulk order.",
+    date: 'July 2026',
+    readTime: '7 min read',
+    category: 'Sourcing',
+    keywords: ['organic psyllium husk supplier india', 'organic psyllium husk india', 'usda organic psyllium husk supplier', 'eu organic psyllium husk india', 'organic isabgol supplier'],
+    relatedLinks: [
+      { label: 'How to Verify Organic Certifications', href: '/en/psyllium/blog/organic-psyllium-certification-verification-guide', description: 'Step-by-step guide to verify USDA/EU Organic certificates before buying' },
+      { label: 'Organic Psyllium Husk Market Guide', href: '/en/psyllium/blog/organic-psyllium-husk-market-guide', description: 'Market growth, certification requirements, and supplier selection' },
+      { label: 'Psyllium Husk Supplier Germany', href: '/en/psyllium/blog/psyllium-husk-supplier-germany', description: 'EU Organic requirements and import guide for German buyers' },
+      { label: 'Request Organic Psyllium Sample', href: '/en/contact', description: 'USDA/EU Organic certified psyllium husk sample with full COA' },
+    ],
+    body: `India produces the majority of the world's organic psyllium husk (Isabgol). The Unjha region of Gujarat has an established organic farming infrastructure for Plantago ovata, with farms certified under USDA NOP and EU Organic Regulation (2018/848).
+
+**Why Source Organic Psyllium Husk from India?**
+
+Lowest cost: USD 3-5 per kg FOB India for USDA/EU Organic certified psyllium husk powder versus USD 8-15 per kg from US or European distributors. Full certification coverage: USDA NOP, EU Organic, India Organic (NPOP) — available from single supplier. Farm-direct traceability: Certificate of Origin traceable to specific farms. Integrated processing: Organic farming and organic processing in one certified facility.
+
+**What Certifications Does Organic Psyllium Husk Need?**
+
+For USA market: USDA NOP (National Organic Program) certification. The certifying body must be USDA-accredited. The certificate must cover both the farming operation AND the processing facility. Common Indian certifiers: Ecocert, LACON, OneCert, Control Union.
+
+For EU/Germany market: EU Organic certification under Regulation 2018/848. Must cover farming and processing. Annual inspection by EU-notified control body.
+
+For UK market (post-Brexit): UK Organic certification from recognized bodies: Soil Association, OF&G, BDAA.
+
+**How to Verify Organic Certification Authenticity**
+
+Step 1: Request the current organic certificate — check expiry date and scope. Step 2: Verify the certifying body is USDA-accredited at ams.usda.gov/organic-certifiers. Step 3: For EU, verify the certifying body at the EU notified control body list. Step 4: Request a Transaction Certificate for each shipment — this proves the specific batch is certified organic. Step 5: Check that the certificate scope includes processing not just farming — both are required.
+
+**Organic Psyllium Husk Price Benchmarks (2026)**
+
+Organic Whole Psyllium Husk 99% (USDA/EU): USD 3.50-5.00 per kg FOB India. Organic Psyllium Husk Powder 99% (USDA/EU): USD 4.00-6.00 per kg FOB India. Pricing depends on order volume, certifying body, and current Unjha mandi market rates.
+
+Amar Herbal Origins holds USDA NOP, EU Organic (2018/848), and India Organic (NPOP) certifications covering both our contracted farming operations in Gujarat and our processing facility. All organic psyllium husk shipments come with current organic certificates, transaction certificates, and full COA. Contact us for a free sample.`,
+    faqs: [
+      {
+        q: 'What is the difference between USDA Organic and EU Organic psyllium husk?',
+        a: 'Both USDA NOP and EU Organic prohibit synthetic pesticides, synthetic fertilizers, and GMOs. The key practical differences are the certifying body requirements (USDA-accredited vs EU-notified) and some processing aid differences. Most Indian exporters hold both certifications. Always request both certificates if you sell in both markets.',
+      },
+      {
+        q: 'Is organic psyllium husk worth the premium over conventional?',
+        a: 'For supplement and health food brands, organic psyllium husk commands a retail premium of 30-80% over conventional. The raw material cost premium is typically 50-80% (USD 4-6/kg organic vs USD 2.5-3.5/kg conventional). For pharmaceutical applications, conventional 99% grade is often sufficient.',
+      },
+      {
+        q: "How do I verify an Indian supplier's organic psyllium certificate is real?",
+        a: 'Verify by: (1) Checking the certifying body is on the USDA accredited certifiers list at ams.usda.gov; (2) Contacting the certifying body directly to confirm the certificate is current; (3) Requesting a Transaction Certificate for the specific batch — this is the most reliable verification that a specific lot is certified organic.',
+      },
+      {
+        q: 'What is the MOQ for organic psyllium husk from India?',
+        a: 'Minimum order quantity for certified organic psyllium husk from Amar Herbal Origins is 1 Metric Ton (MT). Available in whole husk (99% purity) and fine powder (40-100 mesh). We supply with USDA NOP, EU Organic, and India Organic certificates. Contact us for current pricing and availability.',
+      },
+    ],
+  },
+
 ];
 
 export const BLOG_CATEGORIES = ['All', 'Export Guide', 'Market Intelligence', 'Quality & Certs', 'Packaging', 'Sourcing'] as const;

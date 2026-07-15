@@ -470,8 +470,50 @@ function toTitleCase(str: string) {
 }
 
 function buildDescription(kw: string): string {
-  const base = toTitleCase(kw);
-  return `Looking for ${base}? Amar Herbal Origins is India's trusted psyllium husk exporter — farm-direct from Gujarat, ISO certified, with full COA. Bulk B2B supply to 30+ countries. Request a free quote today.`;
+  const kl = kw.toLowerCase();
+
+  // ── Extract location from keyword (e.g. "in UAE", "in Germany") ──
+  const locationMatch = kw.match(/\bin\s+([A-Z][a-zA-Z\s]+?)(?:\s*$|\s*[-,])/);
+  const location = locationMatch ? locationMatch[1].trim() : null;
+
+  // ── Extract product type ──
+  const isIsabgol = kl.includes('isabgol');
+  const isPowder  = kl.includes('powder');
+  const isBlonde  = kl.includes('blonde');
+  const isOrganic = kl.includes('organic');
+  const isSeed    = kl.includes('seed') && !kl.includes('husk');
+  const productName = isIsabgol ? 'Isabgol (Psyllium Husk)'
+    : isPowder  ? 'Psyllium Husk Powder'
+    : isBlonde  ? 'Blonde Psyllium Husk'
+    : isSeed    ? 'Psyllium Seeds'
+    : 'Psyllium Husk';
+
+  // ── Extract use-case ──
+  const useCase = kl.includes('constipation')                                      ? 'constipation relief'
+    : kl.includes('cholesterol')                                                   ? 'cholesterol management'
+    : kl.includes('weight')                                                        ? 'weight management'
+    : (kl.includes('gut') || kl.includes('digestive') || kl.includes('ibs'))     ? 'gut health'
+    : (kl.includes('diabetes') || kl.includes('blood sugar'))                     ? 'blood sugar control'
+    : kl.includes('fiber')                                                         ? 'dietary fiber intake'
+    : kl.includes('detox')                                                         ? 'detox & cleansing'
+    : null;
+
+  // ── Extract buyer type ──
+  const isWholesale = kl.includes('wholesale') || kl.includes('bulk');
+  const isPrivLabel = kl.includes('private label') || kl.includes('white label');
+  const isSupplier  = kl.includes('supplier') || kl.includes('exporter') || kl.includes('manufacturer');
+
+  // ── Assemble unique description ──
+  const certTag     = isOrganic ? 'USDA Organic certified' : 'ISO 22000 & FSSAI certified';
+  const gradeTag    = isPowder  ? '98–99% pure powder' : '99% purity';
+  const locationTag = location  ? `Shipping to ${location}.` : 'Shipping to 30+ countries.';
+  const buyerTag    = isPrivLabel  ? 'Private label & white-label available.'
+    : isWholesale               ? 'MOQ 1 MT. Full FCL container orders welcome.'
+    : isSupplier                ? 'Bulk B2B orders. Free COA + samples.'
+    : 'Bulk B2B supply. Free sample available.';
+  const useCaseTag  = useCase   ? ` Ideal for ${useCase}.` : '';
+
+  return `Source ${gradeTag} ${productName} from Amar Herbal Origins — India's ${certTag} B2B exporter.${useCaseTag} ${locationTag} ${buyerTag} Request a free quote today.`;
 }
 
 function buildContent(kw: string) {
