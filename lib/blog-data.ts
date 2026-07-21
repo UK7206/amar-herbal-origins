@@ -30,6 +30,143 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'isabgol-vs-psyllium-husk-difference',
+    title: 'Isabgol vs Psyllium Husk: Are They the Same? Complete 2026 Guide',
+    excerpt:
+      'Yes — isabgol and psyllium husk are exactly the same product. This guide explains why they have different names, how they compare to ispaghula husk and Metamucil, and what B2B buyers need to know about grading, sourcing, and pricing.',
+    date: 'July 2026',
+    readTime: '6 min read',
+    category: 'Export Guide',
+    keywords: [
+      'isabgol vs psyllium husk',
+      'is isabgol same as psyllium husk',
+      'psyllium husk and isabgol same',
+      'difference between isabgol and psyllium husk',
+      'isabgol and psyllium husk are same',
+      'is psyllium husk same as isabgol',
+      'isabgol vs metamucil',
+      'ispaghula husk vs psyllium husk',
+    ],
+    body: `If you have searched "isabgol vs psyllium husk" or "is isabgol the same as psyllium husk", the short answer is: yes, they are completely identical. Isabgol and psyllium husk refer to the exact same product — the outer seed coat (husk) of the Plantago ovata plant. The only difference is the language the name comes from.
+
+**Why Do They Have Different Names?**
+
+The name "Isabgol" comes from Persian and Hindi — it means "horse ear" (isb = horse, gol = ear) and describes the shape of the seed. It is the common name used in India, Pakistan, Bangladesh, and the Middle East for this product.
+
+The name "Psyllium husk" comes from the Latin genus name Plantago psyllium and is the internationally recognised English term — used in the USA, Europe, Australia, and Canada.
+
+"Ispaghula husk" is a third name for the same product, used primarily in the United Kingdom and British pharmacopoeia (BP) documentation. It is derived from the Persian "ispaghu" meaning "horse ear".
+
+All three names — Isabgol, Psyllium Husk, and Ispaghula Husk — refer to the outer fibrous seed coat of Plantago ovata, the same plant, grown primarily in Gujarat and Rajasthan, India.
+
+**Isabgol vs Psyllium Husk: Side-by-Side Comparison**
+
+| Property | Isabgol | Psyllium Husk | Ispaghula Husk |
+|---|---|---|---|
+| Same product? | ✅ Yes | ✅ Yes | ✅ Yes |
+| Botanical source | Plantago ovata | Plantago ovata | Plantago ovata |
+| Primary market | India, Middle East | USA, EU, global | UK, Commonwealth |
+| Language origin | Hindi / Persian | English / Latin | British English / Persian |
+| Fiber content | 70–80% soluble fiber | 70–80% soluble fiber | 70–80% soluble fiber |
+| Swell volume (99% grade) | 75+ mL/g | 75+ mL/g | 75+ mL/g |
+| Country of origin (85%+) | India | India | India |
+| HS Code | 1211.90.90 | 1211.90.90 | 1211.90.90 |
+
+**Is Isabgol the Same as Metamucil?**
+
+Metamucil is a branded over-the-counter supplement product manufactured by Procter & Gamble. Its active ingredient is psyllium husk (isabgol). However, Metamucil adds sweeteners, artificial flavors, citric acid, and other excipients. So the active ingredient is the same as isabgol, but Metamucil is a finished consumer product — not the raw bulk ingredient.
+
+For B2B buyers, this means: if you are manufacturing fiber supplements, laxative products, or gut health formulations similar to Metamucil, you would source bulk psyllium husk (isabgol) directly from an Indian exporter like Amar Herbal Origins — not Metamucil.
+
+**What Is the Difference Between Isabgol and Isabgol Husk?**
+
+This is a common source of confusion. There are actually two distinct products from the Plantago ovata plant:
+
+1. **Isabgol Seeds** (Plantago ovata seeds): The whole, cleaned seeds of the plant. Contains lower fiber (20–30% soluble fiber). Used for extraction and some specialty applications.
+
+2. **Isabgol Husk** (Psyllium Husk): The outer seed coat separated from the seed. Contains 70–80% soluble fiber — far higher than the seed. This is what is used in pharmaceutical laxatives, dietary supplements, and food fiber products.
+
+When people say "isabgol" in everyday language, they almost always mean the husk, not the seed. The husk is the commercially dominant product.
+
+**Psyllium Husk Grades: What B2B Buyers Need to Know**
+
+Not all psyllium husk is the same quality. For B2B buyers, understanding grades is critical:
+
+- **85% Grade (Commercial)**: Swell volume 45–55 mL/g. Used in animal feed, lower-grade food products.
+- **95% Grade (Premium)**: Swell volume 55–65 mL/g. Used in food fiber enrichment.
+- **98% Grade (Pharmaceutical)**: Swell volume 65–75 mL/g. USP/BP compliant. Used in dietary supplements.
+- **99% Grade (Ultra-Premium)**: Swell volume 75+ mL/g. Used in branded pharmaceutical laxatives.
+
+Most pharmaceutical and nutraceutical buyers in the USA, EU, UK, and Australia require 98% or 99% grade psyllium husk.
+
+**How to Source Isabgol / Psyllium Husk from India**
+
+India produces over 85% of the world's psyllium husk supply. Gujarat and Rajasthan are the primary growing regions. The Unjha Agricultural Produce Market Committee (APMC) in North Gujarat is the world's largest psyllium trading market.
+
+When sourcing from India, look for:
+- APEDA registration (Agricultural & Processed Food Products Export Development Authority)
+- FSSAI license (Food Safety & Standards Authority of India)
+- ISO 22000 certification
+- USDA NOP Organic or EU Organic certification (if needed for organic market)
+- Halal certification (for Middle East, Southeast Asia)
+- Third-party COA from accredited lab (SGS, Eurofins, Intertek, or NABL-accredited Indian lab)
+
+**Amar Herbal Origins: Verified Psyllium Husk Exporter from Gujarat**
+
+Amar Herbal Origins is based in Amreli, Gujarat — 200 km from Unjha. We supply psyllium husk (all grades from 85% to 99%) to pharmaceutical, nutraceutical, and food companies in 30+ countries. 
+
+Our verifiable credentials:
+- GST Number: 24ICIPP6678D1Z4 (verify at gst.gov.in)
+- Udyam: UDYAM-GJ-02-0036891
+- APEDA Registered Exporter
+- ISO 22000, FSSAI, USDA Organic, EU Organic, Halal, Kosher certified
+
+MOQ: 1 MT standard / 500 kg organic / 100 kg private label. Free samples (100–200g) available before bulk orders. Contact: amarherbalorigins@gmail.com | WhatsApp: +91-94084-65040`,
+    faqs: [
+      {
+        q: 'Is isabgol the same as psyllium husk?',
+        a: 'Yes, isabgol and psyllium husk are exactly the same product — the outer seed coat (husk) of Plantago ovata. Isabgol is the Hindi and Urdu name used in India and the Middle East. Psyllium husk is the English name used internationally. Both refer to identical material with the same fiber content, same botanical source, and same HS code (1211.90.90).',
+      },
+      {
+        q: 'What is the difference between isabgol and psyllium husk?',
+        a: 'There is no difference in the product itself — only in the name. Isabgol is the Hindi/Urdu/Persian name; psyllium husk is the English/Latin name; ispaghula husk is the British pharmacopoeia name. All three are the outer fibrous seed coat of Plantago ovata, with 70–80% soluble dietary fiber content.',
+      },
+      {
+        q: 'Is psyllium husk and isabgol the same thing?',
+        a: 'Yes. Psyllium husk and isabgol are the same thing. India produces 85%+ of the world supply of this product. The same material is exported from India under either name depending on the destination market — "isabgol" for Middle East and South Asian markets, "psyllium husk" for USA/EU/Australia.',
+      },
+      {
+        q: 'Is Metamucil the same as isabgol?',
+        a: "Metamucil uses psyllium husk (isabgol) as its active ingredient. However, Metamucil is a finished consumer product that adds sweeteners, flavors, and other excipients. The raw active ingredient — psyllium husk — is the same as isabgol. B2B buyers manufacture Metamucil-type products using bulk psyllium husk from Indian exporters.",
+      },
+      {
+        q: 'Is ispaghula husk the same as psyllium husk?',
+        a: 'Yes. Ispaghula husk, psyllium husk, and isabgol are all the same product — Plantago ovata seed husk. Ispaghula is the term used in British pharmacopoeia (BP) and UK regulatory documents. All three names are interchangeable in terms of the actual botanical material.',
+      },
+      {
+        q: 'What is the difference between isabgol seed and isabgol husk?',
+        a: 'Isabgol seed is the whole Plantago ovata seed (20–30% soluble fiber). Isabgol husk is the outer seed coat separated from the seed (70–80% soluble fiber). The husk has much higher fiber content and is used in pharmaceutical laxatives, dietary supplements, and food fiber applications. When most people say "isabgol", they mean the husk.',
+      },
+    ],
+    relatedLinks: [
+      {
+        label: 'Buy Bulk Psyllium Husk from India',
+        href: '/en/product',
+        description: 'All grades: 85%, 95%, 98%, 99% — whole husk, powder, seeds. ISO 22000, USDA Organic, Halal certified.',
+      },
+      {
+        label: 'Psyllium Husk Import Guide by Country',
+        href: '/en/suppliers',
+        description: 'Country-specific import regulations, HS codes, duties, and logistics for 25+ countries.',
+      },
+      {
+        label: 'Pharmaceutical Grade Psyllium Husk Guide',
+        href: '/en/psyllium/blog/pharmaceutical-grade-psyllium-husk-guide',
+        description: 'USP/BP specifications, swell volume standards, and documentation for pharmaceutical buyers.',
+      },
+    ],
+  },
+  {
     slug: 'psyllium-husk-supplier-germany',
     title: 'Psyllium Husk Supplier Germany: EU Organic, HS Code & Import Guide (2026)',
     excerpt:

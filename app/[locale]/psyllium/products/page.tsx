@@ -102,7 +102,7 @@ export default async function PsylliumProductsPage({ params }: Props) {
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                     <span style={{ fontSize: '0.82rem', color: '#6b7280' }}>MOQ: <strong style={{ color: colorTheme }}>{product.moq}</strong></span>
-                    <Link href={`/${locale}/psyllium/${product.slug}`} style={{ background: colorTheme, color: 'white', padding: '0.45rem 1rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '0.82rem' }}>View Details →</Link>
+                    <Link href={`/${locale}/psyllium/contact`} style={{ background: colorTheme, color: 'white', padding: '0.45rem 1rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '0.82rem' }}>Get Quote →</Link>
                   </div>
                 </div>
               </div>

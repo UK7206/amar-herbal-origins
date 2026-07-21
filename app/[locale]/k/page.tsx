@@ -122,7 +122,7 @@ export default async function DirectoryIndexPage({ params }: Props) {
             { val: totalKeywords.toLocaleString(), label: 'Total Topics' },
             { val: String(alphabet.length), label: 'Categories' },
             { val: '30+', label: 'Countries Served' },
-            { val: '5+', label: 'Years Exporting' },
+            { val: 'Est. 2026', label: 'Founded' },
           ].map((s) => (
             <div key={s.label} style={{ textAlign: 'center' }}>
               <div

@@ -246,7 +246,7 @@ export function Footer() {
             alignItems: 'center', flexWrap: 'wrap', gap: '1rem',
           }}>
             <p style={{ color: '#4b5563', fontSize: '0.75rem', margin: 0 }}>
-              © 2026 Amar Herbal Origins (Proprietor: Khunt Umang Pareshbhai) · SARDAR CHOK, Navi Haliyad, Amreli, Gujarat 365440, India
+              © 2024–2026 Amar Herbal Origins (Proprietor: Khunt Umang Pareshbhai) · SARDAR CHOK, Navi Haliyad, Amreli, Gujarat 365440, India
             </p>
             <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
               <Link href="/en/about" style={{ color: '#6b7280', fontSize: '0.82rem', textDecoration: 'none' }}>About Us</Link>

@@ -155,6 +155,8 @@ export default async function LocaleLayout({ children, params }: Props) {
               "image": "https://amarherbalorigins.com/og-home.jpg",
               "description": "Amar Herbal Origins is a Amreli, Gujarat, India-based exporter and manufacturer of psyllium husk (Isabgol), herbs, spices, seeds, and agricultural products. GST registered (24ICIPP6678D1Z4), MSME/Udyam registered (UDYAM-GJ-02-0036891). Supplying bulk B2B to pharma, food, and nutraceutical industries in 30+ countries.",
               "foundingDate": "2026",
+              "slogan": "Farm-Direct Psyllium & Herbal Exports from Gujarat, India",
+              "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 5, "maxValue": 20 },
               "taxID": "24ICIPP6678D1Z4",
               "identifier": [
                 { "@type": "PropertyValue", "name": "GST Number", "value": "24ICIPP6678D1Z4" },
@@ -193,7 +195,12 @@ export default async function LocaleLayout({ children, params }: Props) {
                 { "@type": "Country", "name": "South Africa" },
                 { "@type": "Country", "name": "Thailand" },
                 { "@type": "Country", "name": "Vietnam" },
-                { "@type": "Country", "name": "Indonesia" }
+                { "@type": "Country", "name": "Indonesia" },
+                { "@type": "Country", "name": "Egypt" },
+                { "@type": "Country", "name": "Bangladesh" },
+                { "@type": "Country", "name": "Pakistan" },
+                { "@type": "Country", "name": "Mexico" },
+                { "@type": "Country", "name": "Brazil" }
               ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",

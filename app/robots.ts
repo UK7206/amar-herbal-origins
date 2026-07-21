@@ -18,7 +18,18 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: 'Googlebot',
         allow: ['/', '/en/', '/de/', '/fr/', '/ar/', '/es/', '/zh/', '/ja/'],
-        disallow: ['/admin/', '/api/'],
+        // Block category-specific supplier sub-pages (duplicate of /suppliers/{country})
+        // These cause ~1,316 canonical conflicts and drain crawl budget.
+        // The canonical master pages at /{locale}/suppliers/{country} remain fully crawlable.
+        disallow: [
+          '/admin/',
+          '/api/',
+          '/*/spices/suppliers/',
+          '/*/herbs/suppliers/',
+          '/*/ready-to-eat/suppliers/',
+          '/*/oils/suppliers/',
+          '/*/psyllium/suppliers/',
+        ],
       },
       {
         userAgent: 'Bingbot',
@@ -139,7 +150,15 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/admin/', '/api/'],
+        disallow: [
+          '/admin/',
+          '/api/',
+          '/*/spices/suppliers/',
+          '/*/herbs/suppliers/',
+          '/*/ready-to-eat/suppliers/',
+          '/*/oils/suppliers/',
+          '/*/psyllium/suppliers/',
+        ],
       },
     ],
     sitemap: 'https://amarherbalorigins.com/sitemap.xml',

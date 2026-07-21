@@ -10,9 +10,9 @@ import { MarqueeBanner } from '@/components/home/MarqueeBanner';
 import { CommercialLinksSection } from '@/components/home/CommercialLinksSection';
 import { HomeFAQSection } from '@/components/home/HomeFAQSection';
 import { GEOEntitySection } from '@/components/home/GEOEntitySection';
-import { HomeBlogSection } from '@/components/home/HomeBlogSection';
 
 type Props = { params: Promise<{ locale: string }> };
+
 
 const META: Record<string, { title: string; description: string }> = {
   en: {
@@ -128,7 +128,6 @@ export default async function HomePage({ params }: Props) {
       <ProductsSection />
       <WhyUsSection />
       <CommercialLinksSection locale={locale} />
-      <HomeBlogSection locale={locale} />
       <ProcessSection />
       <HomeFAQSection />
       <GEOEntitySection />
