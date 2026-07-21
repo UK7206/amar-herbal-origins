@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { getCategoryBySlug } from '@/lib/category-data';
 import { CategoryNavigation } from '@/components/category/CategoryNavigation';
-import { WhatsAppFloat } from '@/components/layout/WhatsAppFloat';
 
 export const metadata: Metadata = {
   title: {
@@ -18,7 +17,6 @@ export default async function HerbsLayout({ children }: { children: React.ReactN
     <>
       <CategoryNavigation category={category} />
       <div style={{ flex: 1 }}>{children}</div>
-      <WhatsAppFloat message="Hi, I'm interested in your Indian herbs — please share pricing" />
     </>
   );
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { getCategoryBySlug } from '@/lib/category-data';
 import { CategoryNavigation } from '@/components/category/CategoryNavigation';
-import { WhatsAppFloat } from '@/components/layout/WhatsAppFloat';
 
 type Props = {
   children: React.ReactNode;
@@ -24,8 +23,6 @@ export default async function PsylliumLayout({ children, params }: Props) {
     <>
       <CategoryNavigation category={category} />
       <div style={{ flex: 1 }}>{children}</div>
-
-      <WhatsAppFloat message="Hi, I'm interested in Psyllium Husk / Isabgol — please share pricing" />
     </>
   );
 }
